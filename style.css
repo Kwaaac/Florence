@@ -10,7 +10,6 @@ body{
 }
 
 .Logo2{
-  width: 100%;
   min-width: 300px;
   max-width: 300px
 }
@@ -38,12 +37,12 @@ nav > ul > li{
 }
 
 nav > ul > li > a{
-  padding: 25px 30px;
+  padding: 20px 30px;
   color: #FFF;
 }
 
-nav > li{
-  padding-top: 20px
+nav > ul > li:hover  a{
+  padding: 15px 30px 20px;
 }
 
 nav li{
@@ -53,4 +52,33 @@ nav li{
 nav a{
   display: inline-block;
   text-decoration: none;
+}
+
+nav li:hover .sousmenu{
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index:1000;
+}
+
+.sousmenu li{
+  border-bottom: 1px solid #CCC;
+}
+
+.sousmenu li a{
+  padding: 15px 30px;
+  font-size: 13px;
+  color: #222538;
+  width: 270px;
+}
+
+nav > ul > li:hover{
+  border-top: 5px solid #b94503;
+  background-color: rgba(185, 68, 2, 0.15);
+}
+
+nav > ul > li .sousmenu{
+  background-color: #f7af3e;
 }

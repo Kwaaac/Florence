@@ -4,6 +4,10 @@ body{
   padding: 0px;
 }
 
+s.smenu{
+    display: none;
+}
+
 nav{
   width: 100%;
   background-color: #ea5c0d;

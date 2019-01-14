@@ -10,8 +10,7 @@ body{
 }
 
 .Logo2{
-  min-width: 300px;
-  max-width: 300px
+  width: 250px;
 }
 
 
@@ -37,12 +36,12 @@ nav > ul > li{
 }
 
 nav > ul > li > a{
-  padding: 20px 30px;
+  padding: 20px 80px;
   color: #FFF;
 }
 
 nav > ul > li:hover  a{
-  padding: 15px 30px 20px;
+  padding: 15px 80px 20px;
 }
 
 nav li{

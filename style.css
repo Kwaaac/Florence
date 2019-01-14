@@ -9,8 +9,9 @@ body{
     display: none;
 }
 
-.Logo2{
+.Logo{
   width: 250px;
+  float: left;
 }
 
 

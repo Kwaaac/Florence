@@ -6,7 +6,7 @@ html, body {
   font-family: "Helvetica", sans-serif;
 }
 
-img {
+.slider-container img {
   max-width: 100%;
 }
 

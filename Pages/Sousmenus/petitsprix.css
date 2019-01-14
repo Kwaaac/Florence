@@ -86,19 +86,14 @@ nav > ul > li .sousmenu{
 
 /* Gestion de la page en dehors du menu */
 
-div-truc > img {
-  width: 100%;
-}
-
-.Colonne{
+.image{
+  margin-top: 10em;
+  margin-left: 1em;
+  width: 90%;
   float: left;
-  width: 33.33%;
-  padding: 15px;
-
 }
 
-.row::after{
-  content:"";
-  clear: both;
-  display: inline-block;
+.txt{
+  text-align: center;
+  background-color: #CCC;
 }

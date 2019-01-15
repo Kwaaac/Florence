@@ -90,7 +90,7 @@ nav > ul > li .sousmenu{
 }
 
 /* Gestion de la page en dehors du menu */
-.image{
+tr > td > img{
   margin-top: 5em;
   margin-left: 1em;
   width: 90%;
@@ -117,7 +117,7 @@ nav > ul > li .sousmenu{
 
 .main{
   border: 5px solid black;
-  padding-left: 0.5em;
+  padding-left: .5em;
   background-color: pink;
   border-radius: 25px;
 }

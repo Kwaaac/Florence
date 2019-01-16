@@ -88,9 +88,12 @@ nav > ul > li .sousmenu{
 }
 
 .indication p{
+  margin-top: 0.1%;
+  border: 5px solid #777;
+  width: 15em;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  background-color: red;
-  margin: 0;
 }
 
 .categorie p{
@@ -167,6 +170,7 @@ nav > ul > li .sousmenu{
 }
 
 .texte {
+  text-align: center;
   margin-top: 30%;
   margin-left: 5%;
   margin-right: 5%;

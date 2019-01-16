@@ -4,14 +4,7 @@ body{
   margin: 0px;
   padding: 0px;
 }
-.lang img{
-  float: right;
-  width: 2%;
-  height: 2%;
-  z-index: auto;
-  margin-top: 25px;
-  margin-right: 25px;
-}
+
 .sousmenu{
     display: none;
 }
@@ -21,6 +14,10 @@ body{
   float: left;
 }
 
+.menu{
+  margin:0px;
+  padding:0px;
+}
 
 .menu nav{
   width: 100%;
@@ -90,24 +87,40 @@ nav > ul > li .sousmenu{
   background-color: #f7af3e;
 }
 
+.indication p{
+  margin-top: 0.1%;
+  border: 5px solid #777;
+  width: 15em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.categorie p{
+  text-align: center;
+  background-color: blue;
+  margin: 0;
+}
+
 .slider-container img {
-  max-width: 100%;
-  max-height: 89%;
+  max-width: 80%;
+  max-height: 20%;
 }
 
 .slider-container{
-  height: 89%;
-  width: 100%;
+  height: 40%;
+  width: 80%;
   position: absolute;
   overflow: hidden;
   text-align: center;
-
+  margin-left: 10%;
+  margin-top: 5%;
 
 
 }
 .menuslider {
+
   position: absolute;
-  left: 0;
   z-index: 900;
   width: 100%;
   bottom: 0;
@@ -124,9 +137,6 @@ nav > ul > li .sousmenu{
   margin: 0 .2em 1em;
 }
 
-
-
-
 .slide {
   width: 100%;
   height: 100%;
@@ -137,24 +147,36 @@ nav > ul > li .sousmenu{
   padding: 8em 1em 0;
   background-size: cover;
   background-position: 50% 50%;
-  transition: left .5s 1.10s;
+  transition: left 1s 2s;
 }
 
 [id^="slide"]:checked + .slide {
   left: 0;
   z-index: 100;
-  transition: left 1s ease-out;
+  transition: left 2s ease-out;
 }
 
 .slide-1 {
-  background-image: url("Images/1.png");
+  background-image: radial-gradient(blue,red);
 }
 .slide-2 {
-  background-image: url("Images/2.png");
+  background-image: radial-gradient(yellow,green);
 }
 .slide-3 {
-  background-image: url("Images/3.png");
+  background-image: radial-gradient(purple,blue);
 }
 .slide-4{
-  background-image: url("Images/4.png");
+  background-image: radial-gradient(black,green);
+}
+
+.texte {
+  text-align: center;
+  margin-top: 30%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.texte p{
+  border: 10px solid #CCC;
+  border-radius: 5%
 }

@@ -84,52 +84,51 @@ nav > ul > li .sousmenu{
   background-color: #f7af3e;
 }
 
-/* Dans le menu Bon Plan, donc on le grise pour signifier qu'on est dedans */
-.BonPl{
-  background-color: rgba(185, 68, 2);
+/* Partie autre que le Menu */
+
+
+/* Conteneur du contenu (images, titre, texte) */
+.container{
+    background-color: #707070;
+    width: 85%;
+    border: 5px solid black;
+    margin: 1em;
 }
 
-/* Gestion de la page en dehors du menu */
-tr > td > img{
-  margin-top: 5em;
-  margin-left: 1em;
-  width: 90%;
-  float: left;
-  border-radius: 150px
-}
+/* Gestion de la div de l'image et de l'image*/
 
-.title {
+.categorie{
+  border: 5px solid #777;
+  width: 8em;
+  margin: 5px auto;
   text-align: center;
 }
 
-.title > td{
-  padding: 10px 2em;
+.cal{
+  margin-left: 1em;
 }
 
-.title > td > a{
-  border: 1px solid black;
-  border-radius: 25px;
-  padding: 5px;
-  color: black;
-  text-decoration: none;
-  background-color: gray;
+.cal > p{
+  margin-bottom: -15px;
 }
 
-.main{
-  border: 5px solid black;
-  padding-left: .5em;
-  background-color: pink;
-  border-radius: 25px;
+.container > img{
+  margin: 1em;
+  width: 30%;
 }
 
-
-h2{
-    border: 5px solid #777;
-    width: 7em;
-    margin: 5px auto;
-    text-align: center;
+/* Gestion du titre */
+.title{
+  text-decoration: underline;
+  display: inline;
 }
 
+.date{
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  color: #901010;
+}
 
 .read-more-state {
   display: none;
@@ -139,7 +138,7 @@ h2{
   opacity: 0;
   max-height: 0;
   font-size: 0;
-  transition: .25s ease;
+  transition: .12s ease;
 }
 
 .read-more-state:checked ~ .read-more-wrap .read-more-target {
@@ -157,7 +156,8 @@ h2{
 }
 
 .read-more-trigger {
-  float: right;
+  position: relative;
+  left: 94%;
   margin-bottom: 0.5em;
   margin-right: 0.5em;
   cursor: pointer;

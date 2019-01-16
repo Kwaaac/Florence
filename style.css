@@ -107,11 +107,12 @@ nav > ul > li .sousmenu{
 }
 
 .menuslider label {
+  opacity: .75;
   cursor: pointer;
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: #fff;
+  background: #333333;
   border-radius: 50px;
   margin: 0 .2em 1em;
 }

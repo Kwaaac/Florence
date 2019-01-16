@@ -124,17 +124,15 @@ nav > ul > li .sousmenu{
 }
 
 .menuslider label {
+  opacity: .75;
   cursor: pointer;
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: #fff;
+  background: #333333;
   border-radius: 50px;
   margin: 0 .2em 1em;
 }
-
-
-
 
 .slide {
   width: 100%;
@@ -166,4 +164,15 @@ nav > ul > li .sousmenu{
 }
 .slide-4{
   background-image: radial-gradient(black,green);
+}
+
+.texte {
+  margin-top: 30%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.texte p{
+  border: 10px solid #CCC;
+  border-radius: 5%
 }

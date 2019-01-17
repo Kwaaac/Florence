@@ -6,6 +6,7 @@ body{
   background-image: url("../../Images/bckg30%.jpeg");
   background-size: cover;
 }
+
 .lang img{
   float: right;
   width: 2%;
@@ -14,6 +15,7 @@ body{
   margin-top: 25px;
   margin-right: 25px;
 }
+
 .sousmenu{
     display: none;
 }

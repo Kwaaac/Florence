@@ -7,6 +7,16 @@ body{
   background-size: cover;
 }
 
+.lang img{
+  float: right;
+  width: 2%;
+  height: 2%;
+  z-index: auto;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+
+
 .sousmenu{
     display: none;
 }

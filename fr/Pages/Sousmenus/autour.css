@@ -6,6 +6,7 @@ body{
   background-image: url("../../Images/bckg30%.jpeg");
   background-size: cover;
 }
+
 .lang img{
   float: right;
   width: 2%;
@@ -94,7 +95,7 @@ nav > ul > li .sousmenu{
 
 
 
-/* Gestion de la page, autre que le header */ 
+/* Gestion de la page, autre que le header */
 
 h2{
     border: 5px solid #777;
@@ -128,6 +129,6 @@ footer > div{
   font-size: 16px;
   margin-top: -1.5em;
 }
-h6{
+.qui > h6{
   margin-top: 0.8em;
 }

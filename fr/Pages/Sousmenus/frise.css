@@ -1,0 +1,130 @@
+body{
+  font-family: 'Source code pro', Calibri, sans-serif;
+  font-size: 25px;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../../Images/bckg30%.jpeg");
+  background-size: cover;
+}
+.lang img{
+  float: right;
+  width: 2%;
+  height: 2%;
+  z-index: auto;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+.sousmenu{
+    display: none;
+}
+
+.Logo{
+  width: 250px;
+  float: left;
+}
+
+
+.menu nav{
+  width: 100%;
+  background-color: #ea5c0d;
+}
+
+nav > ul{
+  margin: 0px;
+  padding: 0px;
+}
+
+nav > ul::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav > ul > li{
+  float: left;
+  position: relative;
+}
+
+nav > ul > li > a{
+  padding: 20px 80px;
+  color: #FFF;
+}
+
+nav > ul > li:hover  a{
+  padding: 20px 80px 20px;
+}
+
+nav li{
+  list-style-type: none;
+}
+
+nav a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav li:hover .sousmenu{
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index:1000;
+}
+
+.sousmenu li{
+  border-bottom: 1px solid #CCC;
+}
+
+.sousmenu li a{
+  padding: 15px 30px;
+  font-size: 13px;
+  color: #222538;
+  width: 270px;
+}
+
+nav > ul > li:hover{
+  border-top: 5px solid #b94503;
+  background-color: rgba(185, 68, 2, 0.15);
+}
+
+nav > ul > li .sousmenu{
+  background-color: #f7af3e;
+}
+
+
+
+/* Gestion de la page, autre que le header */
+
+h2{
+    border: 5px solid #777;
+    width: 19em;
+    margin: 5px auto;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.frise > img{
+  width: 55%;
+  margin-left: 22%;
+}
+
+footer {
+  background-color: #ea5c0d;
+  display: inline-block;
+  width: 100%;
+  margin-top: 2em;
+}
+
+footer > div{
+  margin-left: 30%;
+}
+
+.desc{
+  width: 55%;
+  font-size: 16px;
+  margin-top: -1.5em;
+}
+.qui > h6{
+  margin-top: 0.8em;
+}

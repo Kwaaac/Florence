@@ -3,6 +3,17 @@ body{
   font-size: 25px;
   margin: 0px;
   padding: 0px;
+  background-image: url("../../../Images/bckg30%.jpeg");
+  background-size: cover;
+}
+
+.lang img{
+  float: right;
+  width: 2%;
+  height: 2%;
+  z-index: auto;
+  margin-top: 25px;
+  margin-right: 25px;
 }
 
 .sousmenu{
@@ -157,17 +168,14 @@ nav > ul > li .sousmenu{
 }
 
 .slide-1 {
-  background-image: radial-gradient(blue,red);
+  background-image: url("../../../Images/PaVe/palazzo vecchio2.jpg");
+  background-size: contain;
 }
+
 .slide-2 {
-  background-image: radial-gradient(yellow,green);
+  background-image: url("../../../Images/PaVe/David-Hercule et Cacus.jpg");
 }
-.slide-3 {
-  background-image: radial-gradient(purple,blue);
-}
-.slide-4{
-  background-image: radial-gradient(black,green);
-}
+
 
 .texte {
   text-align: center;
@@ -178,5 +186,4 @@ nav > ul > li .sousmenu{
 
 .texte p{
   border: 10px solid #CCC;
-  border-radius: 5%
 }

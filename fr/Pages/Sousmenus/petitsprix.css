@@ -3,6 +3,8 @@ body{
   font-size: 25px;
   margin: 0px;
   padding: 0px;
+  background-image: url("../../Images/bckg30%.jpeg");
+  background-size: cover;
 }
 
 .lang img{
@@ -92,20 +94,19 @@ nav > ul > li .sousmenu{
   background-color: #f7af3e;
 }
 
-/* Dans le menu Bon Plan, donc on le grise pour signifier qu'on est dedans */
-.BonPl{
-  background-color: rgba(185, 68, 2);
-}
 
 /* Gestion de la page en dehors du menu */
 
+
 .image{
-  margin-top: 10em;
-  margin-left: 1em;
+  margin-top: 2em;
+  margin-left: 4em;
   width: 90%;
+  height: 20em;
   float: left;
   border-radius: 150px
 }
+
 
 .tet {
   text-align: center;
@@ -117,4 +118,25 @@ h2{
     width: 7em;
     margin: 5px auto;
     text-align: center;
+}
+
+
+footer {
+  background-color: #ea5c0d;
+  display: inline-block;
+  width: 100%;
+  margin-top: 2em;
+}
+
+footer > div{
+  margin-left: 30%;
+}
+
+.desc{
+  width: 55%;
+  font-size: 16px;
+  margin-top: -1.5em;
+}
+.qui > h6{
+  margin-top: 0.8em;
 }

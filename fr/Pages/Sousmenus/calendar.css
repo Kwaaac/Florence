@@ -3,6 +3,8 @@ body{
   font-size: 25px;
   margin: 0px;
   padding: 0px;
+  background-image: url("../../Images/bckg30%.jpeg");
+  background-size: cover;
 }
 
 .sousmenu{

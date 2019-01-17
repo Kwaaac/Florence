@@ -3,6 +3,8 @@ body{
   font-size: 25px;
   margin: 0px;
   padding: 0px;
+  background-image: url("../../Images/bckg30%.jpeg");
+  background-size: cover;
 }
 
 .sousmenu{
@@ -89,6 +91,16 @@ nav > ul > li .sousmenu{
 }
 
 /* Gestion de la page en dehors du menu */
+
+.image1{
+    margin-top: 5em;
+    margin-left: 3.5em;
+    width: 70%;
+    height: 17em;
+    float: left;
+    border-radius: 150px
+
+}
 
 .image{
   margin-top: 5em;

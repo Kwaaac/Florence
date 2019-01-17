@@ -101,7 +101,7 @@ nav > ul > li .sousmenu{
 .indication p{
   margin-top: 0.1%;
   border: 5px solid #777;
-  width: 15em;
+  width: 11em;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -168,12 +168,15 @@ nav > ul > li .sousmenu{
 }
 
 .slide-1 {
-  background-image: url("../../../Images/PaVe/palazzo vecchio2.jpg");
-  background-size: contain;
+  background-image: url("../../../Images/PoVe/Ponte_Vecchio2.JPG");
 }
 
 .slide-2 {
-  background-image: url("../../../Images/PaVe/David-Hercule et Cacus.jpg");
+  background-image: url("../../../Images/PoVe/Ponte_Vecchio1.jpg");
+}
+
+.slide-3 {
+  background-image: url("../../../Images/PoVe/ponte_vecchio3.jpg");
 }
 
 
@@ -186,4 +189,26 @@ nav > ul > li .sousmenu{
 
 .texte p{
   border: 10px solid #CCC;
+}
+
+
+
+footer {
+  background-color: #ea5c0d;
+  display: inline-block;
+  width: 100%;
+  margin-top: 2em;
+}
+
+footer > div{
+  margin-left: 30%;
+}
+
+.desc{
+  width: 55%;
+  font-size: 16px;
+  margin-top: -1.5em;
+}
+.qui > h6{
+  margin-top: 0.8em;
 }

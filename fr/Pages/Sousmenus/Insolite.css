@@ -104,9 +104,19 @@ nav > ul > li .sousmenu{
 
 .image1{
     margin-top: 5em;
-    margin-left: 3.5em;
-    width: 70%;
-    height: 17em;
+    margin-left: 3em;
+    width: 90%;
+    height: 12em;
+    float: left;
+    border-radius: 150px
+
+}
+
+.image2{
+    margin-top: 5em;
+    margin-left: 3em;
+    width: 100%;
+    height: 12em;
     float: left;
     border-radius: 150px
 
@@ -114,13 +124,16 @@ nav > ul > li .sousmenu{
 
 .image{
   margin-top: 5em;
-  margin-left: 1em;
+  margin-left: 5em;
   width: 90%;
+  height: 12em;
   float: left;
   border-radius: 150px
 }
 
 .tet {
+  position: relative;
+  left: 3em;
   text-align: center;
   text-decoration: overline;
 }

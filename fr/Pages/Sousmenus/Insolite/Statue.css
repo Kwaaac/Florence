@@ -98,6 +98,10 @@ nav > ul > li .sousmenu{
   background-color: #f7af3e;
 }
 
+table{
+  margin-left: 15%;
+}
+
 .indication p{
   margin-top: 0.1%;
   border: 5px solid #777;
@@ -168,10 +172,9 @@ nav > ul > li .sousmenu{
 }
 
 .slide-1 {
-  background-image: url("../../../Images/La_Specola.JPG");
+  background-image: url("../../../Images/statue.JPG");
   background-size: cover;
 }
-
 
 .texte {
   text-align: center;

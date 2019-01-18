@@ -122,3 +122,24 @@ nav > ul > li .sousmenu{
 
 .tableau td h2{
   padding-left: .75rem;
+}
+
+footer{
+    background-color: #ea5c0d;
+    display: inline-block;
+    width: 100%;
+    margin-top: 2em;
+  }
+
+  footer > div{
+    margin-left: 30%;
+  }
+
+  .desc{
+    width: 55%;
+    font-size: 16px;
+    margin-top: -1.5em;
+  }
+  .qui > h6{
+    margin-top: 0.8em;
+  }

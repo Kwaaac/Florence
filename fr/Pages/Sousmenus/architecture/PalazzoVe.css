@@ -120,11 +120,11 @@ nav > ul > li .sousmenu{
 
 .slider-container{
   height: 40%;
-  width: 80%;
+  width: 65%;
   position: absolute;
   overflow: hidden;
   text-align: center;
-  margin-left: 10%;
+  margin-left: 20%;
   margin-top: 5%;
 
 
@@ -186,7 +186,8 @@ nav > ul > li .sousmenu{
 }
 
 .texte p{
-  border: 10px solid #CCC;
+  border: 5px solid #CCC;
+  background-color: white;
 }
 
 

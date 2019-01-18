@@ -181,10 +181,9 @@ nav > ul > li .sousmenu{
 }
 
 .texte p{
-  border: 10px solid #CCC;
+  border: 5px solid #CCC;
+  background-color: #FFF;
 }
-
-
 
 footer {
   background-color: #ea5c0d;

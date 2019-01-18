@@ -106,6 +106,7 @@ nav > ul > li .sousmenu{
 }
 
 .tableau td{
+  vertical-align: top;
   width: 15%;
   text-align: center;
   border-style: inset;

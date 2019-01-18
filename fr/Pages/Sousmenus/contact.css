@@ -114,7 +114,7 @@ nav > ul > li .sousmenu{
   width: auto;
 }
 
-.pers > img{
+.pers > a > img{
   width: 13em;
   height: 13em;
   border-radius: 50%;

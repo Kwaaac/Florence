@@ -5,6 +5,15 @@ body{
   padding: 0px;
 }
 
+.lang img{
+  float: right;
+  width: 2%;
+  height: 2%;
+  z-index: auto;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+
 .sousmenu{
     display: none;
 }
@@ -84,9 +93,55 @@ nav > ul > li .sousmenu{
 }
 
 .tableau{
+  margin-top: 1%;
   width: 80%;
-  text-align: center;
   margin-left: 10%;
   margin-right: 10%;
-
 }
+
+.tableau table{
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+
+.tableau td{
+  vertical-align: top;
+  width: 15%;
+  text-align: center;
+  border-style: inset;
+  border-width: 7px;
+  border-color: rgba(234, 91, 12, 1);
+  background-color: rgba(185, 68, 2, 0.5);
+}
+.tableau td h2,p{
+  text-align: left;
+}
+
+.tableau td p{
+  padding-left: 1.25rem;
+}
+
+.tableau td h2{
+  padding-left: .75rem;
+}
+
+footer{
+    background-color: #ea5c0d;
+    display: inline-block;
+    width: 100%;
+    margin-top: 2em;
+  }
+
+  footer > div{
+    margin-left: 30%;
+  }
+
+  .desc{
+    width: 55%;
+    font-size: 16px;
+    margin-top: -1.5em;
+  }
+  .qui > h6{
+    margin-top: 0.8em;
+  }

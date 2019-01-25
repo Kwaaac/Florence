@@ -3,7 +3,19 @@ body{
   font-size: 25px;
   margin: 0px;
   padding: 0px;
+  background-image: url("../../Images/bckg30%.jpeg");
+  background-size: cover;
 }
+
+.lang img{
+  float: right;
+  width: 2%;
+  height: 2%;
+  z-index: auto;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+
 
 .sousmenu{
     display: none;
@@ -169,4 +181,29 @@ nav > ul > li .sousmenu{
   border: 1px solid #ddd;
   border-radius: .25em;
   background-color: #FFF;
+}
+
+.twitter-timeline{
+  margin-left: 22%;
+}
+
+
+footer {
+  background-color: #ea5c0d;
+  display: inline-block;
+  width: 100%;
+  margin-top: 2em;
+}
+
+footer > div{
+  margin-left: 30%;
+}
+
+.desc{
+  width: 55%;
+  font-size: 16px;
+  margin-top: -1.5em;
+}
+.qui > h6{
+  margin-top: 0.8em;
 }

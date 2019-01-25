@@ -95,10 +95,6 @@ nav > ul > li .sousmenu{
   background-color: #f7af3e;
 }
 
-/* Dans le menu Bon Plan, donc on le grise pour signifier qu'on est dedans */
-.BonPl{
-  background-color: rgba(185, 68, 2);
-}
 
 /* Gestion de la page en dehors du menu */
 

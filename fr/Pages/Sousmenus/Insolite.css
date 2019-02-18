@@ -98,41 +98,28 @@ nav > ul > li .sousmenu{
 
 /* Gestion de la page en dehors du menu */
 
-.image1{
-    margin-top: 5em;
-    margin-left: 3em;
-    width: 90%;
-    height: 12em;
-    float: left;
-    border-radius: 150px
-
-}
-
-.image2{
-    margin-top: 5em;
-    margin-left: 3em;
-    width: 100%;
-    height: 12em;
-    float: left;
-    border-radius: 150px
-
-}
-
-.image{
-  margin-top: 5em;
-  margin-left: 5em;
-  width: 90%;
-  height: 12em;
-  float: left;
-  border-radius: 150px
-}
-
-.tet {
-  position: relative;
-  left: 3em;
+.container{
+  margin-left: 1em;
   text-align: center;
-  text-decoration: overline;
 }
+
+.insolite{
+  display: inline-block;
+  width: auto;
+}
+
+.insolite > a >img{
+  width: 23em;
+  height: 20em;
+  border-radius: 35%;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+h3{
+  margin-bottom: 3em;
+}
+
 
 h2{
     border: 5px solid #777;

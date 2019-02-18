@@ -167,13 +167,69 @@ nav > ul > li .sousmenu{
   transition: left 2s ease-out;
 }
 
-.slide-1 {
+/* Jardins Boboli */
+
+.slide-1_JarBo {
   background-image: url("../../../Images/JaBo/Jardin1.jpg");
 }
 
-.slide-2 {
+.slide-2_JarBo {
   background-image: url("../../../Images/JaBo/Jardin2.jpg");
 }
+
+/* Duomo */
+
+.slide-1_Duomo {
+  background-image: url("../../../Images/Duomo/Duomo1.jpg");
+  background-size: cover;
+}
+
+/* Musée des Offices */
+
+.slide-1_Musee {
+  background-image: url("../../../Images/MuOf/Musée1.png");
+}
+
+.slide-2_Musee {
+  background-image: url("../../../Images/MuOf/Musée2.png");
+}
+
+/* Palais Pitti */
+
+.slide-1_PalPit {
+  background-image: url("../../../Images/PaPi/Florence-PalaisPitti.jpg");
+}
+
+.slide-2_PalPit {
+  background-image: url("../../../Images/PaPi/PalaisPitti.jpg");
+}
+
+/* Palazzo Vecchio */
+
+.slide-1_PallVe {
+  background-image: url("../../../Images/PaVe/palazzo vecchio2.jpg");
+  background-size: contain;
+}
+
+.slide-2_PallVe {
+  background-image: url("../../../Images/PaVe/David-Hercule et Cacus.jpg");
+  background-size: auto;
+}
+
+/* Ponte Vecchio */
+
+.slide-1_PonteVe {
+  background-image: url("../../../Images/PoVe/Ponte_Vecchio2.JPG");
+}
+
+.slide-2_PonteVe {
+  background-image: url("../../../Images/PoVe/Ponte_Vecchio1.jpg");
+}
+
+.slide-3_PonteVe {
+  background-image: url("../../../Images/PoVe/ponte_vecchio3.jpg");
+}
+
 
 
 .texte {

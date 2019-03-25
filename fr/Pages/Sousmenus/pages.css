@@ -150,82 +150,181 @@ nav > ul > li .sousmenu{
 
 
 /* Twitter */
-#twitter .categorie{
+#twitter h2{
   border: 5px solid #777;
   width: 8em;
   margin: 5px auto;
   text-align: center;
 }
 
-#twitter .cal{
-  margin-left: 1em;
-}
-
-#twitter .cal > p{
-  margin-bottom: -15px;
-}
-
-#twitter .container > img{
-  margin: 1em;
-  width: 30%;
-}
-
-/* Gestion du titre */
-#twitter .title{
-  text-decoration: underline;
-  display: inline;
-}
-
-#twitter .date{
-  float: right;
-  font-size: 50px;
-  font-weight: bold;
-  color: #901010;
-}
-
-#twitter .read-more-state {
-  display: none;
-}
-
-#twitter .read-more-target {
-  opacity: 0;
-  max-height: 0;
-  font-size: 0;
-  transition: .12s ease;
-}
-
-#twitter .read-more-state:checked ~ .read-more-wrap .read-more-target {
-  opacity: 1;
-  font-size: inherit;
-  max-height:9em;
-}
-
-#twitter .read-more-state ~ .read-more-trigger:before {
-  content: 'Voir plus';
-}
-
-#twitter .read-more-state:checked ~ .read-more-trigger:before {
-  content: 'Voir moins';
-}
-
-#twitter .read-more-trigger {
-  position: relative;
-  left: 94%;
-  margin-bottom: 0.5em;
-  margin-right: 0.5em;
-  cursor: pointer;
-  display: inline-block;
-  padding: 0 .3em;
-  color: #666;
-  font-size: .6em;
-  line-height: 2;
-  border: 1px solid #ddd;
-  border-radius: .25em;
-  background-color: #FFF;
-}
-
 #twitter .twitter-timeline{
   margin-left: 22%;
+}
+
+/* Circuits */
+
+#circuits h2{
+    border: 5px solid #777;
+    width: 11em;
+    margin: 5px auto;
+    text-align: center;
+}
+
+
+#circuits iframe{
+  margin-left: 25%;
+  margin-right: 24%;
+  margin-top: 1em;
+  width:50%;
+  height: 30em;
+}
+
+/* Contact */
+
+#contact .projet{
+  margin-left: 1em;
+  text-align: center;
+}
+
+#contact .equipe{
+  margin-left: 1em;
+  text-align: center;
+}
+
+#contact .pers{
+  display: inline-block;
+  width: auto;
+}
+
+#contact .pers > a > img{
+  width: 13em;
+  height: 13em;
+  border-radius: 50%;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+#contact .pers > h3{
+  margin-bottom: -20px;
+}
+
+#contact .DA{
+  margin-left: 1em;
+  text-align: center;
+}
+
+/* Frise */
+
+#frise h2{
+    border: 5px solid #777;
+    width: 19em;
+    margin: 5px auto;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#frise .frise > img{
+  width: 55%;
+  margin-left: 22%;
+}
+
+/* Insolite */
+
+
+#insolite .container{
+  margin-left: 1em;
+  text-align: center;
+}
+
+#insolite .insolite{
+  display: inline-block;
+  width: auto;
+}
+
+#insolite .insolite > a >img{
+  width: 23em;
+  height: 20em;
+  border-radius: 35%;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+#insolite h3{
+  margin-bottom: 3em;
+}
+
+
+#insolite h2{
+    border: 5px solid #777;
+    width: 7em;
+    margin: 5px auto;
+    text-align: center;
+}
+
+/* Petits Prix */
+
+#petitsprix .container{
+  margin-left: 1em;
+  text-align: center;
+}
+
+#petitsprix .adresse{
+  display: inline-block;
+  width: auto;
+}
+
+#petitsprix .image{
+  width: 30em;
+  height: 23em;
+  border-radius: 35%;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+#petitsprix .h3 {
+  margin-bottom: 3em;
+}
+
+#petitsprix h2{
+    border: 5px solid #777;
+    width: 7em;
+    margin: 5px auto;
+    text-align: center;
+}
+
+/* Transports */
+#transport .tableau{
+  margin-top: 1%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#transport .tableau table{
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+
+#transport .tableau td{
+  vertical-align: top;
+  width: 15%;
+  text-align: center;
+  border-style: inset;
+  border-width: 7px;
+  border-color: rgba(234, 91, 12, 1);
+  background-color: rgba(185, 68, 2, 0.5);
+}
+#transport .tableau td h2,p{
+  text-align: left;
+}
+
+#transport .tableau td p{
+  padding-left: 1.25rem;
+}
+
+#transport .tableau td h2{
+  padding-left: .75rem;
 }
 
 footer {

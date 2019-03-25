@@ -23,12 +23,11 @@ body{
 
 .Logo{
   width: 250px;
-  height: 80px;
   float: left;
 }
 
 
-nav{
+.menu nav{
   width: 100%;
   background-color: #ea5c0d;
 }
@@ -96,78 +95,120 @@ nav > ul > li .sousmenu{
   background-color: #f7af3e;
 }
 
-/* Partie autre que le Menu */
 
+/* Gestion de la page en dehors du menu */
 
-/* Conteneur du contenu (images, titre, texte) */
-.container{
-    background-color: #707070;
-    width: 85%;
-    border: 5px solid black;
-    margin: 1em;
+/* Page Architecture */
+
+#archi .container{
+  margin-left: 1em;
+  text-align: center;
 }
 
-/* Gestion de la div de l'image et de l'image*/
+#archi .monuments{
+  display: inline-block;
+  width: auto;
+}
 
-.categorie{
+#archi .monuments > a >img{
+  width: 23em;
+  height: 23em;
+  border-radius: 35%;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+#archi h3{
+  margin-bottom: 3em;
+}
+
+#archi h2{
+    border: 5px solid #777;
+    width: 7em;
+    margin: 5px auto;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+/* Page Autour de vous */
+
+#autour h2{
+    border: 5px solid #777;
+    width: 11em;
+    margin: 5px auto;
+    text-align: center;
+}
+
+
+#autour iframe{
+  margin-left: 25%;
+  margin-right: 24%;
+  margin-top: 1em;
+  width:50%;
+  height: 30em;
+}
+
+
+/* Twitter */
+#twitter .categorie{
   border: 5px solid #777;
   width: 8em;
   margin: 5px auto;
   text-align: center;
 }
 
-.cal{
+#twitter .cal{
   margin-left: 1em;
 }
 
-.cal > p{
+#twitter .cal > p{
   margin-bottom: -15px;
 }
 
-.container > img{
+#twitter .container > img{
   margin: 1em;
   width: 30%;
 }
 
 /* Gestion du titre */
-.title{
+#twitter .title{
   text-decoration: underline;
   display: inline;
 }
 
-.date{
+#twitter .date{
   float: right;
   font-size: 50px;
   font-weight: bold;
   color: #901010;
 }
 
-.read-more-state {
+#twitter .read-more-state {
   display: none;
 }
 
-.read-more-target {
+#twitter .read-more-target {
   opacity: 0;
   max-height: 0;
   font-size: 0;
   transition: .12s ease;
 }
 
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
+#twitter .read-more-state:checked ~ .read-more-wrap .read-more-target {
   opacity: 1;
   font-size: inherit;
   max-height:9em;
 }
 
-.read-more-state ~ .read-more-trigger:before {
+#twitter .read-more-state ~ .read-more-trigger:before {
   content: 'Voir plus';
 }
 
-.read-more-state:checked ~ .read-more-trigger:before {
+#twitter .read-more-state:checked ~ .read-more-trigger:before {
   content: 'Voir moins';
 }
 
-.read-more-trigger {
+#twitter .read-more-trigger {
   position: relative;
   left: 94%;
   margin-bottom: 0.5em;
@@ -183,10 +224,9 @@ nav > ul > li .sousmenu{
   background-color: #FFF;
 }
 
-.twitter-timeline{
+#twitter .twitter-timeline{
   margin-left: 22%;
 }
-
 
 footer {
   background-color: #ea5c0d;

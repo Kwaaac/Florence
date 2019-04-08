@@ -1,11 +1,13 @@
 body{
   font-family: 'Source code pro', Calibri, sans-serif;
   font-size: 25px;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   background-image: url("../../Images/bckg30%.jpeg");
   background-size: cover;
 }
+
+/* Menu */
 
 .lang img{
   float: right;
@@ -111,8 +113,8 @@ nav > ul > li .sousmenu{
 }
 
 #archi .monuments > a >img{
-  width: 23em;
-  height: 23em;
+  width: 15em;
+  height: 15em;
   border-radius: 35%;
   margin-left: 3em;
   margin-right: 3em;
@@ -263,6 +265,7 @@ nav > ul > li .sousmenu{
 
 /* Petits Prix */
 
+
 #petitsprix .container{
   margin-left: 1em;
   text-align: center;
@@ -274,11 +277,12 @@ nav > ul > li .sousmenu{
 }
 
 #petitsprix .image{
-  width: 30em;
-  height: 23em;
+  width: 15em;
+  height: 15em;
   border-radius: 35%;
   margin-left: 3em;
   margin-right: 3em;
+  margin-top: 3em;
 }
 
 #petitsprix .h3 {
@@ -290,6 +294,16 @@ nav > ul > li .sousmenu{
     width: 7em;
     margin: 5px auto;
     text-align: center;
+}
+
+#petitsprix footer {
+  background-color: #ea5c0d;
+  display: inline-block;
+  width: 100%;
+  margin-top: 2em;
+  left: 0;
+  bottom: 0;
+  position: absolute;
 }
 
 /* Transports */
@@ -332,6 +346,7 @@ footer {
   display: inline-block;
   width: 100%;
   margin-top: 2em;
+  position: relative;
 }
 
 footer > div{

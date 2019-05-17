@@ -307,40 +307,37 @@ nav > ul > li .sousmenu{
 }
 
 /* Transports */
-#transport .tableau{
-  margin-top: 1%;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+
+.boiteinfo{
+    width: 100%;
+    margin: 30px auto;
+    border: 2px solid #888;
+    box-shadow:  0px 0px 2px #AAA;
+    background-color: #fc9e32;
 }
 
-#transport .tableau table{
-  width: 100%;
-  height: 100%;
-  border-collapse: collapse;
+.biContent p {
+    font-size: 15px;
 }
 
-#transport .tableau td{
-  vertical-align: top;
-  width: 15%;
-  text-align: center;
-  border-style: inset;
-  border-width: 7px;
-  border-color: rgba(234, 91, 12, 1);
-  background-color: rgba(185, 68, 2, 0.5);
-}
-#transport .tableau td h2,p{
-  text-align: left;
+.biContent h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+    margin: 20px 0px 50px 0px;
 }
 
-#transport .tableau td p{
-  padding-left: 1.25rem;
+.biContent h2{
+  margin-left: 20px;
+  font-size: 23px;
 }
 
-#transport .tableau td h2{
-  padding-left: .75rem;
+#transport .busIcon{
+  width: 2.5em;
+  margin-bottom: -1em;
 }
 
+/* Footer */
 footer {
   background-color: #ea5c0d;
   display: inline-block;

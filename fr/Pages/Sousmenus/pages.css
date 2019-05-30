@@ -100,6 +100,14 @@ nav > ul > li .sousmenu{
 
 /* Gestion de la page en dehors du menu */
 
+.title{
+  border: 5px solid #777;
+  width: 7em;
+  margin: 5px auto;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
 /* Page Architecture */
 
 #archi .container{
@@ -159,8 +167,17 @@ nav > ul > li .sousmenu{
   text-align: center;
 }
 
-#twitter .twitter-timeline{
-  margin-left: 22%;
+#twitter .tt{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+}
+
+@media only screen and (max-width: 1200px) {
+    #twitter .tt{
+      max-width: 100%;
+    }
+
 }
 
 /* Circuits */
@@ -308,26 +325,40 @@ nav > ul > li .sousmenu{
 
 /* Transports */
 
-.boiteinfo{
-    width: 100%;
+#transport .boiteinfo1{
+    width: 85%;
+    float: left;
     margin: 30px auto;
     border: 2px solid #888;
     box-shadow:  0px 0px 2px #AAA;
-    background-color: #fc9e32;
+    background-color: rgba(255, 255, 255, .5);
 }
 
-.biContent p {
+#transport .boiteinfo2{
+    width: 85%;
+    float: right;
+    margin: 30px auto;
+    border: 2px solid #888;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+#transport p {
     font-size: 15px;
+    margin-left: 1.5em;
 }
 
-.biContent h1{
+#transport .text{
+  margin-left: 2em;
+}
+
+#transport h1{
     text-transform: uppercase;
     text-align: center;
     font-size: 35px;
-    margin: 20px 0px 50px 0px;
+    margin: 20px 0px 2px 0px;
 }
 
-.biContent h2{
+#transport .more-content h2{
   margin-left: 20px;
   font-size: 23px;
 }
@@ -335,6 +366,54 @@ nav > ul > li .sousmenu{
 #transport .busIcon{
   width: 2.5em;
   margin-bottom: -1em;
+}
+
+#transport .subtitle{
+  font-weight: bold;
+  margin-bottom: 0.2em;
+  font-size: 23px;
+}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-wrap{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+  align-items: center;
 }
 
 /* Footer */

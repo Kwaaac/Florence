@@ -395,6 +395,7 @@ nav > ul > li .sousmenu{
 .read-more-wrap{
   margin-top: 0;
   margin-bottom: 0;
+  height: 0;
 }
 
 .read-more-state ~ .read-more-trigger:before {

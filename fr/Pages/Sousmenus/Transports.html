@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="pages.css">
     <title>[Florence] Transports</title>
   </head>
-  
+
   <body id="transport">
     <header>
       <div class="menu">
@@ -58,10 +58,9 @@
 
       <div class="boiteinfo1">
         <h1>BUS</h1>
-        <input type="checkbox" class="read-more-state" id="post-1" />
+        <input type="checkbox" class="read-more-state" id="post-1" onclick="myFunction('post-1', 'box-1')" />
 
-
-            <p class="read-more-wrap"><span class="read-more-target">  <span class="subtitle">Tarifs</span><br >
+            <p class="read-more-wrap" id="box-1"><span class="read-more-target">  <span class="subtitle">Tarifs</span><br >
               <span class="text">Vous pouvez achetez les tickets dans les kiosques et tabac.
               Le ticket standard coûte 1,20€ et à une durée de 90 minutes après sa validation.
               D’autre ticket sont disponible tel que le billet valable 24h (5€),
@@ -80,15 +79,15 @@
 
       <div class="boiteinfo2">
         <h1>Taxis</h1>
-        <input type="checkbox" class="read-more-state" id="post-2" />
+        <input type="checkbox" class="read-more-state" id="post-2" onclick="myFunction('post-2', 'box-2')"/>
 
-            <p class="read-more-wrap"><span class="read-more-target">  <span class="subtitle">Prix</span><br >
+            <p class="read-more-wrap" id="box-2"><span class="read-more-target">  <span class="subtitle">Prix</span><br >
               <span class="text">
                 La prise en charge est tout d’abord de 3,30€ en semaine, 5,30€ les dimanche et jours de fête ou 6,60€
                 de 22h à 6h. Puis le reste varie en fonction de votre destination.
               </span><br >
 
-          <span class="subtitle">Où en trouver</span><br ><br >
+          <span class="subtitle">Où en trouver</span><br >
 
             <span class="text">Pour appeler un taxi, vous pouvez en appeler un depuis une place principal tel que  ou alors appeler
             un des numéros suivant :
@@ -105,9 +104,9 @@
 
       <div class="boiteinfo1">
         <h1>Velo</h1>
-        <input type="checkbox" class="read-more-state" id="post-3" />
+        <input type="checkbox" class="read-more-state" id="post-3" onclick="myFunction('post-3', 'box-3')"/>
 
-          <p class="read-more-wrap"><span class="read-more-target"><span class="subtitle">Prix</span><br >
+          <p class="read-more-wrap"  id="box-3"><span class="read-more-target"><span class="subtitle">Prix</span><br >
             <span class="text">
               En moyenne, louer un velo a Florence coûte 3€ de l’heure et pour un week-end entier,
               cela coûte environ 30€
@@ -121,6 +120,8 @@
       </div>
 
     </div>
+
+    <script src="transport.js"></script>
 
     <footer>
 

@@ -233,13 +233,34 @@ nav > ul > li .sousmenu{
 #contact .pers > a > img{
   width: 13em;
   height: 13em;
-  border-radius: 50%;
   margin-left: 3em;
   margin-right: 3em;
+  border-radius: 50%;
 }
+
+
 
 #contact .pers > h3{
   margin-bottom: -20px;
+}
+
+@media only screen and (max-width: 550px) {
+  #contact .pers > a > img{
+    width: 10em;
+    height: 10em;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+
+  #contact .pers > h3{
+    width: 250px;
+  }
+
+  #contact .pers > h4{
+    margin-bottom: 3em;
+    width: 250px;
+  }
+
 }
 
 #contact .DA{

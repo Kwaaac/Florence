@@ -342,6 +342,16 @@ nav > ul > li .sousmenu{
     background-color: rgba(255, 255, 255, .5);
 }
 
+@media only screen and (max-width: 1200px) {
+    #transport .boiteinfo1{
+      width: 100%;
+    }
+
+    #transport .boiteinfo2{
+        width: 100%;
+    }
+}
+
 #transport p {
     font-size: 15px;
     margin-left: 1.5em;
@@ -374,39 +384,49 @@ nav > ul > li .sousmenu{
   font-size: 23px;
 }
 
-.read-more-state {
+#transport footer {
+  background-color: #ea5c0d;
+  display: inline-block;
+  width: 100%;
+  margin-top: 6em;
+  left: 0;
+  bottom: 0;
+  position: relative;
+}
+
+#transport .read-more-state {
   display: none;
 }
 
 
-.read-more-target {
+#transport .read-more-target {
   opacity: 0;
   max-height: 0;
   font-size: 0;
   transition: .25s ease;
 }
 
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
+#transport .read-more-state:checked ~ .read-more-wrap .read-more-target {
   opacity: 1;
   font-size: inherit;
   max-height: 999em;
 }
 
-.read-more-wrap{
+#transport .read-more-wrap{
   margin-top: 0;
   margin-bottom: 0;
   height: 0;
 }
 
-.read-more-state ~ .read-more-trigger:before {
+#transport .read-more-state ~ .read-more-trigger:before {
   content: 'Show more';
 }
 
-.read-more-state:checked ~ .read-more-trigger:before {
+#transport .read-more-state:checked ~ .read-more-trigger:before {
   content: 'Show less';
 }
 
-.read-more-trigger {
+#transport .read-more-trigger {
   cursor: pointer;
   display: inline-block;
   padding: 0 .5em;

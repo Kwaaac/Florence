@@ -69,7 +69,7 @@ include("connectionFiles/connectionLOG.inc.php");
       //on fait deux requêtes pour vérifier les deux BDD
       $req = $dbh -> query("SELECT * FROM USER WHERE login=\"".$login."\" AND password=SHA1(\"".$_POST["mdp"]."\");");
       $req2 = $dbh -> query("SELECT * FROM ADMIN WHERE login=\"".$login."\" AND password=SHA1(\"".$_POST["mdp"]."\");");
-      if($req -> rowCount() !=0){//on vérifie si il y a un résultat , si oui , c'est que la connection est validée
+      if($req -> rowCount() !=0){//on vérifie si il y a un résultat, si oui, c'est que la connection est validée
         $_SESSION["login"] = $login;
         $_SESSION["mdp"] = $mdp;
         $_SESSION["type"] = 0;

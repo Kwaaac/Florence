@@ -238,8 +238,6 @@ nav > ul > li .sousmenu{
   border-radius: 50%;
 }
 
-
-
 #contact .pers > h3{
   margin-bottom: -20px;
 }
@@ -304,8 +302,23 @@ nav > ul > li .sousmenu{
   margin-right: 3em;
 }
 
+
 #insolite h3{
   margin-bottom: 3em;
+}
+
+@media only screen and (max-width: 550px) {
+
+  #insolite .insolite > a >img{
+    width: 10em;
+    height: 10em;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+
+  #petitsprix .h3 {
+    width: 250px;
+  }
 }
 
 
@@ -342,6 +355,19 @@ nav > ul > li .sousmenu{
   margin-bottom: 3em;
 }
 
+@media only screen and (max-width: 550px) {
+  #petitsprix .image{
+    width: 10em;
+    height: 10em;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+
+  #petitsprix .h3 {
+    width: 250px;
+  }
+}
+
 #petitsprix h2{
     border: 5px solid #777;
     width: 7em;
@@ -350,13 +376,13 @@ nav > ul > li .sousmenu{
 }
 
 #petitsprix footer {
-  background-color: #ea5c0d;
-  display: inline-block;
-  width: 100%;
-  margin-top: 2em;
-  left: 0;
-  bottom: 0;
-  position: absolute;
+    background-color: #ea5c0d;
+    display: inline-block;
+    width: 100%;
+    margin-top: 5em;
+    left: 0;
+    bottom: 0;
+    position: relative;
 }
 
 /* Transports */
@@ -380,11 +406,11 @@ nav > ul > li .sousmenu{
 
 @media only screen and (max-width: 1200px) {
     #transport .boiteinfo1{
-      width: 100%;
+      width: 98%;
     }
 
     #transport .boiteinfo2{
-        width: 100%;
+        width: 98%;
     }
 }
 
@@ -418,16 +444,6 @@ nav > ul > li .sousmenu{
   font-weight: bold;
   margin-bottom: 0.2em;
   font-size: 23px;
-}
-
-#transport footer {
-  background-color: #ea5c0d;
-  display: inline-block;
-  width: 100%;
-  margin-top: 6em;
-  left: 0;
-  bottom: 0;
-  position: relative;
 }
 
 #transport .read-more-state {
@@ -474,7 +490,7 @@ nav > ul > li .sousmenu{
   align-items: center;
 }
 
-/* Footer */
+/* Ancien Footer */
 footer {
   background-color: #ea5c0d;
   display: inline-block;
@@ -482,11 +498,11 @@ footer {
   margin-top: 2em;
   position: relative;
 }
-
+/*
 footer > div{
   margin-left: 30%;
 }
-
+*/
 .desc{
   width: 55%;
   font-size: 16px;
@@ -494,4 +510,76 @@ footer > div{
 }
 .qui > h6{
   margin-top: 0.8em;
+}
+
+/* WIP footer */
+
+#transport footer {
+  background-color: #d14a00;
+  border-top: 10px solid #ff5b00;
+  display: inline-block;
+  width: 100%;
+  margin-top: 6em;
+  left: 0;
+  bottom: 0;
+  position: relative;
+  color: #ffffff;
+}
+
+#transport .Partenaires{
+  margin-left: 15%;
+  display: inline-block;
+  float: left;
+  width: auto;
+}
+
+#transport .Propos{
+  float: right;
+  margin-right: 15%;
+  display: inline-block;
+  width: auto;
+}
+
+#transport .CP{
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+#transport ul {
+  margin-top: 0;
+}
+
+#transport a{
+  color: #fff;
+  text-decoration: none;
+}
+
+#transport a:hover{
+  text-decoration: underline;
+}
+
+#transport li{
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  list-style: none;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 930px) {
+  #transport .Partenaires{
+    margin-left: 9%;
+    font-size: 17px;
+  }
+
+  #transport .Propos{
+    margin-left: 9%;
+    display: inline-block;
+    float: left;
+    width: auto;
+    font-size: 17px;
+  }
+
+  #transport li{
+    font-size: 13px;
+  }
 }

@@ -101,60 +101,118 @@ nav > ul > li .sousmenu{
   position: absolute;
   overflow: hidden;
   text-align: center;
-
-
-
-}
-.menuslider {
-  position: absolute;
-  left: 0;
-  z-index: 900;
-  width: 100%;
-  bottom: 0;
 }
 
-.menuslider label {
-  opacity: .75;
+[class^="swiper-button-"] {
+  transition: all .3s ease;
+}
+
+.swiper-slide {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 80%;
+  height: 100vh;
+  float: left;
+  transition: opacity .6s ease, -webkit-transform .3s ease;
+  transition: opacity .6s ease, transform .3s ease;
+  transition: opacity .6s ease, transform .3s ease, -webkit-transform .3s ease;
+}
+.swiper-container.nav-slider {
+  width: 20%;
+  padding-left: 5px;
+}
+.swiper-container.nav-slider .swiper-slide {
   cursor: pointer;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background: #333333;
-  border-radius: 50px;
-  margin: 0 .2em 1em;
+  opacity: .4;
+  transition: opacity .3s ease;
+}
+.swiper-container.nav-slider .swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+.swiper-container.nav-slider .swiper-slide .content {
+  width: 100%;
+}
+.swiper-container.nav-slider .swiper-slide .content .title {
+  font-size: 20px;
+}
+.swiper-container:hover .swiper-button-prev,
+.swiper-container:hover .swiper-button-next {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+.swiper-container.loading {
+  opacity: 0;
+  visibility: hidden;
 }
 
-
-
-
-.slide {
-  width: 100%;
-  height: 100%;
+.swiper-slide {
+  overflow: hidden;
+}
+.swiper-slide .slide-bgimg {
   position: absolute;
   top: 0;
-  left: 100%;
-  z-index: 10;
-  padding: 8em 1em 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  transition: left .5s 1.10s;
-}
-
-[id^="slide"]:checked + .slide {
   left: 0;
-  z-index: 100;
-  transition: left 1s ease-out;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.swiper-slide .entity-img {
+  display: none;
+}
+.swiper-slide .content {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 50%;
+  padding-left: 5%;
+  color: #fff;
+}
+.swiper-slide .content .title {
+  font-size: 2.6em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.swiper-slide .content .caption {
+  display: block;
+  font-size: 13px;
+  line-height: 1.4;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  opacity: 0;
+  transition: opacity .3s ease, -webkit-transform .7s ease;
+  transition: opacity .3s ease, transform .7s ease;
+  transition: opacity .3s ease, transform .7s ease, -webkit-transform .7s ease;
+}
+.swiper-slide .content .caption.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
 }
 
-.slide-1 {
-  background-image: url("Images/Ponte_vecchio.jpg");
+[class^="swiper-button-"] {
+  width: 44px;
+  opacity: 0;
+  visibility: hidden;
 }
-.slide-2 {
-  background-image: url("Images/Palazzo_pitti.jpg");
+
+.swiper-button-prev {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
 }
-.slide-3 {
-  background-image: url("Images/Calcio_Fiorentino.JPG");
-}
-.slide-4{
-  background-image: url("Images/Background.jpeg");
+
+.swiper-button-next {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
 }

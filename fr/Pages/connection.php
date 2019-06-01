@@ -78,7 +78,7 @@ include("connectionFiles/connectionLOG.inc.php");
         $_SESSION["login"] = $login;
         $_SESSION["mdp"] = $mdp;
         $_SESSION["type"] = 1;
-        echo "Administrateur : ".$login.".";
+        header("location: Admin/mainAdmin.php");
       }else{
         echo "T'es pas co !";
       }

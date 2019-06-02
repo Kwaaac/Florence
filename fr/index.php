@@ -106,11 +106,16 @@
         <div class="swiper-container nav-slider loading caca">
             <div class="swiper-wrapper" role="navigation">
               <?php
-                for ($i=0; $i<count($fichierEtDossiers); $i++)
-                {
-                        if($fichierEtDossiers[$i]!="." && $fichierEtDossiers[$i]!=".."){
-                          $fichier = $fichierEtDossiers[$i];
-                 ?>
+              for ($i=0; $i<count($fichierEtDossiers); $i++)
+              {
+                      if($fichierEtDossiers[$i]!="." && $fichierEtDossiers[$i]!=".."){
+                        $fichier = $fichierEtDossiers[$i];
+                        if (strpos($lines[$i], '@')){
+                          list($name , $commentaire) = explode("@", $lines[$i]);
+                        }else {
+                          $name = " ";
+                        }
+                ?>
                 <div class="swiper-slide">
                   <?php
                     echo "<figure class=\"slide-bgimg\" style=\"background-image:url(".$dir."/".$fichier.")\">";
@@ -118,7 +123,9 @@
                     ?>
                     </figure>
                     <div class="content">
-                        <p class="title">Shaun Matthews</p>
+                    <?php
+                      echo  "<p class=\"title\">".$name."</p>";
+                    ?>
                     </div>
                 </div>
                 <?php

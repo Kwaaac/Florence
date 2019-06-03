@@ -6,59 +6,99 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+    <link rel="stylesheet" href="test.css">
     <title>Florence</title>
 </head>
 
 <body>
-    <header>
-        <div class="menu">
-            <div class="lang">
-                <a href="../en/index.html"><img src="Images/langswitch.png" alt="en"></a>
-            </div>
-            <div class="logo">
-                <a href="index.html"><img class="Logo" src="Images/Logo.png" alt="Logo"></a>
-            </div>
-            <div class="menuderoulant">
-                <nav>
-                    <ul>
+  <div class="header">
+    <ul class="logo">
+      <a href="test.html"><img src="Images/Logo.png" alt="Logo"></a>
+    </ul>
+    <nav>
+      <input class="menu-toggle" id="menu-toggle" type="checkbox">
+      <label class="menu-toggle-button" for="menu-toggle">☰</label>
+      <ul class="primary">
 
-                        <li class="Login"><a href="#">Culture</a>
+        <li class="BonPl">
 
-                            <ul class="sousmenu">
-                                <li><a href="Pages/Sousmenus/frise.html">Histoire de la ville</a></li>
-                                <li><a href="Pages/Sousmenus/archi.html">Architecture</a></li>
-                            </ul>
-                        </li>
+          <a class=" menuItem">
+            <input class="menu-toggle" id="menu-toggle1" type="checkbox"></input>
+            <label class="menu-toggle-button" for="menu-toggle">☶</label>
+            Bon Plans
+          </a>
 
-                        <li class="InfoPr"><a href="#">Infos Pratiques</a>
+          <ul class="sousmenu">
+            <li><a href="Pages/Sousmenus/frise.html">Histoire de la ville</a></li>
+            <li><a href="Pages/Sousmenus/archi.html">Architecture</a></li>
+          </ul>
+        </li>
 
-                            <ul class="sousmenu">
-                                <li><a href="Pages/Sousmenus/calendar.html">Actualités de la ville</a></li>
-                                <li><a href="Pages/Sousmenus/Transports.html">Transports</a></li>
-                            </ul>
-                        </li>
+        <li class="InfoPr">
 
-                        <li class="BonPl"><a href="#">Astuces</a>
+          <a class=" menuItem">
+            <input class="menu-toggle" id="menu-toggle2" type="checkbox"></input>
+            <label class="menu-toggle-button" for="menu-toggle">☶</label>
+            Infos Pratiques
+          </a>
 
-                            <ul class="sousmenu">
-                                <li><a href="Pages/Sousmenus/Petits Prix.html">Nos bonnes adresses</a></li>
-                                <li><a href="Pages/Sousmenus/Insolite.html">Insolites</a></li>
-                            </ul>
-                        </li>
+          <ul class="sousmenu">
+            <li><a href="Pages/Sousmenus/calendar.html">Actualités de la ville</a></li>
+            <li><a href="Pages/Sousmenus/Transports.html">Transports</a></li>
+          </ul>
 
-                        <li class="Sejour"><a href="#">Visiter Florence</a>
+        </li>
 
-                            <ul class="sousmenu">
-                                <li><a href="Pages/Sousmenus/autour.html">Autour de vous</a></li>
-                                <li><a href="Pages/Sousmenus/circuits.html">Nos circuit</a></li>
-                            </ul>
-                        </li>
+        <li class="BonPl">
 
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+          <a class=" menuItem">
+            <input class="menu-toggle" id="menu-toggle3" type="checkbox"></input>
+            <label class="menu-toggle-button" for="menu-toggle">☶</label>
+            Astuces
+          </a>
+
+          <ul class="sousmenu">
+            <li><a href="Pages/Sousmenus/Petits Prix.html">Nos bonnes adresses</a></li>
+            <li><a href="Pages/Sousmenus/Insolite.html">Insolites</a></li>
+          </ul>
+        </li>
+
+        <li class="Sejour">
+
+          <a class=" menuItem">
+            <input class="menu-toggle" id="menu-toggle4" type="checkbox"></input>
+            <label class="menu-toggle-button" for="menu-toggle">☶</label>
+            Visiter Florence
+          </a>
+
+          <ul class="sousmenu">
+            <li><a href="Pages/Sousmenus/autour.html">Autour de vous</a></li>
+            <li><a href="Pages/Sousmenus/circuits.html">Nos circuit</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a class=" menuItem">
+            <input class="menu-toggle" id="menu-toggle4" type="checkbox"></input>
+            <label class="menu-toggle-button" for="menu-toggle">☶</label>
+            Authentification
+          </a>
+
+          <ul class="sousmenu">
+            <li><a>Se connecter</a></li>
+            <li><a>S'inscrire</a></li>
+          </ul>
+
+        </li>
+
+        <li class="lang" id="lang">
+          <a href=""><img class="lg" src="Images/langswitch.png" alt="en"></a>
+        </li>
+
+      </ul>
+    </nav>
+
+  </div>
 
     <div class="slider-container">
         <div class="swiper-container main-slider loading">
@@ -137,6 +177,24 @@
 
         <script src="slider.js"></script>
     </div>
+
+    <footer class="footer">
+      <div class="Partenaires">
+        <ul>Les partenaires de ce projet
+          <li><a class="ftr" href="https://fr.unesco.org/" >L'UNESCO</a></li>
+          <li><a class="ftr" href="http://www.u-pem.fr/">L'Université Paris-Est Marne-La-Vallée</a></li>
+        </ul>
+      </div>
+
+      <div class="Propos">
+        <ul>A Propos
+          <li><a class="ftr" href="contact.html">Objectif et créateurs du site</a></li>
+          <li><a class="ftr" href="politiqueContenu.html">Mentions Légales</a></li>
+        </ul>
+
+      </div>
+    </footer>
+
 </body>
 
 </html>

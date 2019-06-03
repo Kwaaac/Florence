@@ -180,7 +180,8 @@ nav > ul > li .sousmenu{
   color: #fff;
 }
 .swiper-slide .content .title {
-  font-size: 2.6em;
+  font-size: 5em;
+  font-family: 'Pinyon Script', cursive;
   font-weight: bold;
   margin-bottom: 30px;
 }

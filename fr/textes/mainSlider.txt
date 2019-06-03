@@ -1,7 +1,7 @@
 je ne sais pas pk mais les deux premiere ligne doivent etre laisser vide
 ////////////////////////////////////////////////////////////////////////
-fleur@description fleur
-background@description bg
-calcio@description catch
-palazzopitti@description palazzopitti
-pontevecchio@1description pontevecchio
+Florence@Florence, une ville exceptionnellement debordante pour les amateurs d'Art !
+Florence@Vous pouvez decouvrir plusieurs itineraires pour vous promener dans Florence dans notre rubrique Visiter Florence --> Nos circuits
+Florence@
+Florence@
+Florence@

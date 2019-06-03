@@ -63,17 +63,39 @@
     <div class="slider-container">
         <div class="swiper-container main-slider loading">
             <div class="swiper-wrapper">
+              <?php
+              $dir = './Images/mainSlider';
+              $fichierEtDossiers=scandir($dir);
+              $myFile = "./textes/mainSlider.txt";
+              $lines = file($myFile);
 
+                for ($i=0; $i<count($fichierEtDossiers); $i++)
+                {
+                        if($fichierEtDossiers[$i]!="." && $fichierEtDossiers[$i]!=".."){
+                          $fichier = $fichierEtDossiers[$i];
+                          if (strpos($lines[$i], '@')){
+                            list($name , $commentaire) = explode("@", $lines[$i]);
+                          }else {
+                            $name = " ";
+                            $commentaire = " ";
+                          }
+                 ?>
                 <div class="swiper-slide">
-                    <figure class="slide-bgimg" style="background-image:url(Images/Duomo/Duomo1.jpg)">
-                        <img src="Images/Duomo/Duomo1.jpg" class="entity-img" />
+                  <?php
+                    echo "<figure class=\"slide-bgimg\" style=\"background-image:url(".$dir."/".$fichier.")\">";
+                    echo "<img src=\"".$dir."/".$fichier."\" class=\"entity-img\" />";
+                    ?>
                     </figure>
                     <div class="content">
-                        <p class="title">Shaun Matthews</p>
-                        <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                    <?php
+                      echo  "<p class=\"title\">".$name."</p>";
+                      echo  "<span class=\"caption\">".$commentaire."</span>";
+                     ?>
                     </div>
                 </div>
-
+                <?php
+              }}
+                 ?>
             </div>
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev swiper-button-white"></div>
@@ -83,16 +105,32 @@
         <!-- Thumbnail navigation -->
         <div class="swiper-container nav-slider loading caca">
             <div class="swiper-wrapper" role="navigation">
-
+              <?php
+              for ($i=0; $i<count($fichierEtDossiers); $i++)
+              {
+                      if($fichierEtDossiers[$i]!="." && $fichierEtDossiers[$i]!=".."){
+                        $fichier = $fichierEtDossiers[$i];
+                        if (strpos($lines[$i], '@')){
+                          list($name , $commentaire) = explode("@", $lines[$i]);
+                        }else {
+                          $name = " ";
+                        }
+                ?>
                 <div class="swiper-slide">
-                    <figure class="slide-bgimg" style="background-image:url(Images/Duomo/Duomo1.jpg)">
-                        <img src="Images/Duomo/Duomo1.jpg" class="entity-img" />
+                  <?php
+                    echo "<figure class=\"slide-bgimg\" style=\"background-image:url(".$dir."/".$fichier.")\">";
+                    echo    "<img src=\"".$dir."/".$fichier."\" class=\"entity-img\" />";
+                    ?>
                     </figure>
                     <div class="content">
-                        <p class="title">Shaun Matthews</p>
+                    <?php
+                      echo  "<p class=\"title\">".$name."</p>";
+                    ?>
                     </div>
                 </div>
-
+                <?php
+              }}
+                 ?>
             </div>
         </div>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>

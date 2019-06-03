@@ -1,9 +1,9 @@
 body{
-  font-family: 'Source code pro', Calibri, sans-serif;
+  font-family: 'Lobster Two', cursive;
   font-size: 25px;
   margin: 0;
   padding: 0;
-  background-image: url("../../Images/bckg30%.jpeg");
+  background-image: url("../../Images/bckg30.jpeg");
   background-size: cover;
 }
 
@@ -97,6 +97,8 @@ nav > ul > li .sousmenu{
   background-color: #f7af3e;
 }
 
+/* Nouveau menu */
+
 
 /* Gestion de la page en dehors du menu */
 
@@ -165,12 +167,24 @@ nav > ul > li .sousmenu{
 }
 
 
-#autour iframe{
-  margin-left: 25%;
-  margin-right: 24%;
-  margin-top: 1em;
-  width:50%;
+#autour .map{
+  margin: 1em auto;
+  width:80%;
   height: 30em;
+}
+
+#autour iframe{
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px){
+  #autour .map{
+    width:100%;
+    height: 20em;
+  }
+}
+
 }
 
 
@@ -205,12 +219,24 @@ nav > ul > li .sousmenu{
 }
 
 
-#circuits iframe{
-  margin-left: 25%;
-  margin-right: 24%;
-  margin-top: 1em;
-  width:50%;
+#circuits .map{
+  margin: 1em auto;
+  width:80%;
   height: 30em;
+}
+
+#circuits iframe{
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px){
+  #circuits .map{
+    width:100%;
+    height: 20em;
+  }
+}
+
 }
 
 /* Contact */
@@ -540,21 +566,16 @@ footer > div{
   width: auto;
 }
 
-#transport .CP{
-  text-align: center;
-  margin-top: 0.5em;
-}
-
 #transport ul {
   margin-top: 0;
 }
 
-#transport a{
+#transport .ftr{
   color: #fff;
   text-decoration: none;
 }
 
-#transport a:hover{
+#transport .ftr:hover{
   text-decoration: underline;
 }
 

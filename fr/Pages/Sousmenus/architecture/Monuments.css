@@ -1,5 +1,5 @@
 body{
-  font-family: 'Source code pro', Calibri, sans-serif;
+  font-family: 'Lobster Two', cursive;
   font-size: 25px;
   margin: 0px;
   padding: 0px;
@@ -99,9 +99,9 @@ nav > ul > li .sousmenu{
 }
 
 .indication p{
+  font-family: 'Pinyon Script', cursive;
   margin-top: 0.1%;
-  border: 5px solid #777;
-  width: 11em;
+  font-size: 50px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -119,12 +119,12 @@ nav > ul > li .sousmenu{
 }
 
 .slider-container{
-  height: 40%;
-  width: 80%;
+  height: 70%;
+  width: 100%;
   position: absolute;
   overflow: hidden;
   text-align: center;
-  margin-left: 10%;
+  margin-left: 0;
   margin-top: 5%;
 
 
@@ -154,7 +154,6 @@ nav > ul > li .sousmenu{
   position: absolute;
   top: 0;
   left: 100%;
-  z-index: 10;
   padding: 8em 1em 0;
   background-size: cover;
   background-position: 50% 50%;
@@ -163,9 +162,43 @@ nav > ul > li .sousmenu{
 
 [id^="slide"]:checked + .slide {
   left: 0;
-  z-index: 100;
   transition: left 2s ease-out;
 }
+
+
+/* New slider */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 2em auto;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: 10%;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
 
 /* Jardins Boboli */
 
@@ -230,18 +263,20 @@ nav > ul > li .sousmenu{
   background-image: url("../../../Images/PoVe/ponte_vecchio3.jpg");
 }
 
-
-
 .texte {
   text-align: center;
-  margin-top: 30%;
   margin-left: 5%;
   margin-right: 5%;
 }
 
 .texte p{
-  border: 5px solid #CCC;
   background-color: #FFF;
+  line-height: 50px;
+  border-radius: 10%;
+}
+
+.truc {
+  background-color: white;
 }
 
 

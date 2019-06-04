@@ -197,6 +197,7 @@ ul.primary li:hover > a{
 
 
 .title{
+  font-family: 'Pinyon Script', cursive;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -742,7 +743,7 @@ footer li{
 
 }
 
-/* Menu, transport */
+/* Menu, footer */
 @media only screen and (max-width: 930px) {
 
     /* Menu burger */

@@ -199,6 +199,10 @@ footer {
   color: #ffffff;
 }
 
+#accueil footer {
+  margin-top: 47em; /* quand le footer ne reste pas en bas de la page, on augmente le margin-top*/
+}
+
 .Partenaires{
   margin-left: 15%;
   display: inline-block;

@@ -9,92 +9,184 @@ body{
 
 /* Menu */
 
+.header a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
 .lang img{
-  float: right;
-  width: 2%;
-  height: 2%;
-  z-index: auto;
-  margin-top: 25px;
-  margin-right: 25px;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
 }
 
-
-.sousmenu{
-    display: none;
+.lang a{
+  height: 96px;
+  padding-left: 30px;
+  padding: 0;
+  width: 92px;
 }
 
-.Logo{
-  width: 250px;
+.primary ul {
+  list-style: none;
+  position: relative;
+  text-align: left;
+}
+
+.primary li {
   float: left;
 }
 
-
-.menu nav{
-  width: 100%;
-  background-color: #ea5c0d;
-}
-
-nav > ul{
-  margin: 0px;
-  padding: 0px;
-}
-
-nav > ul::after{
-  content: "";
-  display: block;
+ul:after {
   clear: both;
 }
 
-nav > ul > li{
-  float: left;
+ul:before,
+ul:after {
+  content: " ";
+  display: table;
+}
+
+nav {
+  font-family: 'Pinyon Script', cursive;
   position: relative;
+  background-color: #ea5c0d;
+  /*
+  background-image: -webkit-linear-gradient(bottom, #2B2B2B 7%, #333333 100%);
+  background-image: -moz-linear-gradient(bottom, #2B2B2B 7%, #333333 100%);
+  background-image: -o-linear-gradient(bottom, #2B2B2B 7%, #333333 100%);
+  background-image: linear-gradient(bottom, #2B2B2B 7%, #333333 100%);
+  */
+  text-align: center;
+  text-shadow: 0.063em 0.063em 0.063em #333333;
 }
 
-nav > ul > li > a{
-  padding: 20px 100px;
-  color: #FFF;
+ul.logo {
+  position: relative;
+  width: 260px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
 }
 
-nav > ul > li:hover  a{
-  padding: 20px 100px 20px;
+ul.logo a , img{
+  width: 100%;
+  height: 96px;
 }
 
-nav li{
-  list-style-type: none;
+
+ul.primary li .menuItem {
+  display: block;
+  padding-right: 1.875em;
+  padding-left: 1.875em;
+  padding-top: 1.2em;
+  padding-bottom: 1em;
+  border-right: 0.063em solid #3D3D3D;
+  font-size: 25px;
 }
 
-nav a{
-  display: inline-block;
-  text-decoration: none;
+.menu-toggle-button , .primary a {
+  transition: 1s;
 }
 
-nav li:hover .sousmenu{
-  display: inline-block;
+ul.primary li:last-child a {
+  border-right: none;
+}
+
+ul.primary li a:hover {
+  color: #b94503;
+}
+
+/* sousmenus */
+ul.sousmenu {
   position: absolute;
-  top: 100%;
-  left: 0px;
-  padding: 0px;
-  z-index:1000;
+  z-index: 2;
+  box-shadow: 0.125em 0.125em 0.188em #505050;
+  width: 35%;
+  display: none;
+  padding-left: 0;
+  font-size: 25px;
 }
 
-.sousmenu li{
-  border-bottom: 1px solid #CCC;
+ul.sousmenu li {
+  float: none;
+  margin: 0;
 }
 
-.sousmenu li a{
-  padding: 15px 30px;
-  font-size: 13px;
-  color: #222538;
-  width: 270px;
+ul.sousmenu li a {
+  border-bottom: 0.063em dotted #ccc;
+  border-right: none;
+  color: #000;
+  padding: 0.938em 3.125em;
 }
 
-nav > ul > li:hover{
-  border-top: 5px solid #b94503;
-  background-color: rgba(185, 68, 2, 0.15);
+ul.sousmenu li:last-child a {
+  border-bottom: none;
 }
 
-nav > ul > li .sousmenu{
-  background-color: #f7af3e;
+ul.sousmenu li a:hover {
+  color: #000;
+  background: #eeeeee;
+}
+
+/* sousmenu display*/
+ul.primary li:hover ul {
+  display: block;
+  background: #fff;
+}
+
+/* keeps the tab background white */
+ul.primary li:hover a {
+  background: #fff;
+  color: #666;
+  text-shadow: none;
+}
+
+ul.primary li:hover > a{
+  color: #000;
+}
+
+.primary {
+  width: auto;
+  list-style: none;
+  margin-left: 400px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.primary .menuItem {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.primary a:focus,
+.primary a:hover {
+  background-color: #444;
+  outline: none;
+}
+
+.primary a:active {
+  background-color: #666;
+}
+
+.menu-toggle-button {
+  cursor: pointer;
+  display: none;
+  padding: 1rem;
+  user-select: none;
+}
+
+.menu-toggle {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+#lang {
+  float: right;
 }
 
 /* Nouveau menu */
@@ -102,12 +194,18 @@ nav > ul > li .sousmenu{
 
 /* Gestion de la page en dehors du menu */
 
+
+
 .title{
-  border: 5px solid #777;
-  width: 7em;
-  margin: 5px auto;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
   margin-bottom: 1em;
   text-align: center;
+  background-color: #ce500a;
+  color: #fff;
+  font-size: 40px;
 }
 
 /* Page Architecture */
@@ -123,8 +221,8 @@ nav > ul > li .sousmenu{
 }
 
 #archi .monuments > a >img{
-  width: 15em;
-  height: 15em;
+  width: 10em;
+  height: 10em;
   border-radius: 35%;
   margin-left: 3em;
   margin-right: 3em;
@@ -136,10 +234,10 @@ nav > ul > li .sousmenu{
 
 @media only screen and (max-width: 550px) {
     #archi .monuments > a >img{
-      width: 10em;
-      height: 10em;
-      margin-left: 1em;
-      margin-right: 1em;
+      width: 8em;
+      height: 8 em;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     #archi h3{
@@ -430,14 +528,14 @@ nav > ul > li .sousmenu{
     background-color: rgba(255, 255, 255, .5);
 }
 
-@media only screen and (max-width: 1200px) {
-    #transport .boiteinfo1{
-      width: 98%;
-    }
+@media only screen and (max-width: 1215px) {
+  #transport .boiteinfo1{
+    width: 98%;
+  }
 
-    #transport .boiteinfo2{
-        width: 98%;
-    }
+  #transport .boiteinfo2{
+    width: 98%;
+  }
 }
 
 #transport p {
@@ -516,91 +614,165 @@ nav > ul > li .sousmenu{
   align-items: center;
 }
 
-/* Ancien Footer */
+/* footer */
+
 footer {
-  background-color: #ea5c0d;
-  display: inline-block;
-  width: 100%;
-  margin-top: 2em;
-  position: relative;
-}
-/*
-footer > div{
-  margin-left: 30%;
-}
-*/
-.desc{
-  width: 55%;
-  font-size: 16px;
-  margin-top: -1.5em;
-}
-.qui > h6{
-  margin-top: 0.8em;
-}
-
-/* WIP footer */
-
-#transport footer {
   background-color: #d14a00;
   border-top: 10px solid #ff5b00;
   display: inline-block;
+  height: auto;
   width: 100%;
-  margin-top: 6em;
+  margin-top: 10em; /* quand le footer ne reste pas en bas de la page, on augmente le margin-top*/
   left: 0;
   bottom: 0;
   position: relative;
   color: #ffffff;
 }
 
-#transport .Partenaires{
+#accueil footer {
+  margin-top: 47em; /* quand le footer ne reste pas en bas de la page, on augmente le margin-top*/
+}
+
+.Partenaires{
   margin-left: 15%;
   display: inline-block;
   float: left;
   width: auto;
 }
 
-#transport .Propos{
+.Propos{
   float: right;
   margin-right: 15%;
   display: inline-block;
   width: auto;
 }
 
-#transport ul {
+footer ul {
   margin-top: 0;
+  font-size: 24px;
 }
 
-#transport .ftr{
+.ftr{
   color: #fff;
   text-decoration: none;
 }
 
-#transport .ftr:hover{
+.ftr:hover{
   text-decoration: underline;
 }
 
-#transport li{
+footer li{
   margin-left: 0.5em;
-  margin-top: 0.5em;
   list-style: none;
-  font-size: 15px;
+  font-size: 20px;
 }
 
-@media only screen and (max-width: 930px) {
-  #transport .Partenaires{
-    margin-left: 9%;
-    font-size: 17px;
+
+/* Responsivité du menu */
+
+@media only screen and (max-width: 1640px){
+
+  .primary{
+    margin: 0;
   }
 
-  #transport .Propos{
-    margin-left: 9%;
-    display: inline-block;
+  ul.primary li .menuItem {
+    display: block;
+    padding-right: 1.875em;
+    padding-left: 1.875em;
+    padding-top: 1.2em;
+    padding-bottom: 1em;
+    border-right: 0.063em solid #3D3D3D;
+    font-size: 20px;
+  }
+
+  .sousmenu {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1215px) {
+
+
+  ul.logo , .lang{
+    display: none;
+    visibility: hidden;
+  }
+
+  .primary li{
+    margin-right: 2500em;
+  }
+
+  .primary {
+    flex-direction: column;
+    display: inline-grid;
+    margin: 0;
+  }
+  .primary .menuItem {
+    width: 100%;
+  }
+
+  .primary label{
+    padding-top: 0;
     float: left;
-    width: auto;
-    font-size: 17px;
   }
 
-  #transport li{
-    font-size: 13px;
+  ul.primary li .menuItem{
+    border-right: 0;
   }
+
+  .menu-toggle:not(:checked) ~ .primary {
+    display: none;
+    float: left;
+  }
+
+  .menu-toggle-button {
+    display: -webkit-box
+  }
+
+  #menu-toggle .menu-toggle:focus ~ .menu-toggle-button,
+  #menu-toggle .menu-toggle-button:hover {
+    background-color: #444;
+  }
+
+  .menu-toggle:focus ~ .menu-toggle-button,
+  .menu-toggle-button:hover {
+    background-color: #inherit;
+  }
+
+}
+
+/* Menu, transport */
+@media only screen and (max-width: 930px) {
+
+    /* Menu burger */
+    ul.sousmenu {
+      width: 262px;
+    }
+
+    .primary{
+      width: 100%;
+    }
+
+    .primary li{
+      margin-right: 2500em;
+    }
+
+
+    /* footer */
+    .Propos{
+      margin-left: 9%;
+      display: inline-block;
+      float: left;
+      width: auto;
+      font-size: 17px;
+    }
+    .Partenaires{
+      margin-left: 9%;
+      font-size: 17px;
+    }
+
+    footer > li{
+      font-size: 13px;
+    }
 }

@@ -1,0 +1,145 @@
+#voyageurs html {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+  line-height: 1.5;
+  font-size: 12px;
+  font-weight: 400;
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+#voyageurs body {
+  font-family: helvetica, arial, sans-serif;
+}
+#voyageurs h3 {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  line-height: 1.4;
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 300;
+  color: #333;
+}
+.mosaic {
+  margin: 0 auto;
+  width: 1100px;
+  background: #fff;
+}
+.mosaic-title {
+  text-align: center;
+}
+.mosaic-cell {
+  position: relative;
+  overflow: hidden;
+  margin-right: 10px;
+  float: left;
+  background-repeat: no-repeat;
+}
+.mosaic-cell-overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("https://css-tricks.com/wp-content/csstricks-uploads/transpBlack10.png");
+}
+.mosaic-cell-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  transition: all 0.15s ease-in-out;
+}
+.mosaic-cell-caption:hover {
+  width: 100%;
+  cursor: pointer;
+  background-image: url("https://css-tricks.com/wp-content/csstricks-uploads/transpBlack50.png");
+  /*Au cas ou la ligne suivante ne fonctionne pas, on utilise l'image du lien ci-dessus*/
+  background: rgba(0, 0, 0, 0.5);
+}
+.mosaic-cell-caption-text, .mosaic-cell-caption-source {
+  text-align: right;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+.mosaic-cell-caption-text {
+  position: absolute;
+  bottom: 23px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.mosaic-cell-caption-source {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 16px;
+}
+.mosaic-row {
+  width: 1100px;
+  clear: both;
+  margin-right: 0;
+}
+.mosaic-row-one {
+  height: 328px;
+  margin-bottom: 10px;
+}
+.mosaic-row-one > .mosaic-cell {
+  width: 762px;
+  height: 328px;
+  background-image: ("../../Images/mosaic/test11.jpg");
+}
+.mosaic-row-one > .mosaic-cell + .mosaic-cell {
+  width: 328px;
+  background-image: url("http://lorempixel.com/328/328");
+  margin-right: 0;
+}
+.mosaic-row-two {
+  height: 345px;
+  margin-bottom: 10px;
+}
+.mosaic-row-two > .mosaic-cell {
+  width: 345px;
+  height: 345px;
+  background-image: url("http://lorempixel.com/345/345");
+}
+.mosaic-row-two > .mosaic-cell + .mosaic-cell {
+  width: 345px;
+  background-image: url("http://lorempixel.com/345/345/city");
+}
+.mosaic-row-two > .mosaic-cell + .mosaic-cell + .mosaic-cell {
+  background: #fff;
+  width: 390px;
+  font-size: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+.mosaic-row-two > .mosaic-cell + .mosaic-cell + .mosaic-cell > .mosaic-cell {
+  width: 390px;
+  height: 168px;
+  background-image: url("http://lorempixel.com/398/168/city");
+  display: block;
+  margin-bottom: 10px;
+}
+.mosaic-row-two > .mosaic-cell + .mosaic-cell + .mosaic-cell > .mosaic-cell + .mosaic-cell {
+  background-image: url("http://lorempixel.com/g/398/168/city");
+  display: block;
+  height: 168px;
+  margin-bottom: 0;
+}
+.mosaic-row-three {
+  height: 298px;
+}
+.mosaic-row-three > .mosaic-cell {
+  width: 396px;
+  height: 298px;
+  background-image: url("http://lorempixel.com/396/298/city");
+}
+.mosaic-row-three > .mosaic-cell + .mosaic-cell {
+  width: 694px;
+  height: 298px;
+  background-image: url("http://lorempixel.com/694/298/city");
+  margin-right: 0px;
+}

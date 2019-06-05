@@ -10,94 +10,7 @@
 </head>
 
 <body>
-  <div class="header">
-    <ul class="logo">
-      <a href="../../../index.php"><img src="../../../Images/Logo.png" alt="Logo"></a>
-    </ul>
-    <nav>
-      <input class="menu-toggle" id="menu-toggle" type="checkbox">
-      <label class="menu-toggle-button" for="menu-toggle">☰</label>
-      <ul class="primary">
-
-        <li class="BonPl">
-
-          <a class=" menuItem">
-            <input class="menu-toggle" id="menu-toggle1" type="checkbox"></input>
-            <label class="menu-toggle-button" for="menu-toggle">☶</label>
-            Bon Plans
-          </a>
-
-          <ul class="sousmenu">
-            <li><a href="../frise.php">Histoire de la ville</a></li>
-            <li><a href="../archi.php">Architecture</a></li>
-          </ul>
-        </li>
-
-        <li class="InfoPr">
-
-          <a class=" menuItem">
-            <input class="menu-toggle" id="menu-toggle2" type="checkbox"></input>
-            <label class="menu-toggle-button" for="menu-toggle">☶</label>
-            Infos Pratiques
-          </a>
-
-          <ul class="sousmenu">
-            <li><a href="../calendar.php">Actualités de la ville</a></li>
-            <li><a href="../Transports.php">Transports</a></li>
-          </ul>
-
-        </li>
-
-        <li class="BonPl">
-
-          <a class=" menuItem">
-            <input class="menu-toggle" id="menu-toggle3" type="checkbox"></input>
-            <label class="menu-toggle-button" for="menu-toggle">☶</label>
-            Astuces
-          </a>
-
-          <ul class="sousmenu">
-            <li><a href="../Petits Prix.php">Nos bonnes adresses</a></li>
-            <li><a href="../Insolite.php">Insolites</a></li>
-          </ul>
-        </li>
-
-        <li class="Sejour">
-
-          <a class=" menuItem">
-            <input class="menu-toggle" id="menu-toggle4" type="checkbox"></input>
-            <label class="menu-toggle-button" for="menu-toggle">☶</label>
-            Visiter Florence
-          </a>
-
-          <ul class="sousmenu">
-            <li><a href="../autour.php">Autour de vous</a></li>
-            <li><a href="../circuits.php">Nos circuit</a></li>
-          </ul>
-        </li>
-
-        <li>
-          <a class=" menuItem">
-            <input class="menu-toggle" id="menu-toggle4" type="checkbox"></input>
-            <label class="menu-toggle-button" for="menu-toggle">☶</label>
-            Authentification
-          </a>
-
-          <ul class="sousmenu">
-            <li><a>Se connecter</a></li>
-            <li><a>S'inscrire</a></li>
-          </ul>
-
-        </li>
-
-        <li class="lang" id="lang">
-          <a href=""><img class="lg" src="../../../Images/langswitch.png" alt="en"></a>
-        </li>
-
-      </ul>
-    </nav>
-
-  </div>
+  <?php include('header.php'); ?>
 
   <div class="slider-container" id="gestionTailleSlider">
     <div class="swiper-container main-slider loading">
@@ -185,22 +98,7 @@
 
 <script src="slider.js"></script>
 
-<footer class="footer">
-  <div class="Partenaires">
-    <ul>Les partenaires de ce projet
-      <li><br><a class="ftr" href="https://fr.unesco.org/" >L'UNESCO</a></li>
-      <li><a class="ftr" href="http://www.u-pem.fr/">L'Université Paris-Est Marne-La-Vallée</a></li>
-    </ul>
-  </div>
-
-  <div class="Propos">
-    <ul>A Propos
-      <li><br><a class="ftr" href="contact.php">Objectif et créateurs du site</a></li>
-      <li><a class="ftr" href="politiqueContenu.php">Mentions Légales</a></li>
-    </ul>
-
-  </div>
-</footer>
+<?php include('footer.php'); ?>
 
 </body>
 

@@ -23,7 +23,6 @@
 .mosaic {
   margin: 0 auto;
   width: 1100px;
-  background: #fff;
 }
 .mosaic-title {
   text-align: center;
@@ -89,7 +88,7 @@
 .mosaic-row-one > .mosaic-cell {
   width: 762px;
   height: 328px;
-  background-image: ("../../Images/mosaic/test11.jpg");
+  background-image: url("../../Images/mosaic/test11.jpg");
 }
 .mosaic-row-one > .mosaic-cell + .mosaic-cell {
   width: 328px;

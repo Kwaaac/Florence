@@ -1,4 +1,4 @@
-body{
+body {
   font-family: 'Lobster Two', cursive;
   font-size: 25px;
   margin: 0px;
@@ -6,21 +6,21 @@ body{
   background-image: url("../../../Images/bckg30.jpeg");
   background-size: cover;
 }
-/* Menu */
 
+/* Menu */
 .header a {
   text-decoration: none;
   color: #fff;
   display: block;
 }
 
-.lang img{
+.lang img {
   width: 100%;
   height: 50px;
   margin-top: 20px;
 }
 
-.lang a{
+.lang a {
   height: 96px;
   padding-left: 30px;
   padding: 0;
@@ -70,11 +70,10 @@ ul.logo {
   z-index: 1;
 }
 
-ul.logo a , img{
+ul.logo a, img {
   width: 100%;
   height: 96px;
 }
-
 
 ul.primary li .menuItem {
   display: block;
@@ -86,7 +85,7 @@ ul.primary li .menuItem {
   font-size: 25px;
 }
 
-.menu-toggle-button , .primary a {
+.menu-toggle-button, .primary a {
   transition: 1s;
 }
 
@@ -143,7 +142,7 @@ ul.primary li:hover a {
   text-shadow: none;
 }
 
-ul.primary li:hover > a{
+ul.primary li:hover>a {
   color: #000;
 }
 
@@ -188,30 +187,13 @@ ul.primary li:hover > a{
   float: right;
 }
 
-
-.indication p{
-  font-family: 'Pinyon Script', cursive;
-  margin-top: 0.1%;
-  font-size: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.categorie p{
-  text-align: center;
-  background-color: blue;
-  margin: 0;
-}
-
 /* Slider */
-
 .slider-container img {
   max-width: 100%;
   max-height: 89%;
 }
 
-.slider-container{
+.slider-container {
   height: 81%;
   width: 100%;
   position: absolute;
@@ -242,30 +224,37 @@ ul.primary li:hover > a{
   transition: opacity .6s ease, transform .3s ease;
   transition: opacity .6s ease, transform .3s ease, -webkit-transform .3s ease;
 }
+
 .swiper-container.nav-slider {
   display: none;
 }
+
 .swiper-container.nav-slider .swiper-slide {
   cursor: pointer;
   opacity: .4;
   transition: opacity .3s ease;
 }
+
 .swiper-container.nav-slider .swiper-slide.swiper-slide-active {
   opacity: 1;
 }
+
 .swiper-container.nav-slider .swiper-slide .content {
   width: 100%;
 }
+
 .swiper-container.nav-slider .swiper-slide .content .title {
   font-size: 20px;
 }
+
 .swiper-container:hover .swiper-button-prev,
 .swiper-container:hover .swiper-button-next {
   -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
   opacity: 1;
   visibility: visible;
 }
+
 .swiper-container.loading {
   opacity: 0;
   visibility: hidden;
@@ -274,6 +263,7 @@ ul.primary li:hover > a{
 .swiper-slide {
   overflow: hidden;
 }
+
 .swiper-slide .slide-bgimg {
   position: absolute;
   top: 0;
@@ -283,9 +273,11 @@ ul.primary li:hover > a{
   background-position: center;
   background-size: cover;
 }
+
 .swiper-slide .entity-img {
   display: none;
 }
+
 .swiper-slide .content {
   position: absolute;
   top: 40%;
@@ -294,26 +286,29 @@ ul.primary li:hover > a{
   padding-left: 5%;
   color: #fff;
 }
+
 .swiper-slide .content .title {
   font-size: 5em;
   font-family: 'Pinyon Script', cursive;
   font-weight: bold;
   margin-bottom: 30px;
 }
+
 .swiper-slide .content .caption {
   display: block;
   font-size: 13px;
   line-height: 1.4;
   -webkit-transform: translateX(50px);
-          transform: translateX(50px);
+  transform: translateX(50px);
   opacity: 0;
   transition: opacity .3s ease, -webkit-transform .7s ease;
   transition: opacity .3s ease, transform .7s ease;
   transition: opacity .3s ease, transform .7s ease, -webkit-transform .7s ease;
 }
+
 .swiper-slide .content .caption.show {
   -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
   opacity: 1;
 }
 
@@ -325,16 +320,15 @@ ul.primary li:hover > a{
 
 .swiper-button-prev {
   -webkit-transform: translateX(50px);
-          transform: translateX(50px);
+  transform: translateX(50px);
 }
 
 .swiper-button-next {
   -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
+  transform: translateX(-50px);
 }
 
 /* Jardins Boboli */
-
 .slide-1_JarBo {
   background-image: url("../../../Images/JaBo/Jardin1.jpg");
 }
@@ -344,14 +338,12 @@ ul.primary li:hover > a{
 }
 
 /* Duomo */
-
 .slide-1_Duomo {
   background-image: url("../../../Images/Duomo/Duomo1.jpg");
   background-size: cover;
 }
 
 /* Musée des Offices */
-
 .slide-1_Musee {
   background-image: url("../../../Images/MuOf/Musée1.png");
 }
@@ -361,7 +353,6 @@ ul.primary li:hover > a{
 }
 
 /* Palais Pitti */
-
 .slide-1_PalPit {
   background-image: url("../../../Images/PaPi/Florence-PalaisPitti.jpg");
 }
@@ -371,7 +362,6 @@ ul.primary li:hover > a{
 }
 
 /* Palazzo Vecchio */
-
 .slide-1_PallVe {
   background-image: url("../../../Images/PaVe/palazzo vecchio2.jpg");
   background-size: contain;
@@ -383,7 +373,6 @@ ul.primary li:hover > a{
 }
 
 /* Ponte Vecchio */
-
 .slide-1_PonteVe {
   background-image: url("../../../Images/PoVe/Ponte_Vecchio2.JPG");
 }
@@ -396,13 +385,22 @@ ul.primary li:hover > a{
   background-image: url("../../../Images/PoVe/ponte_vecchio3.jpg");
 }
 
+.indication p {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 50px;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 .texte {
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-.texte p{
+.texte p {
   margin-top: 1em;
   background-color: #FFF;
   line-height: 50px;
@@ -410,33 +408,33 @@ ul.primary li:hover > a{
 }
 
 .textBox {
-  margin-top: 30.8em;
   background-color: white;
 }
 
 /* footer */
-
 footer {
   background-color: #d14a00;
   border-top: 10px solid #ff5b00;
   display: inline-block;
   height: auto;
   width: 100%;
-  margin-top: 2em; /* quand le footer ne reste pas en bas de la page, on augmente le margin-top*/
+  margin-top: 2em;
+  /* quand le footer ne reste pas en bas de la page, on augmente le margin-top*/
+  padding-bottom: 1em;
   left: 0;
   bottom: 0;
   position: relative;
   color: #ffffff;
 }
 
-.Partenaires{
+.Partenaires {
   margin-left: 15%;
   display: inline-block;
   float: left;
   width: auto;
 }
 
-.Propos{
+.Propos {
   float: right;
   margin-right: 15%;
   display: inline-block;
@@ -448,27 +446,24 @@ footer ul {
   font-size: 24px;
 }
 
-.ftr{
+.ftr {
   color: #fff;
   text-decoration: none;
 }
 
-.ftr:hover{
+.ftr:hover {
   text-decoration: underline;
 }
 
-footer li{
+footer li {
   margin-left: 0.5em;
   list-style: none;
   font-size: 20px;
 }
 
-
 /* Responsivité du menu */
-
-@media only screen and (max-width: 1640px){
-
-  .primary{
+@media only screen and (max-width: 1640px) {
+  .primary {
     margin: 0;
   }
 
@@ -488,14 +483,12 @@ footer li{
 }
 
 @media only screen and (max-width: 1215px) {
-
-
-  ul.logo , .lang{
+  ul.logo, .lang {
     display: none;
     visibility: hidden;
   }
 
-  .primary li{
+  .primary li {
     margin-right: 2500em;
   }
 
@@ -504,20 +497,21 @@ footer li{
     display: inline-grid;
     margin: 0;
   }
+
   .primary .menuItem {
     width: 100%;
   }
 
-  .primary label{
+  .primary label {
     padding-top: 0;
     float: left;
   }
 
-  ul.primary li .menuItem{
+  ul.primary li .menuItem {
     border-right: 0;
   }
 
-  .menu-toggle:not(:checked) ~ .primary {
+  .menu-toggle:not(:checked)~.primary {
     display: none;
     float: left;
   }
@@ -526,48 +520,47 @@ footer li{
     display: -webkit-box
   }
 
-  #menu-toggle .menu-toggle:focus ~ .menu-toggle-button,
+  #menu-toggle .menu-toggle:focus~.menu-toggle-button,
   #menu-toggle .menu-toggle-button:hover {
     background-color: #444;
   }
 
-  .menu-toggle:focus ~ .menu-toggle-button,
+  .menu-toggle:focus~.menu-toggle-button,
   .menu-toggle-button:hover {
     background-color: #inherit;
   }
-
 }
 
 /* Menu, footer */
 @media only screen and (max-width: 930px) {
 
-    /* Menu burger */
-    ul.sousmenu {
-      width: 262px;
-    }
+  /* Menu burger */
+  ul.sousmenu {
+    width: 262px;
+  }
 
-    .primary{
-      width: 100%;
-    }
+  .primary {
+    width: 100%;
+  }
 
-    .primary li{
-      margin-right: 2500em;
-    }
+  .primary li {
+    margin-right: 2500em;
+  }
 
+  /* footer */
+  .Propos {
+    margin-left: 9%;
+    display: inline-block;
+    float: left;
+    width: auto;
+    font-size: 17px;
+  }
 
-    /* footer */
-    .Propos{
-      margin-left: 9%;
-      display: inline-block;
-      float: left;
-      width: auto;
-      font-size: 17px;
-    }
-    .Partenaires{
-      margin-left: 9%;
-      font-size: 17px;
-    }
+  .Partenaires {
+    margin-left: 9%;
+    font-size: 17px;
+  }
 
-    footer > li{
-      font-size: 13px;
-    }
+  footer>li {
+    font-size: 13px;
+  }

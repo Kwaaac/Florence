@@ -97,25 +97,21 @@
 
   </div>
 
-  <div class="slider-container">
+  <div class="slider-container" id="gestionTailleSlider">
     <div class="swiper-container main-slider loading">
       <div class="swiper-wrapper">
         <?php
-        $dir = '../../../Images/mainSlider';
+        $dir = '../../../Images/Duomo';
         $fichierEtDossiers=scandir($dir);
-        $myFile = "./textes/mainSlider.txt";
-        $lines = file($myFile);
 
         for ($i=0; $i<count($fichierEtDossiers); $i++)
         {
           if($fichierEtDossiers[$i]!="." && $fichierEtDossiers[$i]!=".."){
             $fichier = $fichierEtDossiers[$i];
-            if (strpos($lines[$i], '@')){
-              list($name , $commentaire) = explode("@", $lines[$i]);
-            }else {
-              $name = " ";
-              $commentaire = " ";
-            }
+
+            $name = " ";
+            $commentaire = " ";
+
             ?>
             <div class="swiper-slide">
               <?php
@@ -172,12 +168,12 @@
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
 
-    <script src="slider.js"></script>
+
 
 
   </div>
 
-  <div class="textBox">
+  <div class="textBox" id="description">
     <div class="indication">
       <p>Le Duomo</p>
     </div>
@@ -190,6 +186,7 @@
 
   </div>
 
+  <script src="slider.js"></script>
 
   <footer class="footer">
     <div class="Partenaires">

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
   <link rel="stylesheet" href="Monuments.css">
-  <title>[Florence] Architecture/Duomo</title>
+  <title>[Florence] Architecture/Palazzo Vecchio</title>
 </head>
+
 <body>
   <div class="header">
     <ul class="logo">
@@ -101,7 +103,7 @@
     <div class="swiper-container main-slider loading">
       <div class="swiper-wrapper">
         <?php
-        $dir = '../../../Images/Duomo';
+        $dir = '../../../Images/PaVe';
         $fichierEtDossiers=scandir($dir);
 
         for ($i=0; $i<count($fichierEtDossiers); $i++)
@@ -113,20 +115,20 @@
             $commentaire = " ";
 
             ?>
-            <div class="swiper-slide">
-              <?php
+        <div class="swiper-slide">
+          <?php
               echo "<figure class=\"slide-bgimg\" style=\"background-image:url(".$dir."/".$fichier.")\">";
               echo "<img src=\"".$dir."/".$fichier."\" class=\"entity-img\" />";
               ?>
-            </figure>
-            <div class="content">
-              <?php
+          </figure>
+          <div class="content">
+            <?php
               echo  "<p class=\"title\">".$name."</p>";
               echo  "<span class=\"caption\">".$commentaire."</span>";
               ?>
-            </div>
           </div>
-          <?php
+        </div>
+        <?php
         }}
         ?>
       </div>
@@ -149,19 +151,19 @@
               $name = " ";
             }
             ?>
-            <div class="swiper-slide">
-              <?php
+        <div class="swiper-slide">
+          <?php
               echo "<figure class=\"slide-bgimg\" style=\"background-image:url(".$dir."/".$fichier.")\">";
               echo    "<img src=\"".$dir."/".$fichier."\" class=\"entity-img\" />";
               ?>
-            </figure>
-            <div class="content">
-              <?php
+          </figure>
+          <div class="content">
+            <?php
               echo  "<p class=\"title\">".$name."</p>";
               ?>
-            </div>
           </div>
-          <?php
+        </div>
+        <?php
         }}
         ?>
       </div>
@@ -172,13 +174,15 @@
 
   <div class="textBox" id="page">
     <div class="indication">
-      <p>Le Duomo</p>
+      <p>Le Palazzo Vecchio</p>
     </div>
 
     <div class="texte">
-      <p> Le Duomo, la cathédrale Santa Maria del Fiore (« Sainte Marie de la Fleur »), porte son nom de par le Lys de Florence. Elle se situe au plein coeur de Florence dont elle en est le phare. En effet, cette cathédrale se distingue parmis bien d’autres cathédrale de par la coupole gigantesque qu’elle arbore en son toit, cette dernière possède un diametre maximum de 45,5 mètres permettant alors l’introduction d’une des plus grandes fresques narrative jamais peinte (3 600m2) réalisée par   Giorgio Vasari et Federigo Zuccaro. Il est important d’ajouter que ce projet titanesque à été produit de 1296 à 1436 (140ans) et fait environ 8 300m2 de superficie. Les architectes impliqués furent Alberto Arnoldi, Pietrio di Giovanni d’Ambrogio, Neri di Fioravante et Andrea Orcagna.
-        Ce monument est inscrit au patrimoine mondial de l’UNESCO depuis 1982.
-      </p>
+      <p>À la fin du XIIIe siècle, la ville de Florence décide de construire un palais, pour montrer sa puissance et garantir une plus grande sécurité aux magistrats de la ville, en cette période de trouble. Celui-ci abritera le Signoria (la «
+        Seigneurie »), c'est-à-dire le gouvernement de la République Florentine.
+        Construit de 1229 à 1314 sur les plans de l’architecte Arnolfo di Cambio, il fut d’abord la résidence des Prieurs sous le nom de Palazzo della Signoria (palais de la Seigneurie) puis nommé Palazzo Ducale sous Cosme 1er.
+        Une sculpture d’ Hercule et Cacus de Baccio Bandinelli ainsi que la réplique du David de Michel-Ange se trouvent sur la place publique, au-devant du bâtiment, un emplacement stratégique emblématique et symbolique (puissance, et puis
+        touristique, aujourd'hui).</p>
     </div>
 
   </div>
@@ -188,7 +192,7 @@
   <footer class="footer">
     <div class="Partenaires">
       <ul>Les partenaires de ce projet
-        <li><br><a class="ftr" href="https://fr.unesco.org/" >L'UNESCO</a></li>
+        <li><br><a class="ftr" href="https://fr.unesco.org/">L'UNESCO</a></li>
         <li><a class="ftr" href="http://www.u-pem.fr/">L'Université Paris-Est Marne-La-Vallée</a></li>
       </ul>
     </div>
@@ -202,5 +206,7 @@
     </div>
   </footer>
 
+
 </body>
+
 </html>

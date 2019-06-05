@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
   <link rel="stylesheet" href="Monuments.css">
-  <title>[Florence] Architecture/Duomo</title>
+  <title>[Florence] Musée des Offices</title>
 </head>
+
 <body>
   <div class="header">
     <ul class="logo">
@@ -101,7 +103,7 @@
     <div class="swiper-container main-slider loading">
       <div class="swiper-wrapper">
         <?php
-        $dir = '../../../Images/Duomo';
+        $dir = '../../../Images/MuOf';
         $fichierEtDossiers=scandir($dir);
 
         for ($i=0; $i<count($fichierEtDossiers); $i++)
@@ -171,36 +173,35 @@
   </div>
 
   <div class="textBox" id="page">
-    <div class="indication">
-      <p>Le Duomo</p>
-    </div>
-
-    <div class="texte">
-      <p> Le Duomo, la cathédrale Santa Maria del Fiore (« Sainte Marie de la Fleur »), porte son nom de par le Lys de Florence. Elle se situe au plein coeur de Florence dont elle en est le phare. En effet, cette cathédrale se distingue parmis bien d’autres cathédrale de par la coupole gigantesque qu’elle arbore en son toit, cette dernière possède un diametre maximum de 45,5 mètres permettant alors l’introduction d’une des plus grandes fresques narrative jamais peinte (3 600m2) réalisée par   Giorgio Vasari et Federigo Zuccaro. Il est important d’ajouter que ce projet titanesque à été produit de 1296 à 1436 (140ans) et fait environ 8 300m2 de superficie. Les architectes impliqués furent Alberto Arnoldi, Pietrio di Giovanni d’Ambrogio, Neri di Fioravante et Andrea Orcagna.
-        Ce monument est inscrit au patrimoine mondial de l’UNESCO depuis 1982.
-      </p>
-    </div>
-
+  <div class="indication">
+    <p>Musée des Offices</p>
   </div>
 
-  <script src="slider.js"></script>
+  <div class="texte">
+    <p>Le musée des Offices se situe en plein cœur de Florence, entre le Palazzo Vecchio et l’Arno qu’il borde conserve et expose l'un des patrimoines artistiques les plus anciens et les plus célèbres au monde. Ouvert au public depuis 1765, il
+      déploie, sur 12 000 m2, la plus belle collection au monde de peintures italiennes et des œuvres de nombreux grands maîtres européens.</p>
+  </div>
+</div>
 
-  <footer class="footer">
-    <div class="Partenaires">
-      <ul>Les partenaires de ce projet
-        <li><br><a class="ftr" href="https://fr.unesco.org/" >L'UNESCO</a></li>
-        <li><a class="ftr" href="http://www.u-pem.fr/">L'Université Paris-Est Marne-La-Vallée</a></li>
-      </ul>
-    </div>
+<script src="slider.js"></script>
 
-    <div class="Propos">
-      <ul>A Propos
-        <li><br><a class="ftr" href="contact.php">Objectif et créateurs du site</a></li>
-        <li><a class="ftr" href="politiqueContenu.php">Mentions Légales</a></li>
-      </ul>
+<footer class="footer">
+  <div class="Partenaires">
+    <ul>Les partenaires de ce projet
+      <li><br><a class="ftr" href="https://fr.unesco.org/" >L'UNESCO</a></li>
+      <li><a class="ftr" href="http://www.u-pem.fr/">L'Université Paris-Est Marne-La-Vallée</a></li>
+    </ul>
+  </div>
 
-    </div>
-  </footer>
+  <div class="Propos">
+    <ul>A Propos
+      <li><br><a class="ftr" href="contact.php">Objectif et créateurs du site</a></li>
+      <li><a class="ftr" href="politiqueContenu.php">Mentions Légales</a></li>
+    </ul>
+
+  </div>
+</footer>
 
 </body>
+
 </html>

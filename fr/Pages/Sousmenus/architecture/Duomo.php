@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<?php include('header.php'); ?>
+<?php include('../../../HeadAndFoot/headerStg3.inc.php'); ?>
 
   <div class="slider-container" id="gestionTailleSlider">
     <div class="swiper-container main-slider loading">
@@ -99,7 +99,7 @@
 
   <script src="slider.js"></script>
 
-  <?php include('footer.php'); ?>
+  <?php include('../../../HeadAndFoot/footerStg3.php'); ?>
 
 </body>
 </html>

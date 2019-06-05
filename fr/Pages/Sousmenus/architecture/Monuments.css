@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lobster Two', cursive;
+  font-family: 'Times New Roman', cursive;
   font-size: 25px;
   margin: 0px;
   padding: 0px;
@@ -187,6 +187,7 @@ ul.primary li:hover>a {
   float: right;
 }
 
+
 /* Slider */
 .slider-container img {
   max-width: 100%;
@@ -355,7 +356,9 @@ ul.primary li:hover>a {
   background-color: white;
 }
 
-/* footer */
+
+
+/* Footer */
 footer {
   background-color: #d14a00;
   border-top: 10px solid #ff5b00;
@@ -405,7 +408,7 @@ footer li {
   font-size: 20px;
 }
 
-/* Responsivité du menu */
+
 @media only screen and (max-width: 1640px) {
   .primary {
     margin: 0;

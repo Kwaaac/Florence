@@ -1,5 +1,4 @@
 #voyageurs html {
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
   line-height: 1.5;
   font-size: 12px;
   font-weight: 400;
@@ -7,9 +6,7 @@
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
-#voyageurs body {
-  font-family: helvetica, arial, sans-serif;
-}
+
 #voyageurs h3 {
   margin-top: 1.4rem;
   margin-bottom: 1.4rem;
@@ -88,11 +85,11 @@
 .mosaic-row-one > .mosaic-cell {
   width: 762px;
   height: 328px;
-  background-image: url("../../Images/mosaic/test11.jpg");
+  background-image: url("../../Images/mosaic/stendhal2.jpg");
 }
 .mosaic-row-one > .mosaic-cell + .mosaic-cell {
   width: 328px;
-  background-image: url("http://lorempixel.com/328/328");
+  background-image: url("../../Images/mosaic/florence_icon.jpg");
   margin-right: 0;
 }
 .mosaic-row-two {
@@ -102,14 +99,14 @@
 .mosaic-row-two > .mosaic-cell {
   width: 345px;
   height: 345px;
-  background-image: url("http://lorempixel.com/345/345");
+  background-image: url("../../Images/mosaic/pont.jpg");
 }
 .mosaic-row-two > .mosaic-cell + .mosaic-cell {
   width: 345px;
-  background-image: url("http://lorempixel.com/345/345/city");
+  background-image: url("../../Images/mosaic/florence_panorama.jpg");
 }
 .mosaic-row-two > .mosaic-cell + .mosaic-cell + .mosaic-cell {
-  background: #fff;
+  background: none;
   width: 390px;
   font-size: 0;
   margin-right: 0;
@@ -118,12 +115,12 @@
 .mosaic-row-two > .mosaic-cell + .mosaic-cell + .mosaic-cell > .mosaic-cell {
   width: 390px;
   height: 168px;
-  background-image: url("http://lorempixel.com/398/168/city");
+  background-image: url("../../Images/mosaic/stendhal.jpg");
   display: block;
   margin-bottom: 10px;
 }
 .mosaic-row-two > .mosaic-cell + .mosaic-cell + .mosaic-cell > .mosaic-cell + .mosaic-cell {
-  background-image: url("http://lorempixel.com/g/398/168/city");
+  background-image: url("../../Images/mosaic/small.jpg");
   display: block;
   height: 168px;
   margin-bottom: 0;
@@ -134,17 +131,17 @@
 .mosaic-row-three > .mosaic-cell {
   width: 396px;
   height: 298px;
-  background-image: url("http://lorempixel.com/396/298/city");
+  background-image: url("../../Images/mosaic/albertcamus.jpg");
 }
 .mosaic-row-three > .mosaic-cell + .mosaic-cell {
   width: 694px;
   height: 298px;
-  background-image: url("http://lorempixel.com/694/298/city");
+  background-image: url("../../Images/mosaic/dumas.jpg");
   margin-right: 0px;
 }
 
 body{
-  font-family: 'Lobster Two', cursive;
+  font-family: 'Times New Roman', cursive;
   font-size: 25px;
   margin: 0;
   padding: 0;

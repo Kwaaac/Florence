@@ -178,8 +178,6 @@
         <script src="slider.js"></script>
     </div>
 
-
-
     <footer class="footer">
       <div class="Partenaires">
         <ul>Les partenaires de ce projet
@@ -196,9 +194,6 @@
 
       </div>
     </footer>
-    <div class="hiden">
-      <a href="../upload.php"></a>
-    </div>
 </body>
 
 </html>

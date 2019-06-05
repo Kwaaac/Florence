@@ -3,104 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
-    <link rel="stylesheet" href="Pages/Sousmenus/test.css">
+    <link rel="stylesheet" href="style.css">
     <title>Florence</title>
 </head>
 
 <body id="accueil">
-  <div class="header">
-    <ul class="logo">
-      <a href="test.html"><img src="Images/Logo.png" alt="Logo"></a>
-    </ul>
-    <nav>
-      <input class="menu-toggle" id="menu-toggle" type="checkbox">
-      <label class="menu-toggle-button" for="menu-toggle">☰</label>
-      <ul class="primary">
+  <?php include('HeadAndFoot/headerStg1.php'); ?>
 
-        <li class="BonPl">
-
-          <a class=" menuItem">
-            <input class="menu-toggle" id="menu-toggle1" type="checkbox"></input>
-            <label class="menu-toggle-button" for="menu-toggle">☶</label>
-            Bon Plans
-          </a>
-
-          <ul class="sousmenu">
-            <li><a href="Pages/Sousmenus/frise.html">Histoire de la ville</a></li>
-            <li><a href="Pages/Sousmenus/archi.html">Architecture</a></li>
-          </ul>
-        </li>
-
-        <li class="InfoPr">
-
-          <a class=" menuItem">
-            <input class="menu-toggle" id="menu-toggle2" type="checkbox"></input>
-            <label class="menu-toggle-button" for="menu-toggle">☶</label>
-            Infos Pratiques
-          </a>
-
-          <ul class="sousmenu">
-            <li><a href="Pages/Sousmenus/calendar.html">Actualités de la ville</a></li>
-            <li><a href="Pages/Sousmenus/Transports.html">Transports</a></li>
-          </ul>
-
-        </li>
-
-        <li class="BonPl">
-
-          <a class=" menuItem">
-            <input class="menu-toggle" id="menu-toggle3" type="checkbox"></input>
-            <label class="menu-toggle-button" for="menu-toggle">☶</label>
-            Astuces
-          </a>
-
-          <ul class="sousmenu">
-            <li><a href="Pages/Sousmenus/Petits Prix.html">Nos bonnes adresses</a></li>
-            <li><a href="Pages/Sousmenus/Insolite.html">Insolites</a></li>
-          </ul>
-        </li>
-
-        <li class="Sejour">
-
-          <a class=" menuItem">
-            <input class="menu-toggle" id="menu-toggle4" type="checkbox"></input>
-            <label class="menu-toggle-button" for="menu-toggle">☶</label>
-            Visiter Florence
-          </a>
-
-          <ul class="sousmenu">
-            <li><a href="Pages/Sousmenus/autour.html">Autour de vous</a></li>
-            <li><a href="Pages/Sousmenus/circuits.html">Nos circuit</a></li>
-          </ul>
-        </li>
-
-        <li>
-          <a class=" menuItem">
-            <input class="menu-toggle" id="menu-toggle4" type="checkbox"></input>
-            <label class="menu-toggle-button" for="menu-toggle">☶</label>
-            Authentification
-          </a>
-
-          <ul class="sousmenu">
-            <li><a>Se connecter</a></li>
-            <li><a>S'inscrire</a></li>
-          </ul>
-
-        </li>
-
-        <li class="lang" id="lang">
-          <a href=""><img class="lg" src="Images/langswitch.png" alt="en"></a>
-        </li>
-
-      </ul>
-    </nav>
-
-  </div>
-
-    <div class="slider-container">
+    <div class="slider-container" id="gestionTailleSlider">
         <div class="swiper-container main-slider loading">
             <div class="swiper-wrapper">
               <?php
@@ -175,30 +87,19 @@
         </div>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
 
-        <script src="slider.js"></script>
+
+    </div>
+
+    <div id="footer">
+      <?php include('HeadAndFoot/footerStg1.php'); ?>
     </div>
 
 
 
-    <footer class="footer">
-      <div class="Partenaires">
-        <ul>Les partenaires de ce projet
-          <li><br><a class="ftr" href="https://fr.unesco.org/" >L'UNESCO</a></li>
-          <li><a class="ftr" href="http://www.u-pem.fr/">L'Université Paris-Est Marne-La-Vallée</a></li>
-        </ul>
-      </div>
-
-      <div class="Propos">
-        <ul>A Propos
-          <li><br><a class="ftr" href="contact.html">Objectif et créateurs du site</a></li>
-          <li><a class="ftr" href="politiqueContenu.html">Mentions Légales</a></li>
-        </ul>
-
-      </div>
-    </footer>
     <div class="hiden">
       <a href="../upload.php"></a>
     </div>
+    <script src="slider.js"></script>
 </body>
 
 </html>

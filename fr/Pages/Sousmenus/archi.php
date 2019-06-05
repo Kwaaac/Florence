@@ -8,8 +8,7 @@
 </head>
 
 <body id="archi">
-  <?php include('../../HeadAndFoot/headerStg2.php'); ?>
-
+<?php include('../../HeadAndFoot/headerStg2.php'); ?>
   <div class="title">
     <span>Monuments</span>
   </div>

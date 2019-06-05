@@ -1,5 +1,4 @@
 
-<link rel="stylesheet" href="headAndFoot.css">
 <footer class="footer">
   <div class="Partenaires">
     <ul>Les partenaires de ce projet

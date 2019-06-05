@@ -91,21 +91,6 @@
       <p>Il Vinaino</p>
     </div>
 
-
-
-    <div class="slider">
-      <div class="slider-container">
-        <div class="menuslider">
-          <label for="slide-point-1"></label>
-        </div>
-
-        <input id="slide-point-1" type="radio" name="slides" checked>
-        <div class="slide slide-1"></div>
-
-
-      </div>
-    </div>
-
     <div class="texte">
       <p>Pour les amateurs de vin où vous pourrez vous régaler d’une assiettes fumante de tagliatelles faites maison garnies de cèpes frais ou d’une riche sauce au sanglier.
         <br>=> Via Palazzuolo 124r, 50123, Florence, Italie
@@ -113,8 +98,8 @@
       </p>
     </div>
 
+</div>
 
-  </div>
 
   <script src="../architecture/slider.js"></script>
 

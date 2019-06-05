@@ -1,6 +1,3 @@
-<head>
-  <link rel="stylesheet" href="headAndFoot.css">  
-</head>
 
 
 <footer class="footer">

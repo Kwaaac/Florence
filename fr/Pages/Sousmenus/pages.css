@@ -1,5 +1,5 @@
 body{
-  font-family: 'Lobster Two', cursive;
+  font-family: 'Times New Roman', cursive;
   font-size: 25px;
   margin: 0;
   padding: 0;
@@ -189,12 +189,8 @@ ul.primary li:hover > a{
   float: right;
 }
 
-/* Nouveau menu */
-
 
 /* Gestion de la page en dehors du menu */
-
-
 
 .title{
   font-family: 'Pinyon Script', cursive;
@@ -336,8 +332,6 @@ ul.primary li:hover > a{
   }
 }
 
-}
-
 /* Contact */
 
 #contact .projet{
@@ -417,20 +411,17 @@ ul.primary li:hover > a{
 #insolite .insolite{
   display: inline-block;
   width: auto;
+  margin-top: 2em;
 }
 
 #insolite .insolite > a >img{
-  width: 23em;
-  height: 20em;
+  width: 17em;
+  height: 15em;
   border-radius: 35%;
   margin-left: 3em;
   margin-right: 3em;
 }
 
-
-#insolite h3{
-  margin-bottom: 3em;
-}
 
 @media only screen and (max-width: 550px) {
 
@@ -441,18 +432,11 @@ ul.primary li:hover > a{
     margin-right: 0em;
   }
 
-  #petitsprix .h3 {
+  #insolite .h3 {
     width: 250px;
   }
 }
 
-
-#insolite h2{
-    border: 5px solid #777;
-    width: 7em;
-    margin: 5px auto;
-    text-align: center;
-}
 
 /* Petits Prix */
 
@@ -476,9 +460,6 @@ ul.primary li:hover > a{
   margin-top: 3em;
 }
 
-#petitsprix .h3 {
-  margin-bottom: 3em;
-}
 
 @media only screen and (max-width: 550px) {
   #petitsprix .image{
@@ -504,7 +485,7 @@ ul.primary li:hover > a{
     background-color: #ea5c0d;
     display: inline-block;
     width: 100%;
-    margin-top: 5em;
+    margin-top: 3.3em;
     left: 0;
     bottom: 0;
     position: relative;
@@ -623,7 +604,7 @@ footer {
   display: inline-block;
   height: auto;
   width: 100%;
-  margin-top: 10em; /* quand le footer ne reste pas en bas de la page, on augmente le margin-top*/
+  margin-top: 5em; /* quand le footer ne reste pas en bas de la page, on augmente le margin-top*/
   left: 0;
   bottom: 0;
   position: relative;

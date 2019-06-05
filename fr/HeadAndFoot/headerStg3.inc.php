@@ -1,11 +1,3 @@
-
-<html lang="fr" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet2" href="headAndFoot.css">
-</head>
-
-
 <div class="header">
   <ul class="logo">
     <a href="../../../../en/index.php"><img src="../../../Images/Logo.png" alt="Logo"></a>

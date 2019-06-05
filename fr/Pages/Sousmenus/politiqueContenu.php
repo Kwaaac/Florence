@@ -6,53 +6,11 @@
     <title>[Florence] Politique du contenu</title>
   </head>
   <body id="contact">
-    <header>
-      <div class="menu">
-        <div class="lang">
-          <a href="../../../en/Pages/Sousmenus/contact.html"><img src="../../Images/langswitch.png" alt="en"></a>
-        </div>
-        <div class="logo">
-          <a href="../../index.html"><img class="Logo" src="../../Images/Logo.png" alt="Logo"></a>
-        </div>
-        <div class="menuderoulant">
-          <nav>
-            <ul>
+    <?php include('../../HeadAndFoot/headerStg2.php'); ?>
 
-              <li class="Login"><a href="#">Culture</a>
-
-                <ul class="sousmenu">
-                  <li><a href="frise.html">Histoire de la ville</a></li>
-                  <li><a href="archi.html">Architecture</a></li>
-                </ul>
-
-
-
-              <li class="InfoPr"><a href="#">Infos Pratiques</a>
-
-                <ul class="sousmenu">
-                <li><a href="calendar.html">Actualités de la ville</a></li>
-                  <li><a href="Transports.html">Transports</a></li>
-                </ul>
-
-              <li class="BonPl"><a href="#">Astuces</a>
-
-                <ul class="sousmenu">
-                  <li><a href="Petits Prix.html">Nos bonnes adresses</a></li>
-                  <li><a href="Insolite.html">Insolites</a></li>
-                </ul>
-
-              <li class="Sejour"><a href="#">Visiter Florence</a>
-
-                <ul class="sousmenu">
-                  <li><a href="autour.html">Autour de vous</a></li>
-                  <li><a href="circuits.html">Nos circuit</a></li>
-                </ul>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-
+    <div class="title">
+      <span> Mentions légales </span>
+    </div>
     <div class="projet">
 
       <h2>A propos de notre contenu</h2>
@@ -88,6 +46,7 @@
 
     </div>
 
+<?php include('../../HeadAndFoot/footerStg2.php'); ?>
 
   </body>
 </html>

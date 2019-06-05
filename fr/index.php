@@ -197,7 +197,7 @@
       </div>
     </footer>
     <div class="hiden">
-      <a href="../upload"></a>
+      <a href="../upload.php"></a>
     </div>
 </body>
 

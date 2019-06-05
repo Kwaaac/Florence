@@ -8,7 +8,7 @@
 
 <div class="header">
   <ul class="logo">
-    <a href="../../../index.php"><img src="../../../Images/Logo.png" alt="Logo"></a>
+    <a href="../../../../en/index.php"><img src="../../../Images/Logo.png" alt="Logo"></a>
   </ul>
   <nav>
     <input class="menu-toggle" id="menu-toggle" type="checkbox">

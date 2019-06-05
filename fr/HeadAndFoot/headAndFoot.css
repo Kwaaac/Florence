@@ -1,0 +1,156 @@
+
+
+/* Footer */
+footer {
+  background-color: #d14a00;
+  border-top: 10px solid #ff5b00;
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  margin-top: 2em;
+  /* quand le footer ne reste pas en bas de la page, on augmente le margin-top*/
+  padding-bottom: 1em;
+  left: 0;
+  bottom: 0;
+  position: relative;
+  color: #ffffff;
+}
+
+.Partenaires {
+  margin-left: 15%;
+  display: inline-block;
+  float: left;
+  width: auto;
+}
+
+.Propos {
+  float: right;
+  margin-right: 15%;
+  display: inline-block;
+  width: auto;
+}
+
+footer ul {
+  margin-top: 0.5em;
+  font-size: 24px;
+}
+
+.ftr {
+  color: #fff;
+  text-decoration: none;
+}
+
+.ftr:hover {
+  text-decoration: underline;
+}
+
+footer li {
+  margin-left: 0.5em;
+  list-style: none;
+  font-size: 20px;
+}
+
+
+@media only screen and (max-width: 1640px) {
+  .primary {
+    margin: 0;
+  }
+
+  ul.primary li .menuItem {
+    display: block;
+    padding-right: 1.875em;
+    padding-left: 1.875em;
+    padding-top: 1.2em;
+    padding-bottom: 1em;
+    border-right: 0.063em solid #3D3D3D;
+    font-size: 20px;
+  }
+
+  .sousmenu {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1215px) {
+  ul.logo, .lang {
+    display: none;
+    visibility: hidden;
+  }
+
+  .primary li {
+    margin-right: 2500em;
+  }
+
+  .primary {
+    flex-direction: column;
+    display: inline-grid;
+    margin: 0;
+  }
+
+  .primary .menuItem {
+    width: 100%;
+  }
+
+  .primary label {
+    padding-top: 0;
+    float: left;
+  }
+
+  ul.primary li .menuItem {
+    border-right: 0;
+  }
+
+  .menu-toggle:not(:checked)~.primary {
+    display: none;
+    float: left;
+  }
+
+  .menu-toggle-button {
+    display: -webkit-box
+  }
+
+  #menu-toggle .menu-toggle:focus~.menu-toggle-button,
+  #menu-toggle .menu-toggle-button:hover {
+    background-color: #444;
+  }
+
+  .menu-toggle:focus~.menu-toggle-button,
+  .menu-toggle-button:hover {
+    background-color: #inherit;
+  }
+}
+
+/* Menu, footer */
+@media only screen and (max-width: 930px) {
+
+  /* Menu burger */
+  ul.sousmenu {
+    width: 262px;
+  }
+
+  .primary {
+    width: 100%;
+  }
+
+  .primary li {
+    margin-right: 2500em;
+  }
+
+  /* footer */
+  .Propos {
+    margin-left: 9%;
+    display: inline-block;
+    float: left;
+    width: auto;
+    font-size: 17px;
+  }
+
+  .Partenaires {
+    margin-left: 9%;
+    font-size: 17px;
+  }
+
+  footer>li {
+    font-size: 13px;
+  }
+}

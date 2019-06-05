@@ -87,7 +87,7 @@
     </div>
 
     <div class="monuments">
-      <a href="architecture/GalleriaAccedemia.php"><img class="image3" src="../../Images/GalleriaAccedemia/galleria.jpg" alt="GalleriaAccedemia"></a>
+      <a href="architecture/GalleriadellAccademia.php"><img class="image3" src="../../Images/GalleriaAccademia/galleria.jpg" alt="GalleriaAccademia"></a>
       <h3>Galleria dell'Accademia</h3>
     </div>
 

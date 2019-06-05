@@ -1,5 +1,4 @@
 
-<link rel="stylesheet" href="headAndFoot.css">
 <div class="header">
   <ul class="logo">
     <a href="../../index.php"><img src="../../Images/Logo.png" alt="Logo"></a>

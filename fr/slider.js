@@ -34,6 +34,16 @@ let mainSliderOptions = {
       swiper.slides[swiper.activeIndex].querySelector('.caption').classList.add('show');
     },
     progress: function() {
+      /*
+       * Ici j'évite que les div en dessous du slider ne se cache derrière lui
+       * pour ça je met un margin-top qui se rafraichi en permanence
+       * de la taille du slider pour qu'il se cale juste en dessous
+       */
+      var sliderHeight = document.getElementById("gestionTailleSlider").clientHeight;
+      var footer = document.getElementById("footer");
+
+      footer.style.marginTop = sliderHeight + "px";
+
       let swiper = this;
       for (let i = 0; i < swiper.slides.length; i++) {
         let slideProgress = swiper.slides[i].progress,

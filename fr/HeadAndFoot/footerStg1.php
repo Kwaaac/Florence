@@ -1,6 +1,5 @@
 
-<link rel="stylesheet" href="headAndFoot.css">
-<footer class="footer">
+<footer class="footer" id="footerIndex">
   <div class="Partenaires">
     <ul>Les partenaires de ce projet
       <li><br><a class="ftr" href="https://fr.unesco.org/" >L'UNESCO</a></li>

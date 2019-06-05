@@ -8,10 +8,9 @@
 </head>
 
 <body id="archi">
-  <?php include('../../HeadAndFoot/headerStg2.php'); ?>
-
+<?php include('../../HeadAndFoot/headerStg2.php'); ?>
   <div class="title">
-    <span>Architecture</span>
+    <span>Monuments</span>
   </div>
 
   <div class="container">
@@ -77,17 +76,17 @@
     </div>
 
     <div class="monuments">
-      <a href="architecture/ForteresseBasso.php"><img class="image3" src="../../Images/ForteresseBasso/Fortezza_da_Basso_1.jpg" alt="ForteresseBasso"></a>
+      <a href="architecture/ForteresseBasso.php"><img class="image3" src="../../Images/ForteresseBasso/Fortezza_da_Basso_1.JPG" alt="ForteresseBasso"></a>
       <h3>Forteresse de Basso</h3>
     </div>
 
     <div class="monuments">
-      <a href="architecture/CampanileGiotto.php"><img class="image3" src="../../Images/CampanileGiotto/Campaniledigiotto.jpg" alt="CampanileGiotto"></a>
+      <a href="architecture/CampanileGiotto.php"><img class="image3" src="../../Images/CampanileGiotto/Campaniledigiotto.JPG" alt="CampanileGiotto"></a>
       <h3>Campanile de Giotto</h3>
     </div>
 
     <div class="monuments">
-      <a href="architecture/GalleriaAccademia.php"><img class="image3" src="../../Images/GalleriaAccademia/galleria.jpg" alt="GalleriaAccademia"></a>
+      <a href="architecture/GalleriadellAccademia.php"><img class="image3" src="../../Images/GalleriaAccademia/galleria.jpg" alt="GalleriaAccademia"></a>
       <h3>Galleria dell'Accademia</h3>
     </div>
 
@@ -97,7 +96,7 @@
     </div>
 
     <div class="monuments">
-      <a href="architecture/MediciRiccardi.php"><img class="image3" src="../../Images/MediciRiccardi/Palazzo_medici_riccardi.jpg" alt="MediciRiccardi"></a>
+      <a href="architecture/MediciRiccardi.php"><img class="image3" src="../../Images/MediciRiccardi/Palazzo_medici_riccardi.JPG" alt="MediciRiccardi"></a>
       <h3>Medici Riccardi</h3>
     </div>
 

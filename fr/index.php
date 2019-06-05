@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="Pages/Sousmenus/test.css">
     <title>Florence</title>
 </head>
 

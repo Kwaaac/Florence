@@ -217,3 +217,10 @@ nav > ul > li .sousmenu{
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
 }
+
+.hiden a{
+padding: 10px;
+margin-top: 10px;
+margin-bottom:0%;
+margin-left:0%;
+}

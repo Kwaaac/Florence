@@ -7,94 +7,7 @@
     <title>Voyageurs célèbres</title>
   </head>
   <body>
-    <div class="header">
-      <ul class="logo">
-        <a href="../../index.php"><img src="../../Images/Logo.png" alt="Logo"></a>
-      </ul>
-      <nav>
-        <input class="menu-toggle" id="menu-toggle" type="checkbox">
-        <label class="menu-toggle-button" for="menu-toggle">☰</label>
-        <ul class="primary">
-
-          <li class="BonPl">
-
-            <a class=" menuItem">
-              <input class="menu-toggle" id="menu-toggle1" type="checkbox"></input>
-              <label class="menu-toggle-button" for="menu-toggle">☶</label>
-              Bon Plans
-            </a>
-
-            <ul class="sousmenu">
-              <li><a href="frise.php">Histoire de la ville</a></li>
-              <li><a href="archi.php">Architecture</a></li>
-            </ul>
-          </li>
-
-          <li class="InfoPr">
-
-            <a class=" menuItem">
-              <input class="menu-toggle" id="menu-toggle2" type="checkbox"></input>
-              <label class="menu-toggle-button" for="menu-toggle">☶</label>
-              Infos Pratiques
-            </a>
-
-            <ul class="sousmenu">
-              <li><a href="calendar.php">Actualités de la ville</a></li>
-              <li><a href="Transports.php">Transports</a></li>
-            </ul>
-
-          </li>
-
-          <li class="BonPl">
-
-            <a class=" menuItem">
-              <input class="menu-toggle" id="menu-toggle3" type="checkbox"></input>
-              <label class="menu-toggle-button" for="menu-toggle">☶</label>
-              Astuces
-            </a>
-
-            <ul class="sousmenu">
-              <li><a href="Petits Prix.php">Nos bonnes adresses</a></li>
-              <li><a href="Insolite.php">Insolites</a></li>
-            </ul>
-          </li>
-
-          <li class="Sejour">
-
-            <a class=" menuItem">
-              <input class="menu-toggle" id="menu-toggle4" type="checkbox"></input>
-              <label class="menu-toggle-button" for="menu-toggle">☶</label>
-              Visiter Florence
-            </a>
-
-            <ul class="sousmenu">
-              <li><a href="autour.php">Autour de vous</a></li>
-              <li><a href="circuits.php">Nos circuit</a></li>
-            </ul>
-          </li>
-
-          <li>
-            <a class=" menuItem">
-              <input class="menu-toggle" id="menu-toggle4" type="checkbox"></input>
-              <label class="menu-toggle-button" for="menu-toggle">☶</label>
-              Authentification
-            </a>
-
-            <ul class="sousmenu">
-              <li><a>Se connecter</a></li>
-              <li><a>S'inscrire</a></li>
-            </ul>
-
-          </li>
-
-          <li class="lang" id="lang">
-            <a href=""><img class="lg" src="../../Images/langswitch.png" alt="en"></a>
-          </li>
-
-        </ul>
-      </nav>
-
-    </div>
+    <?php include('../../../HeadAndFoot/headerStg2.php'); ?>
 
     <div class="title">
       Citations de voyageurs célèbres
@@ -170,5 +83,7 @@
         </div>
       </div>
     </section>
+
+    <?php include('../../../HeadAndFoot/footerStg2.php'); ?>
   </body>
 </html>

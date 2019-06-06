@@ -1,6 +1,5 @@
 <?php
-session_start();
-include('../Admin/connexion.php');
+include("./Pages/connectionFiles/connectionLOG.inc.php");
 $maxsize= floatval('52428800‬');
 $maxwidth= 1920;
 $maxheight= 1080;
@@ -12,6 +11,7 @@ $dossierA=$_SESSION['dossier-attacher'];
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <?php
+echo "<h2 class=\"h2 text-center\">".$dossierA."</h2><br />";
 if(isset($_FILES['mon_fichier'])){
 if ($_FILES['mon_fichier']['error'] > 0) $erreur = "Erreur lors du transfert";
 if ($_FILES['mon_fichier']['size'] > $maxsize) $erreur = "Le fichier est trop gros";
@@ -26,7 +26,9 @@ if($erreur != ""){
   header("Refresh:5; url=upload.php");
 }else{
   $name=$_FILES['mon_fichier']['name'];
-  $destination= './Images/';
+  echo $name."<br/>";
+  $destination= './Images/'.$dossierA.'/';
+  echo $destination."<br/>";
   // $destinationEN= '../en/Images/';
   $dir = './Images/mainSlider';
   $fichierEtDossiers=scandir($destination);
@@ -34,16 +36,25 @@ if($erreur != ""){
   {
           $w = 0;
           while($fichierEtDossiers[$i]==$name){
-            $name=$_FILES['mon_fichier']['name']."(".$w.")";
+            $name=explode(".",$_FILES['mon_fichier']['name'])[0]."(".$w.")".".".$extension_upload;
             $w++;
           }
 }
   $resultat = move_uploaded_file($_FILES['mon_fichier']['tmp_name'],$destination.$name);
   // $resultat2 = move_uploaded_file($_FILES['mon_fichier']['tmp_name'],$destinationEN.$name);
-if ($resultat && $resultat2){
-  $req= "INSERT INTO PHOTOS_MONUMENTS(\`Name\`, \`FileName\`, \`Valid\`) VALUES ($name,$dossierA,0);";
-  echo "<h2 class=\"h2 text-center\">transfer reussi</h2><br />";
-  header("Refresh:3; url=upload.php");
+if ($resultat){
+  $req= "INSERT INTO PHOTOS_MONUMENTS(Name, FileName, Valid) VALUES ('".$name."','".$dossierA."',0);";
+  try {
+    $dbh->query($req);
+    echo "<h2 class=\"h2 text-center\">transfer reussi</h2><br />";
+    header("Refresh:3; url=upload.php");
+
+  } catch (\Exception $e) {
+    echo "<h2 class=\"h2 text-center\">erreur d'enregistrement</h2><br />";
+    echo $e;
+    header("Refresh:10; url=upload.php");
+  }
+
 }
 }
 }else {

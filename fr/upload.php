@@ -1,6 +1,7 @@
 <?php
-include('../Admin/connexion.php');
+include('./Pages/connectionFiles/connectionLOG.inc.php');
  ?>
+
  <!DOCTYPE html>
  <html lang="fr" dir="ltr">
    <head>
@@ -44,11 +45,17 @@ include('../Admin/connexion.php');
 .control-group.success .fileupload .fileupload-preview{color:#468847;}
 .control-group.success .fileupload .thumbnail{border-color:#468847;}
 </style>
+<?php
+$dossierA=$_SESSION['dossier-attacher'];
+?>
+<?php
+if(isset($_SESSION['dossier-attacher'])){
+ ?>
 <div class="ajout">
 
      <form method="post" action="reception.php" enctype="multipart/form-data" class="col">
        <input type="hidden" name="MAX_FILE_SIZE" value="52428800‬" />
-       <label class="col-form-label" for="mon_fichier">Icône du fichier (JPG, PNG, GIF | max. 50Mo) :</label><br />
+       <label class="col-form-label" for="mon_fichier">Ajouter un fichier (JPG, PNG, GIF | max. 50Mo) :</label><br />
        <div class="form-group">
         <div class="fileupload fileupload-new" data-provides="fileupload">
   <span class="btn btn-primary btn-file"><span class="fileupload-new">Select file</span>
@@ -56,14 +63,15 @@ include('../Admin/connexion.php');
   <span class="fileupload-preview"></span>
   <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
 </div>
-       <label class="col-form-label" for="titre">Titre du fichier (max. 50 caractères) :</label><br />
-       <input type="text" class="form-inline" name="titre" value="Titre du fichier" id="titre" /><br />
-       <label class="col-form-label" for="description">Description de votre fichier (max. 255 caractères) :</label><br />
-       <textarea name="description" class="form-control" style="width: 70%" id="description"></textarea><br />
-       <input type="submit" class="btn btn-primary" name="submit" value="Envoyer" />
+      <input type="submit" class="btn btn-primary" name="submit" value="Envoyer"/>
        <input type="reset"  class="btn btn-secondary" onclick="javascript:if(confirm('Votre formulaire va être réinisialiser \nêtes vous êtes sûr ?'));" value="réinitialiser">
      </form>
 </div>
+<?php
+}else {
+  echo "<h2 class=\"h2 text-center\">Erreur aucun dossier de destination ajouter</h2><br />";
+}
+ ?>
    </body>
 
 

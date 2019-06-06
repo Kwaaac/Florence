@@ -110,9 +110,11 @@ include('../../connectionFiles/connectionLOG.inc.php');
     <script src="slider.js"></script>
 <?php
 if(isset($_SESSION["login"])){
-  echo "<a href=\"../../../upload.php\"> <input type=\"button\" value=\"Upload\"> </a>";
+  $_SESSION['dossier-attacher']= $strict_dir;
+  echo $_SESSION['dossier-attacher'];
+  echo "<a href=\"../../../upload.php\"> <input type=\"button\" value=\"".$strict_dir."\"> </a>";
 }else{
-  echo '<a href="../../connexion.php" > <input type="button" value="Upload"> </a>';
+  echo '<a href="../connection.php" > <input type="button" value="Upload"> </a>';
     }
     ?>
   <?php include('../../../HeadAndFoot/footerStg3.php'); ?>

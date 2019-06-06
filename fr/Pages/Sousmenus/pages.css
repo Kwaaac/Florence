@@ -491,6 +491,14 @@ ul.primary li:hover > a{
     position: relative;
 }
 
+/* Connection */
+#connection .formConnection {
+    margin: auto;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 1em;
+}
+
 /* Transports */
 
 #transport .boiteinfo1{

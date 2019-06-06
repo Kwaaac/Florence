@@ -27,6 +27,19 @@ if($login != null && $mdp != null){
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="pages.css">
+    <style media="screen">
+    .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    }
+    </style>
     <title>[Florence] Connection</title>
   </head>
   <body id="connection">
@@ -36,13 +49,15 @@ if($login != null && $mdp != null){
       echo "L'identifiant ou le mot de passe que vous avez rentre est errone, veuillez reessayer.";
     }
     ?>
-    <form class="form-inline my-2 my-lg-0" method="post">
-      <input type="text" placeholder="Utilisateur" name="login" required>
-      <br>
-      <input type="password" placeholder="Password" name="mdp" required>
-      <br>
-      <button type="submit" name="button" class="btn btn-primary" align="center">Envoyer</button>
-    </form>
+    <div class="formConnection">
+      <form method="post">
+        <input type="text" placeholder="Identifiant" name="login" required>
+        <br>
+        <input type="password" placeholder="Mot de passe" name="mdp" required>
+        <br>
+        <button type="submit" name="button" class="btn btn-primary" align="center">Envoyer</button>
+      </form>
+    </div>
     <?php include('../../HeadAndFoot/footerStg2.php');?>
   </body>
 </html>

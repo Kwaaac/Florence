@@ -16,13 +16,43 @@
   <div class="container">
 
     <div class="adresse">
-      <a href="restaurant/Il_Vinaino.html"><img class="image" src="../../Images/restaurant.jpg" alt="Restaurant"></a>
-      <h3>Restaurants</h3>
+      <a href="restaurant/Il_Vinaino.php"><img class="image" src="../../Images/restaurant.jpg" alt="Restaurant"></a>
+      <h3>Il_Vinaino</h3>
+    </div>
+
+
+
+  
+
+    <div class="adresse">
+      <a href="restaurant/Gelateria_Vivoli.php"><img class="image" src="../../Images/restaurant/Gelateria Vivoli/ice_Cream_Cup.png" alt="Restaurant"></a>
+      <h3>Gelateria Vivoli</h3>
     </div>
 
     <div class="adresse">
-      <a href="hotel/Orcagna.html"><img class="image" src="../../Images/Hotel.JPG" alt="Hotel"></a>
-      <h3>Hotels</h3>
+      <a href="restaurant/Mercato_Central.php"><img class="image" src="../../Images/restaurant/Mercato Central/mercato.jpg" alt="Mercato_Central"></a>
+      <h3>Mercato_Central</h3>
+    </div>
+
+    <div class="adresse">
+      <a href="restaurant/Panini_Toscani.php"><img class="image" src="../../Images/restaurant/Panini Toscani/Panini_Toscani.png" alt="Panini Toscani"></a>
+      <h3>Panini Toscani</h3>
+    </div>
+
+
+    <div class="adresse">
+      <a href="restaurant/Trattoria_Mario.php"><img class="image" src="../../Images/restaurant/Trattoria Mario/Mario.png" alt="Trattoria Mario"></a>
+      <h3>Trattoria Mario</h3>
+    </div>
+
+    <div class="adresse">
+      <a href="restaurant/Trattoria_Pallotino.php"><img class="image" src="../../Images/restaurant/Trattoria Pallotino/pallotino.png" alt="Trattoria Pallotino"></a>
+      <h3>Trattoria Pallotino</h3>
+    </div>
+
+    <div class="adresse">
+      <a href="restaurant/Trattoria_Dall'Oste.php"><img class="image" src="../../Images/restaurant/Trattoria dall oste/dall oste.png" alt="Trattoria Dall'Oste"></a>
+      <h3>Trattoria Dall'Oste</h3>
     </div>
 
   </div>

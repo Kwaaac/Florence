@@ -15,9 +15,11 @@ include('./Admin/connexion.php');
    <body>
 <style media="screen">
 
-form{
+.ajout {
+  margin-top: auto;
   margin-left: auto;
   margin-right: auto;
+  width: 35em;
 }
 .clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
 .clearfix:after{clear:both;}
@@ -42,11 +44,12 @@ form{
 .control-group.success .fileupload .fileupload-preview{color:#468847;}
 .control-group.success .fileupload .thumbnail{border-color:#468847;}
 </style>
+<div class="ajout">
+
      <form method="post" action="reception.php" enctype="multipart/form-data" class="col">
        <input type="hidden" name="MAX_FILE_SIZE" value="52428800‬" />
-       <label class="col-form-label" for="mon_fichier">Icône du fichier (JPG, PNG | max. 50Mo) :</label><br />
+       <label class="col-form-label" for="mon_fichier">Icône du fichier (JPG, PNG, GIF | max. 50Mo) :</label><br />
        <div class="form-group">
-
         <div class="fileupload fileupload-new" data-provides="fileupload">
   <span class="btn btn-primary btn-file"><span class="fileupload-new">Select file</span>
   <span class="fileupload-exists">Change</span><input type="file" name="mon_fichier" id="mon_fichier" /></span>
@@ -60,6 +63,7 @@ form{
        <input type="submit" class="btn btn-primary" name="submit" value="Envoyer" />
        <input type="reset"  class="btn btn-secondary" onclick="javascript:if(confirm('Votre formulaire va être réinisialiser \nêtes vous êtes sûr ?'));" value="réinitialiser">
      </form>
+</div>
    </body>
 
 

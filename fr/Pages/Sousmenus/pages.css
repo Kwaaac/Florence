@@ -478,9 +478,9 @@ ul.primary li:hover>a {
 
 /* Connection */
 #connection .formConnection {
-  margin-left: auto;
+  margin-top: 10em;
   text-align: center;
-  width: 100%;
+  width: 50%;
   background-color: rgba(255, 255, 255, 1);
 }
 

@@ -48,7 +48,7 @@ if($login != null && $mdp != null){
         <input type="password" placeholder="Mot de passe" name="mdp" required>
         <br>
         <button type="submit" name="button" class="btn btn-primary" align="center">Envoyer</button>
-        <a href="inscription.php">Pas de compte</a><br >
+        <a href="inscription.php">Pas de compte ? Inscrivez-vous</a><br >
       </form>
     </div>
     <?php include('../../HeadAndFoot/footerStg2.php');?>

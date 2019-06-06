@@ -1,3 +1,3 @@
 <?php
-header("Refresh:0; url=fr/index.html");
+header("Refresh:0; url=fr/index.php");
  ?>

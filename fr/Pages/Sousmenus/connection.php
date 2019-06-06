@@ -1,6 +1,27 @@
 <?php
-include("connectionFiles/connectionLOG.inc.php");
-
+include("../connectionFiles/connectionLOG.inc.php");
+//on récupère les données du formulaire
+$login=isset($_POST['login']) ? $_POST['login'] : null ;
+$mdp=isset($_POST['mdp']) ? $_POST['mdp'] : null ;
+//on vérifie la connection
+if($login != null && $mdp != null){
+  //on fait deux requêtes pour vérifier les deux BDD
+  $req = $dbh -> query("SELECT * FROM USER WHERE login=\"".$login."\" AND password=SHA1(\"".$_POST["mdp"]."\");");
+  $req2 = $dbh -> query("SELECT * FROM ADMIN WHERE login=\"".$login."\" AND password=SHA1(\"".$_POST["mdp"]."\");");
+  if($req -> rowCount() !=0){//on vérifie si il y a un résultat, si oui, c'est que la connection est validée
+    $_SESSION["login"] = $login;
+    $_SESSION["mdp"] = $mdp;
+    $_SESSION["type"] = 0;
+    header("location: ../../index.php");
+  }else if($req2 -> rowCount() !=0){
+    $_SESSION["login"] = $login;
+    $_SESSION["mdp"] = $mdp;
+    $_SESSION["type"] = 1;
+    header("location: ../Admin/mainAdmin.php");
+  }else{
+    echo "T'es pas co !";
+  }
+}
 ?>
 <html lang="fr" dir="ltr">
   <head>
@@ -11,33 +32,8 @@ include("connectionFiles/connectionLOG.inc.php");
   <body id="connection">
     <?php
     include('../../HeadAndFoot/headerStg2.php');
-    //on récupère les données du formulaire
-    $login=isset($_POST['login']) ? $_POST['login'] : null ;
-    $mdp=isset($_POST['mdp']) ? $_POST['mdp'] : null ;
-    //on vérifie la connection
-    if($login != null && $mdp != null){
-
-      //on fait deux requêtes pour vérifier les deux BDD
-      $req = $dbh -> query("SELECT * FROM USER WHERE login=\"".$login."\" AND password=SHA1(\"".$_POST["mdp"]."\");");
-      $req2 = $dbh -> query("SELECT * FROM ADMIN WHERE login=\"".$login."\" AND password=SHA1(\"".$_POST["mdp"]."\");");
-      if($req -> rowCount() !=0){//on vérifie si il y a un résultat, si oui, c'est que la connection est validée
-        $_SESSION["login"] = $login;
-        $_SESSION["mdp"] = $mdp;
-        $_SESSION["type"] = 0;
-        echo "Utilisateur : ".$login.".";
-      }else if($req2 -> rowCount() !=0){
-        $_SESSION["login"] = $login;
-        $_SESSION["mdp"] = $mdp;
-        $_SESSION["type"] = 1;
-        header("location: Admin/mainAdmin.php");
-      }else{
-        echo "T'es pas co !";
-      }
-    } else {
-
+    if ($login == null && $mdp == null) {
     ?>
-    <br>
-    <br>
     <form class="form-inline my-2 my-lg-0" method="post">
       <input type="text" placeholder="Utilisateur" name="login" required>
       <br>

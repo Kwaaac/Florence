@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+include('../../connectionFiles/connectionLOG.inc.php');
+ ?>
 <html lang="fr" dir="ltr">
 
 <head>
@@ -17,10 +19,19 @@
       <div class="swiper-wrapper">
         <?php
         $dir = '../../../Images/PoVe';
+        $strict_dir=array_pop(explode('/', $dir));;
         $fichierEtDossiers=scandir($dir);
-
+        $req = "SELECT name FROM `PHOTOS_MONUMENTS` WHERE `valid` = 1 and `FileName` = '".$strict_dir."' ;";
+        $res=$dbh->query($req);
+        $array = $res->fetchAll();
+        for($i=0; $i<count($array); $i++){
+          $valide[]=$array[$i][0];
+        }
+        // print_r($array);
+        // print_r($valide);
         for ($i=0; $i<count($fichierEtDossiers); $i++)
         {
+          if(in_array($fichierEtDossiers[$i],$valide)){
           if($fichierEtDossiers[$i]!="." && $fichierEtDossiers[$i]!=".."){
             $fichier = $fichierEtDossiers[$i];
 
@@ -42,7 +53,7 @@
           </div>
         </div>
         <?php
-        }}
+      }}}
         ?>
       </div>
       <!-- If we need navigation buttons -->

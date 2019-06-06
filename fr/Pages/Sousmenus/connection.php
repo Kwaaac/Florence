@@ -32,7 +32,6 @@ if($login != null && $mdp != null){
   <body id="connection">
     <?php
     include('../../HeadAndFoot/headerStg2.php');
-    if ($login == null && $mdp == null) {
     ?>
     <form class="form-inline my-2 my-lg-0" method="post">
       <input type="text" placeholder="Utilisateur" name="login" required>
@@ -41,8 +40,6 @@ if($login != null && $mdp != null){
       <br>
       <button type="submit" name="button" class="btn btn-primary" align="center">Envoyer</button>
     </form>
-    <?php
-    }
-    include('../../HeadAndFoot/footerStg2.php');?>
+    <?php include('../../HeadAndFoot/footerStg2.php');?>
   </body>
 </html>

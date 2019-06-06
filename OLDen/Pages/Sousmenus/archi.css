@@ -1,0 +1,150 @@
+body{
+  font-family: 'Source code pro', Calibri, sans-serif;
+  font-size: 25px;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../../Images/bckg30%.jpeg");
+  background-size: cover;
+}
+
+.lang img{
+  float: right;
+  width: 2%;
+  height: 2%;
+  z-index: auto;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+
+
+.sousmenu{
+    display: none;
+}
+
+.Logo{
+  width: 250px;
+  float: left;
+}
+
+
+nav{
+  width: 100%;
+  background-color: #ea5c0d;
+}
+
+nav > ul{
+  margin: 0px;
+  padding: 0px;
+}
+
+nav > ul::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav > ul > li{
+  float: left;
+  position: relative;
+}
+
+nav > ul > li > a{
+  padding: 20px 100px;
+  color: #FFF;
+}
+
+nav > ul > li:hover  a{
+  padding: 20px 100px 20px;
+}
+
+nav li{
+  list-style-type: none;
+}
+
+nav a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav li:hover .sousmenu{
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index:1000;
+}
+
+.sousmenu li{
+  border-bottom: 1px solid #CCC;
+}
+
+.sousmenu li a{
+  padding: 15px 30px;
+  font-size: 13px;
+  color: #222538;
+  width: 270px;
+}
+
+nav > ul > li:hover{
+  border-top: 5px solid #b94503;
+  background-color: rgba(185, 68, 2, 0.15);
+}
+
+nav > ul > li .sousmenu{
+  background-color: #f7af3e;
+}
+
+
+/* Gestion de la page en dehors du menu */
+
+.container{
+  margin-left: 1em;
+  text-align: center;
+}
+
+.monuments{
+  display: inline-block;
+  width: auto;
+}
+
+.monuments > a >img{
+  width: 23em;
+  height: 23em;
+  border-radius: 35%;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+h3{
+  margin-bottom: 3em;
+}
+
+h2{
+    border: 5px solid #777;
+    width: 7em;
+    margin: 5px auto;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+footer {
+  background-color: #ea5c0d;
+  display: inline-block;
+  width: 100%;
+  margin-top: 2em;
+}
+
+footer > div{
+  margin-left: 30%;
+}
+
+.desc{
+  width: 55%;
+  font-size: 16px;
+  margin-top: -1.5em;
+}
+.qui > h6{
+  margin-top: 0.8em;
+}

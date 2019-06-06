@@ -9,8 +9,8 @@
 
   <div class="Propos">
     <ul>A Propos
-      <li><br><a class="ftr" href="Pages/sousmenus/contact.php">Objectif et créateurs du site</a></li>
-      <li><a class="ftr" href="Pages/sousmenus/politiqueContenu.php">Mentions Légales</a></li>
+      <li><br><a class="ftr" href="Pages/Sousmenus/contact.php">Objectif et créateurs du site</a></li>
+      <li><a class="ftr" href="Pages/Sousmenus/politiqueContenu.php">Mentions Légales</a></li>
     </ul>
 
   </div>

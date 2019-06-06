@@ -1,5 +1,10 @@
+@font-face {
+font-family: "Pinyon Script";
+src: url("../Polices/PinyonScript-Regular.ttf");
+}
+
 body{
-  font-family: 'Source code pro', Calibri, sans-serif;
+  font-family: 'Times New Roman', cursive;
   font-size: 25px;
   margin: 0px;
   padding: 0px;

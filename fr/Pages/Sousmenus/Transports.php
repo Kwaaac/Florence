@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="pages.css">
   <title>[Florence] Transports</title>
 </head>
 
@@ -35,7 +35,7 @@
 
   </div>
 
-  <div class="boiteinfo2">
+  <div class="boiteinfo1">
     <h1>Taxis</h1>
     <input type="checkbox" class="read-more-state" id="post-2" onclick="myFunction('post-2', 'box-2')" />
 

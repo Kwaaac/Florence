@@ -45,7 +45,7 @@
         </a>
 
         <ul class="sousmenu">
-          <li><a href="../Petits Prix.php">Se loger / Se restaurer</a></li>
+          <li><a href="../Petits Prix.php">Se restaurer</a></li>
           <li><a href="../Insolite.php">Curiosités</a></li>
           <li><a href="../voyageurs.php">Citations de Voyageurs</a></li>
         </ul>

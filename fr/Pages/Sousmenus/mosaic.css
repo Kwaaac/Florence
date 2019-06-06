@@ -1,3 +1,8 @@
+@font-face {
+font-family: "Pinyon Script";
+src: url("../../../Polices/PinyonScript-Regular.ttf");
+}
+
 #voyageurs html {
   line-height: 1.5;
   font-size: 12px;
@@ -17,13 +22,16 @@
   font-weight: 300;
   color: #333;
 }
+
 .mosaic {
   margin: 0 auto;
   width: 1100px;
 }
+
 .mosaic-title {
   text-align: center;
 }
+
 .mosaic-cell {
   position: relative;
   overflow: hidden;
@@ -31,6 +39,7 @@
   float: left;
   background-repeat: no-repeat;
 }
+
 .mosaic-cell-overlay {
   position: absolute;
   width: 100%;
@@ -40,6 +49,7 @@
   left: 0;
   background-image: url("https://css-tricks.com/wp-content/csstricks-uploads/transpBlack10.png");
 }
+
 .mosaic-cell-caption {
   position: absolute;
   right: 0;
@@ -48,6 +58,7 @@
   top: 0;
   transition: all 0.15s ease-in-out;
 }
+
 .mosaic-cell-caption:hover {
   width: 100%;
   cursor: pointer;
@@ -55,11 +66,13 @@
   /*Au cas ou la ligne suivante ne fonctionne pas, on utilise l'image du lien ci-dessus*/
   background: rgba(0, 0, 0, 0.5);
 }
+
 .mosaic-cell-caption-text, .mosaic-cell-caption-source {
   text-align: right;
   color: #fff;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
+
 .mosaic-cell-caption-text {
   position: absolute;
   bottom: 23px;
@@ -67,80 +80,94 @@
   font-size: 24px;
   font-weight: bold;
 }
+
 .mosaic-cell-caption-source {
   position: absolute;
   bottom: 5px;
   right: 10px;
   font-size: 16px;
 }
+
 .mosaic-row {
   width: 1100px;
   clear: both;
   margin-right: 0;
 }
+
 .mosaic-row-one {
   height: 328px;
   margin-bottom: 10px;
 }
-.mosaic-row-one > .mosaic-cell {
+
+.mosaic-row-one>.mosaic-cell {
   width: 762px;
   height: 328px;
   background-image: url("../../Images/mosaic/stendhal2.jpg");
 }
-.mosaic-row-one > .mosaic-cell + .mosaic-cell {
+
+.mosaic-row-one>.mosaic-cell+.mosaic-cell {
   width: 328px;
   background-image: url("../../Images/mosaic/florence_icon.jpg");
   margin-right: 0;
 }
+
 .mosaic-row-two {
   height: 345px;
   margin-bottom: 10px;
 }
-.mosaic-row-two > .mosaic-cell {
+
+.mosaic-row-two>.mosaic-cell {
   width: 345px;
   height: 345px;
   background-image: url("../../Images/mosaic/pont.jpg");
 }
-.mosaic-row-two > .mosaic-cell + .mosaic-cell {
+
+.mosaic-row-two>.mosaic-cell+.mosaic-cell {
   width: 345px;
   background-image: url("../../Images/mosaic/florence_panorama.jpg");
 }
-.mosaic-row-two > .mosaic-cell + .mosaic-cell + .mosaic-cell {
+
+.mosaic-row-two>.mosaic-cell+.mosaic-cell+.mosaic-cell {
   background: none;
   width: 390px;
   font-size: 0;
   margin-right: 0;
   margin-bottom: 10px;
 }
-.mosaic-row-two > .mosaic-cell + .mosaic-cell + .mosaic-cell > .mosaic-cell {
+
+.mosaic-row-two>.mosaic-cell+.mosaic-cell+.mosaic-cell>.mosaic-cell {
   width: 390px;
   height: 168px;
   background-image: url("../../Images/mosaic/stendhal.jpg");
   display: block;
   margin-bottom: 10px;
 }
-.mosaic-row-two > .mosaic-cell + .mosaic-cell + .mosaic-cell > .mosaic-cell + .mosaic-cell {
+
+.mosaic-row-two>.mosaic-cell+.mosaic-cell+.mosaic-cell>.mosaic-cell+.mosaic-cell {
   background-image: url("../../Images/mosaic/small.jpg");
   display: block;
   height: 168px;
   margin-bottom: 0;
 }
+
 .mosaic-row-three {
   height: 298px;
 }
-.mosaic-row-three > .mosaic-cell {
+
+.mosaic-row-three>.mosaic-cell {
   width: 396px;
   height: 298px;
   background-image: url("../../Images/mosaic/albertcamus.jpg");
 }
-.mosaic-row-three > .mosaic-cell + .mosaic-cell {
+
+.mosaic-row-three>.mosaic-cell+.mosaic-cell {
   width: 694px;
   height: 298px;
   background-image: url("../../Images/mosaic/dumas.jpg");
   margin-right: 0px;
 }
 
-body{
+body {
   font-family: 'Times New Roman', cursive;
   font-size: 25px;
   margin: 0;
@@ -150,20 +177,19 @@ body{
 }
 
 /* Menu */
-
 .header a {
   text-decoration: none;
   color: #fff;
   display: block;
 }
 
-.lang img{
+.lang img {
   width: 100%;
   height: 50px;
   margin-top: 20px;
 }
 
-.lang a{
+.lang a {
   height: 96px;
   padding-left: 30px;
   padding: 0;
@@ -213,11 +239,10 @@ ul.logo {
   z-index: 1;
 }
 
-ul.logo a , img{
+ul.logo a, img {
   width: 100%;
   height: 96px;
 }
-
 
 ul.primary li .menuItem {
   display: block;
@@ -229,7 +254,7 @@ ul.primary li .menuItem {
   font-size: 25px;
 }
 
-.menu-toggle-button , .primary a {
+.menu-toggle-button, .primary a {
   transition: 1s;
 }
 
@@ -286,7 +311,7 @@ ul.primary li:hover a {
   text-shadow: none;
 }
 
-ul.primary li:hover > a{
+ul.primary li:hover>a {
   color: #000;
 }
 
@@ -332,13 +357,8 @@ ul.primary li:hover > a{
 }
 
 /* Nouveau menu */
-
-
 /* Gestion de la page en dehors du menu */
-
-
-
-.title{
+.title {
   font-family: 'Pinyon Script', cursive;
   width: 100%;
   padding: 10px 0 10px 0;
@@ -353,18 +373,17 @@ ul.primary li:hover > a{
 }
 
 /* Page Architecture */
-
-#archi .container{
+#archi .container {
   margin-left: 1em;
   text-align: center;
 }
 
-#archi .monuments{
+#archi .monuments {
   display: inline-block;
   width: auto;
 }
 
-#archi .monuments > a >img{
+#archi .monuments>a>img {
   width: 10em;
   height: 10em;
   border-radius: 35%;
@@ -372,133 +391,123 @@ ul.primary li:hover > a{
   margin-right: 3em;
 }
 
-#archi h3{
+#archi h3 {
   margin-bottom: 3em;
 }
 
 @media only screen and (max-width: 550px) {
-    #archi .monuments > a >img{
-      width: 8em;
-      height: 8 em;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  #archi .monuments>a>img {
+    width: 8em;
+    height: 8 em;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    #archi h3{
-      margin-bottom: 3em;
-      width: 250px;
-    }
-
+  #archi h3 {
+    margin-bottom: 3em;
+    width: 250px;
+  }
 }
 
-#archi h2{
-    border: 5px solid #777;
-    width: 7em;
-    margin: 5px auto;
-    margin-bottom: 1em;
-    text-align: center;
+#archi h2 {
+  border: 5px solid #777;
+  width: 7em;
+  margin: 5px auto;
+  margin-bottom: 1em;
+  text-align: center;
 }
 
 /* Page Autour de vous */
-
-#autour h2{
-    border: 5px solid #777;
-    width: 11em;
-    margin: 5px auto;
-    text-align: center;
+#autour h2 {
+  border: 5px solid #777;
+  width: 11em;
+  margin: 5px auto;
+  text-align: center;
 }
 
-
-#autour .map{
+#autour .map {
   margin: 1em auto;
-  width:80%;
+  width: 80%;
   height: 30em;
 }
 
-#autour iframe{
+#autour iframe {
   width: 100%;
   height: 100%;
 }
 
-@media only screen and (max-width: 600px){
-  #autour .map{
-    width:100%;
+@media only screen and (max-width: 600px) {
+  #autour .map {
+    width: 100%;
     height: 20em;
   }
 }
-
 }
 
-
 /* Twitter */
-#twitter h2{
+#twitter h2 {
   border: 5px solid #777;
   width: 8em;
   margin: 5px auto;
   text-align: center;
 }
 
-#twitter .tt{
+#twitter .tt {
   margin-left: auto;
   margin-right: auto;
   max-width: 50%;
 }
 
 @media only screen and (max-width: 1200px) {
-    #twitter .tt{
-      max-width: 100%;
-    }
-
+  #twitter .tt {
+    max-width: 100%;
+  }
 }
 
 /* Circuits */
-
-#circuits h2{
-    border: 5px solid #777;
-    width: 11em;
-    margin: 5px auto;
-    text-align: center;
+#circuits h2 {
+  border: 5px solid #777;
+  width: 11em;
+  margin: 5px auto;
+  text-align: center;
 }
 
-
-#circuits .map{
+#circuits .map {
   margin: 1em auto;
-  width:80%;
+  width: 80%;
   height: 30em;
 }
 
-#circuits iframe{
+#circuits iframe {
   width: 100%;
   height: 100%;
 }
 
-@media only screen and (max-width: 600px){
-  #circuits .map{
-    width:100%;
+@media only screen and (max-width: 600px) {
+  #circuits .map {
+    width: 100%;
     height: 20em;
   }
 }
-
 }
 
 /* Contact */
-
-#contact .projet{
+#contact .projet {
   margin-left: 1em;
   text-align: center;
 }
 
-#contact .equipe{
+#contact .equipe {
   margin-left: 1em;
   text-align: center;
 }
 
-#contact .pers{
+#contact .pers {
   display: inline-block;
   width: auto;
 }
 
-#contact .pers > a > img{
+#contact .pers>a>img {
   width: 13em;
   height: 13em;
   margin-left: 3em;
@@ -506,63 +515,59 @@ ul.primary li:hover > a{
   border-radius: 50%;
 }
 
-#contact .pers > h3{
+#contact .pers>h3 {
   margin-bottom: -20px;
 }
 
 @media only screen and (max-width: 550px) {
-  #contact .pers > a > img{
+  #contact .pers>a>img {
     width: 10em;
     height: 10em;
     margin-left: 0em;
     margin-right: 0em;
   }
 
-  #contact .pers > h3{
+  #contact .pers>h3 {
     width: 250px;
   }
 
-  #contact .pers > h4{
+  #contact .pers>h4 {
     margin-bottom: 3em;
     width: 250px;
   }
-
 }
 
-#contact .DA{
+#contact .DA {
   margin-left: 1em;
   text-align: center;
 }
 
 /* Frise */
-
-#frise h2{
-    border: 5px solid #777;
-    width: 19em;
-    margin: 5px auto;
-    text-align: center;
-    margin-bottom: 1em;
+#frise h2 {
+  border: 5px solid #777;
+  width: 19em;
+  margin: 5px auto;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
-#frise .frise > img{
+#frise .frise>img {
   width: 55%;
   margin-left: 22%;
 }
 
 /* Insolite */
-
-
-#insolite .container{
+#insolite .container {
   margin-left: 1em;
   text-align: center;
 }
 
-#insolite .insolite{
+#insolite .insolite {
   display: inline-block;
   width: auto;
 }
 
-#insolite .insolite > a >img{
+#insolite .insolite>a>img {
   width: 23em;
   height: 20em;
   border-radius: 35%;
@@ -570,14 +575,12 @@ ul.primary li:hover > a{
   margin-right: 3em;
 }
 
-
-#insolite h3{
+#insolite h3 {
   margin-bottom: 3em;
 }
 
 @media only screen and (max-width: 550px) {
-
-  #insolite .insolite > a >img{
+  #insolite .insolite>a>img {
     width: 10em;
     height: 10em;
     margin-left: 0em;
@@ -589,28 +592,25 @@ ul.primary li:hover > a{
   }
 }
 
-
-#insolite h2{
-    border: 5px solid #777;
-    width: 7em;
-    margin: 5px auto;
-    text-align: center;
+#insolite h2 {
+  border: 5px solid #777;
+  width: 7em;
+  margin: 5px auto;
+  text-align: center;
 }
 
 /* Petits Prix */
-
-
-#petitsprix .container{
+#petitsprix .container {
   margin-left: 1em;
   text-align: center;
 }
 
-#petitsprix .adresse{
+#petitsprix .adresse {
   display: inline-block;
   width: auto;
 }
 
-#petitsprix .image{
+#petitsprix .image {
   width: 15em;
   height: 15em;
   border-radius: 35%;
@@ -624,7 +624,7 @@ ul.primary li:hover > a{
 }
 
 @media only screen and (max-width: 550px) {
-  #petitsprix .image{
+  #petitsprix .image {
     width: 10em;
     height: 10em;
     margin-left: 0em;
@@ -636,79 +636,78 @@ ul.primary li:hover > a{
   }
 }
 
-#petitsprix h2{
-    border: 5px solid #777;
-    width: 7em;
-    margin: 5px auto;
-    text-align: center;
+#petitsprix h2 {
+  border: 5px solid #777;
+  width: 7em;
+  margin: 5px auto;
+  text-align: center;
 }
 
 #petitsprix footer {
-    background-color: #ea5c0d;
-    display: inline-block;
-    width: 100%;
-    margin-top: 5em;
-    left: 0;
-    bottom: 0;
-    position: relative;
+  background-color: #ea5c0d;
+  display: inline-block;
+  width: 100%;
+  margin-top: 5em;
+  left: 0;
+  bottom: 0;
+  position: relative;
 }
 
 /* Transports */
-
-#transport .boiteinfo1{
-    width: 85%;
-    float: left;
-    margin: 30px auto;
-    border: 2px solid #888;
-    box-shadow:  0px 0px 2px #AAA;
-    background-color: rgba(255, 255, 255, .5);
+#transport .boiteinfo1 {
+  width: 85%;
+  float: left;
+  margin: 30px auto;
+  border: 2px solid #888;
+  box-shadow: 0px 0px 2px #AAA;
+  background-color: rgba(255, 255, 255, .5);
 }
 
-#transport .boiteinfo2{
-    width: 85%;
-    float: right;
-    margin: 30px auto;
-    border: 2px solid #888;
-    background-color: rgba(255, 255, 255, .5);
+#transport .boiteinfo2 {
+  width: 85%;
+  float: right;
+  margin: 30px auto;
+  border: 2px solid #888;
+  background-color: rgba(255, 255, 255, .5);
 }
 
 @media only screen and (max-width: 1215px) {
-  #transport .boiteinfo1{
+  #transport .boiteinfo1 {
     width: 98%;
   }
 
-  #transport .boiteinfo2{
+  #transport .boiteinfo2 {
     width: 98%;
   }
 }
 
 #transport p {
-    font-size: 15px;
-    margin-left: 1.5em;
+  font-size: 15px;
+  margin-left: 1.5em;
 }
 
-#transport .text{
+#transport .text {
   margin-left: 2em;
 }
 
-#transport h1{
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 35px;
-    margin: 20px 0px 2px 0px;
+#transport h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 35px;
+  margin: 20px 0px 2px 0px;
 }
 
-#transport .more-content h2{
+#transport .more-content h2 {
   margin-left: 20px;
   font-size: 23px;
 }
 
-#transport .busIcon{
+#transport .busIcon {
   width: 2.5em;
   margin-bottom: -1em;
 }
 
-#transport .subtitle{
+#transport .subtitle {
   font-weight: bold;
   margin-bottom: 0.2em;
   font-size: 23px;
@@ -718,7 +717,6 @@ ul.primary li:hover > a{
   display: none;
 }
 
-
 #transport .read-more-target {
   opacity: 0;
   max-height: 0;
@@ -726,23 +724,23 @@ ul.primary li:hover > a{
   transition: .25s ease;
 }
 
-#transport .read-more-state:checked ~ .read-more-wrap .read-more-target {
+#transport .read-more-state:checked~.read-more-wrap .read-more-target {
   opacity: 1;
   font-size: inherit;
   max-height: 999em;
 }
 
-#transport .read-more-wrap{
+#transport .read-more-wrap {
   margin-top: 0;
   margin-bottom: 0;
   height: 0;
 }
 
-#transport .read-more-state ~ .read-more-trigger:before {
+#transport .read-more-state~.read-more-trigger:before {
   content: 'Show more';
 }
 
-#transport .read-more-state:checked ~ .read-more-trigger:before {
+#transport .read-more-state:checked~.read-more-trigger:before {
   content: 'Show less';
 }
 
@@ -759,14 +757,14 @@ ul.primary li:hover > a{
 }
 
 /* footer */
-
 footer {
   background-color: #d14a00;
   border-top: 10px solid #ff5b00;
   display: inline-block;
   height: auto;
   width: 100%;
-  margin-top: 10em; /* quand le footer ne reste pas en bas de la page, on augmente le margin-top*/
+  margin-top: 10em;
+  /* quand le footer ne reste pas en bas de la page, on augmente le margin-top*/
   left: 0;
   bottom: 0;
   position: relative;
@@ -774,17 +772,18 @@ footer {
 }
 
 #accueil footer {
-  margin-top: 47em; /* quand le footer ne reste pas en bas de la page, on augmente le margin-top*/
+  margin-top: 47em;
+  /* quand le footer ne reste pas en bas de la page, on augmente le margin-top*/
 }
 
-.Partenaires{
+.Partenaires {
   margin-left: 15%;
   display: inline-block;
   float: left;
   width: auto;
 }
 
-.Propos{
+.Propos {
   float: right;
   margin-right: 15%;
   display: inline-block;
@@ -796,27 +795,24 @@ footer ul {
   font-size: 24px;
 }
 
-.ftr{
+.ftr {
   color: #fff;
   text-decoration: none;
 }
 
-.ftr:hover{
+.ftr:hover {
   text-decoration: underline;
 }
 
-footer li{
+footer li {
   margin-left: 0.5em;
   list-style: none;
   font-size: 20px;
 }
 
-
 /* Responsivité du menu */
-
-@media only screen and (max-width: 1640px){
-
-  .primary{
+@media only screen and (max-width: 1640px) {
+  .primary {
     margin: 0;
   }
 
@@ -836,14 +832,12 @@ footer li{
 }
 
 @media only screen and (max-width: 1215px) {
-
-
-  ul.logo , .lang{
+  ul.logo, .lang {
     display: none;
     visibility: hidden;
   }
 
-  .primary li{
+  .primary li {
     margin-right: 2500em;
   }
 
@@ -852,20 +846,21 @@ footer li{
     display: inline-grid;
     margin: 0;
   }
+
   .primary .menuItem {
     width: 100%;
   }
 
-  .primary label{
+  .primary label {
     padding-top: 0;
     float: left;
   }
 
-  ul.primary li .menuItem{
+  ul.primary li .menuItem {
     border-right: 0;
   }
 
-  .menu-toggle:not(:checked) ~ .primary {
+  .menu-toggle:not(:checked)~.primary {
     display: none;
     float: left;
   }
@@ -874,49 +869,48 @@ footer li{
     display: -webkit-box
   }
 
-  #menu-toggle .menu-toggle:focus ~ .menu-toggle-button,
+  #menu-toggle .menu-toggle:focus~.menu-toggle-button,
   #menu-toggle .menu-toggle-button:hover {
     background-color: #444;
   }
 
-  .menu-toggle:focus ~ .menu-toggle-button,
+  .menu-toggle:focus~.menu-toggle-button,
   .menu-toggle-button:hover {
     background-color: #inherit;
   }
-
 }
 
 /* Menu, footer */
 @media only screen and (max-width: 930px) {
 
-    /* Menu burger */
-    ul.sousmenu {
-      width: 262px;
-    }
+  /* Menu burger */
+  ul.sousmenu {
+    width: 262px;
+  }
 
-    .primary{
-      width: 100%;
-    }
+  .primary {
+    width: 100%;
+  }
 
-    .primary li{
-      margin-right: 2500em;
-    }
+  .primary li {
+    margin-right: 2500em;
+  }
 
+  /* footer */
+  .Propos {
+    margin-left: 9%;
+    display: inline-block;
+    float: left;
+    width: auto;
+    font-size: 17px;
+  }
 
-    /* footer */
-    .Propos{
-      margin-left: 9%;
-      display: inline-block;
-      float: left;
-      width: auto;
-      font-size: 17px;
-    }
-    .Partenaires{
-      margin-left: 9%;
-      font-size: 17px;
-    }
+  .Partenaires {
+    margin-left: 9%;
+    font-size: 17px;
+  }
 
-    footer > li{
-      font-size: 13px;
-    }
+  footer>li {
+    font-size: 13px;
+  }
 }

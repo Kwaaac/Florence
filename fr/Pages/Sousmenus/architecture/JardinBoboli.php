@@ -9,7 +9,7 @@
   <title>[Florence] JardinBoboli</title>
 </head>
 
-<?php include('../../../HeadAndFoot/headerStg3.php'); ?>
+<?php include('../../../HeadAndFoot/headerStg3.inc.php'); ?>
 
   <div class="slider-container" id="gestionTailleSlider">
     <div class="swiper-container main-slider loading">

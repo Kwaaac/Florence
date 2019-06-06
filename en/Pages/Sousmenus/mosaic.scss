@@ -1,0 +1,154 @@
+#voyageurs html {
+    font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
+    line-height: 1.5;
+    font-size: 12px;
+    font-weight: 400;
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+#voyageurs body {
+  font-family: helvetica,arial,sans-serif;
+}
+#voyageurs h3 {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  line-height: 1.4;
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 300;
+  color: #333;
+}
+// end of website core styles
+// Let's keep aspect ratio heights for each mozaic row
+$cell-height: 300px;
+$mozaic-row-one-cell-height: 328px;
+$mozaic-row-two-cell-height: 345px;
+$mozaic-row-three-cell-height: 298px;
+
+.mosaic{
+  margin: 0 auto;
+  width: 1100px;
+  background: #fff;
+  &-title {
+    text-align: center;
+  }
+  &-cell {
+    position: relative;
+    overflow: hidden;
+    margin-right: 10px;
+    float: left;
+    background-repeat: no-repeat;
+    &-overlay {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url("https://css-tricks.com/wp-content/csstricks-uploads/transpBlack10.png"); // this will be a gradient, one pixel png
+    }
+    &-caption {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left:0;
+      top: 0;
+      transition: all .15s ease-in-out;
+      &:hover {
+        width: 100%;
+        cursor: pointer;
+        // Fallback for web browsers that don't support RGBa
+        background-image: url("https://css-tricks.com/wp-content/csstricks-uploads/transpBlack50.png");
+        // RGBa with 0.5 opacity
+        background: rgba(0, 0, 0, 0.5);
+      }
+      &-city, &-country {
+        text-align: right;
+        color: #fff;
+        // to text-shadow or not to text-shadow, that is the question
+        //text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+      }
+      &-city {
+        position: absolute;
+        bottom: 23px;
+        right: 10px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      &-country {
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+  &-row {
+    width: 1100px;
+    clear: both;
+    margin-right: 0;
+    &-one { // mosaic ligne une
+      height: $mozaic-row-one-cell-height;
+      margin-bottom: 10px;
+      > .mosaic-cell { // get the first child *.mosaic-cell* of .mosaic-row-one
+        width: 762px;
+        height: $mozaic-row-one-cell-height;
+        background-image: url("http://lorempixel.com/762/328/city");
+        & + .mosaic-cell { // get the sibling of .mosaic-cell
+          width: 328px;
+          background-image: url("http://lorempixel.com/328/328");
+          margin-right: 0;
+        }
+      }
+    }
+    &-two { // mosaic ligne deux
+      height: $mozaic-row-two-cell-height;
+      margin-bottom: 10px;
+      > .mosaic-cell {
+        width: 345px;
+        height: $mozaic-row-two-cell-height;
+        background-image: url("http://lorempixel.com/345/345");
+        & + .mosaic-cell {
+          width: 345px;
+          background-image: url("http://lorempixel.com/345/345/city");
+          & + .mosaic-cell {
+            background: #fff; // Il faut donner une couleur de fond a la cellule pour ne pas avoir l'image de fond de la case parente
+            width: 390px;
+            font-size: 0;
+            margin-right: 0;
+            margin-bottom: 10px;
+            & > .mosaic-cell { // .mosaic-cell nested - get the first child of parent .mosaic-cell
+              width: 390px;
+              height: 168px;
+              background-image: url("http://lorempixel.com/398/168/city");
+              display: block;
+              margin-bottom: 10px;
+              & + .mosaic-cell {
+                background-image: url("http://lorempixel.com/g/398/168/city");
+                display: block;
+                height: 168px;
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-three { // mosaic ligne trois
+      height: $mozaic-row-three-cell-height;
+      > .mosaic-cell {
+        width: 396px;
+        height: $mozaic-row-three-cell-height;
+        background-image: url("http://lorempixel.com/396/298/city");
+        & + .mosaic-cell {
+          width: 694px;
+          height: $mozaic-row-three-cell-height;
+          background-image: url("http://lorempixel.com/694/298/city");
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}

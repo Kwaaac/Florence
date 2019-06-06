@@ -1,3 +1,8 @@
+@font-face {
+font-family: "Pinyon Script";
+src: url("../../../../Polices/PinyonScript-Regular.ttf");
+}
+
 body {
   font-family: 'Times New Roman', cursive;
   font-size: 25px;

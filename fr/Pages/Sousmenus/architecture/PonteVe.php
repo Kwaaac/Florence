@@ -1,6 +1,6 @@
 <?php
 include('../../connectionFiles/connectionLOG.inc.php');
- ?>
+?>
 <html lang="fr" dir="ltr">
 
 <head>
@@ -12,7 +12,7 @@ include('../../connectionFiles/connectionLOG.inc.php');
 </head>
 
 <body>
-  <?php include('../../../HeadAndFoot/headerStg3.php'); ?>
+  <?php include('../../../HeadAndFoot/headerStg3.inc.php'); ?>
 
   <div class="slider-container" id="gestionTailleSlider">
     <div class="swiper-container main-slider loading">
@@ -27,8 +27,6 @@ include('../../connectionFiles/connectionLOG.inc.php');
         for($i=0; $i<count($array); $i++){
           $valide[]=$array[$i][0];
         }
-        // print_r($array);
-        // print_r($valide);
         for ($i=0; $i<count($fichierEtDossiers); $i++)
         {
           if(in_array($fichierEtDossiers[$i],$valide)){
@@ -110,7 +108,13 @@ include('../../connectionFiles/connectionLOG.inc.php');
     </div>
 
     <script src="slider.js"></script>
-
+<?php
+if(isset($_SESSION["login"])){
+  echo "<a href=\"../../../upload.php\"> <input type=\"button\" value=\"Upload\"> </a>";
+}else{
+  echo '<a href="../../connexion.php" > <input type="button" value="Upload"> </a>';
+    }
+    ?>
   <?php include('../../../HeadAndFoot/footerStg3.php'); ?>
 </body>
 

@@ -27,24 +27,16 @@ if($login != null && $mdp != null){
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="pages.css">
-    <style media="screen">
-    .btn-primary {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-    }
-
-    .btn-primary:hover {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
-    }
-    </style>
     <title>[Florence] Connection</title>
   </head>
   <body id="connection">
     <?php
     include('../../HeadAndFoot/headerStg2.php');
+    ?>
+    <div class="title">
+      <span>Page de connection</span>
+    </div>
+    <?php
     if (isset($error)) {
       echo "L'identifiant ou le mot de passe que vous avez rentre est errone, veuillez reessayer.";
     }
@@ -56,6 +48,7 @@ if($login != null && $mdp != null){
         <input type="password" placeholder="Mot de passe" name="mdp" required>
         <br>
         <button type="submit" name="button" class="btn btn-primary" align="center">Envoyer</button>
+        <a href="inscription.php">Pas de compte</a><br >
       </form>
     </div>
     <?php include('../../HeadAndFoot/footerStg2.php');?>

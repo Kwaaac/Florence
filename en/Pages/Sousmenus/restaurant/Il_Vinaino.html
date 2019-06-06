@@ -1,61 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="Il_Vinaino.css">
-    <title>[Florence] Architecture/Duomo</title>
-  </head>
-  <body>
-    <header>
-      <div class="menu">
-        <div class="lang">
-          <a href="../../../../fr/Pages/Sousmenus/restaurant/Il_Vinaino.html"><img src="../../../Images/langswitch.png" alt="en"></a>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+  <link rel="stylesheet" href="../architecture/Monuments.css">
+  <title>[Florence] Restaurant/Il_Vinaino</title>
+</head>
+
+<body>
+  <?php include('../../../HeadAndFoot/headerStg3.php'); ?>
+
+
+  <div class="slider-container" id="gestionTailleSlider">
+    <div class="swiper-container main-slider loading">
+      <div class="swiper-wrapper">
+        <?php
+          $dir = '../../../Images/hotels/orcagna';
+          $fichierEtDossiers=scandir($dir);
+
+          for ($i=0; $i<count($fichierEtDossiers); $i++)
+          {
+            if($fichierEtDossiers[$i]!="." && $fichierEtDossiers[$i]!=".."){
+              $fichier = $fichierEtDossiers[$i];
+
+              $name = " ";
+              $commentaire = " ";
+
+              ?>
+        <div class="swiper-slide">
+          <?php
+                echo "<figure class=\"slide-bgimg\" style=\"background-image:url(".$dir."/".$fichier.")\">";
+                echo "<img src=\"".$dir."/".$fichier."\" class=\"entity-img\" />";
+                ?>
+          </figure>
+          <div class="content">
+            <?php
+                echo  "<p class=\"title\">".$name."</p>";
+                echo  "<span class=\"caption\">".$commentaire."</span>";
+                ?>
+          </div>
         </div>
-        <div class="logo">
-          <a href="../../../index.html"><img class="Logo" src="../../../Images/Logo.png" alt="Logo"></a>
-        </div>
-        <div class="menuderoulant">
-          <nav>
-            <ul>
-
-              <li class="Login"><a href="#">Culture</a>
-
-                <ul class="sousmenu">
-                  <li><a href="../frise.html">Histoire de la ville</a></li>
-                  <li><a href="../archi.html">Architecture</a></li>
-                </ul>
-
-
-
-              <li class="InfoPr"><a href="#">Infos Pratiques</a>
-
-                <ul class="sousmenu">
-                <li><a href="../calendar.html">Actualités de la ville</a></li>
-                  <li><a href="../Transports.html">Transports</a></li>
-                </ul>
-
-              <li class="BonPl"><a href="#">Astuces</a>
-
-                <ul class="sousmenu">
-                  <li><a href="../Petits Prix.html">Nos bonnes adresses</a></li>
-                  <li><a href="../Insolite.html">Insolites</a></li>
-                </ul>
-
-              <li class="Sejour"><a href="#">Visiter Florence</a>
-
-                <ul class="sousmenu">
-                  <li><a href="../autour.html">Autour de vous</a></li>
-                  <li><a href="../circuits.html">Nos circuit</a></li>
-                </ul>
-
-            </ul>
-          </nav>
-        </div>
+        <?php
+          }}
+          ?>
       </div>
-    </header>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
+    </div>
 
+    <!-- Thumbnail navigation -->
+    <div class="swiper-container nav-slider loading caca">
+      <div class="swiper-wrapper" role="navigation">
+        <?php
+          for ($i=0; $i<count($fichierEtDossiers); $i++)
+          {
+            if($fichierEtDossiers[$i]!="." && $fichierEtDossiers[$i]!=".."){
+              $fichier = $fichierEtDossiers[$i];
+              if (strpos($lines[$i], '@')){
+                list($name , $commentaire) = explode("@", $lines[$i]);
+              }else {
+                $name = " ";
+              }
+              ?>
+        <div class="swiper-slide">
+          <?php
+                echo "<figure class=\"slide-bgimg\" style=\"background-image:url(".$dir."/".$fichier.")\">";
+                echo    "<img src=\"".$dir."/".$fichier."\" class=\"entity-img\" />";
+                ?>
+          </figure>
+          <div class="content">
+            <?php
+                echo  "<p class=\"title\">".$name."</p>";
+                ?>
+          </div>
+        </div>
+        <?php
+          }}
+          ?>
+      </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
 
+  </div>
 
+  <div class="textBox" id="page">
     <div class="indication">
       <p>Il Vinaino</p>
     </div>
@@ -75,25 +106,21 @@
       </div>
     </div>
 
-      <div class="texte">
-        <p>Pour les amateurs de vin où vous pourrez vous régaler d’une assiettes fumante de tagliatelles faites maison garnies de cèpes frais ou d’une riche sauce au sanglier.
-<br>=> Via Palazzuolo 124r, 50123, Florence, Italie
-<br>=> +39 055 292287
-</p>
-      </div>
+    <div class="texte">
+      <p>Pour les amateurs de vin où vous pourrez vous régaler d’une assiettes fumante de tagliatelles faites maison garnies de cèpes frais ou d’une riche sauce au sanglier.
+        <br>=> Via Palazzuolo 124r, 50123, Florence, Italie
+        <br>=> +39 055 292287
+      </p>
+    </div>
 
 
-      <footer>
+  </div>
 
-        <div class="qui">
+  <script src="../architecture/slider.js"></script>
 
-          <h6>Qui somme nous ?</h6>
-          <p class="desc"> Nous sommes un groupe d'étudiant, réalisant un site web de médiation
-             culturel de la ville de Florence, découvrez en plus sur notre équipe <a href="../contact.html">ici</a></p>
-
-        </div>
-      </footer>
+  <?php include('../../../HeadAndFoot/footerStg3.php'); ?>
 
 
-  </body>
+</body>
+
 </html>

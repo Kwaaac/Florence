@@ -7,7 +7,7 @@
     <title>Voyageurs célèbres</title>
   </head>
   <body>
-    <?php include('../../../HeadAndFoot/headerStg2.php'); ?>
+    <?php include('../../HeadAndFoot/headerStg2.php'); ?>
 
     <div class="title">
       Citations de voyageurs célèbres

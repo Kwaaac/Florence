@@ -16,8 +16,8 @@
   <div class="container">
 
     <div class="monuments">
-      <a href="architecture/PalazzoVe.php"><img src="../../Images/PaVe/palazzo vecchio.jpg" alt="Palazzo Vecchio"></a>
-      <h3><a class="titreMonument" href="architecture/PallazzoVe.php">Palazzo Vecchio</a></h3>
+      <a href="architecture/PalazzoVe.php"><img src="../../Images/palazzo_vecchio.jpg" alt="Palazzo Vecchio"></a>
+      <h3><a class="titreMonument" href="architecture/PalazzoVe.php">Palazzo Vecchio</a></h3>
     </div>
 
     <div class="monuments">

@@ -1,5 +1,5 @@
 <?php
-include('./Admin/connexion.php');
+include('../Admin/connexion.php');
  ?>
  <!DOCTYPE html>
  <html lang="fr" dir="ltr">

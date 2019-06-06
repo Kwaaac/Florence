@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('./Admin/connexion.php');
+include('../Admin/connexion.php');
 $maxsize= floatval('52428800‬');
 $maxwidth= 1920;
 $maxheight= 1080;
@@ -26,8 +26,8 @@ if($erreur != ""){
   header("Refresh:5; url=upload.php");
 }else{
   $name=$_FILES['mon_fichier']['name'];
-  $destination= './fr/Images/';
-  // $destinationEN= './en/Images/';
+  $destination= './Images/';
+  // $destinationEN= '../en/Images/';
   $dir = './Images/mainSlider';
   $fichierEtDossiers=scandir($destination);
   for ($i=0; $i<count($fichierEtDossiers); $i++)

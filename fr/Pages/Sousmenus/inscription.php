@@ -1,8 +1,9 @@
 <?php
 if(isset($_POST["Mdp"])){
   if($_POST["Mdp"]== $_POST["Mdp2"]){
-
-      $dbh->query("INSERT INTO USER VALUES (\"".$_POST["login"].\"\", SHA1(\"".$_POST["Mdp"]."\"));");
+    $check->query("SELECT * FROM USER WHERE login=\"".$_POST["login"]."\";")
+    if ($check->rowCount()==0){
+      echo "COUCOU";
     }
     else {
       $error2=true;

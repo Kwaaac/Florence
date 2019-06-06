@@ -1,8 +1,11 @@
 <?php
+session_start();
+include('./Admin/connexion.php');
 $maxsize= floatval('52428800‬');
 $maxwidth= 1920;
 $maxheight= 1080;
 $erreur= "";
+$dossierA=$_SESSION['dossier-attacher'];
 ?>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -24,6 +27,7 @@ if($erreur != ""){
 }else{
   $name=$_FILES['mon_fichier']['name'];
   $destination= './fr/Images/';
+  // $destinationEN= './en/Images/';
   $dir = './Images/mainSlider';
   $fichierEtDossiers=scandir($destination);
   for ($i=0; $i<count($fichierEtDossiers); $i++)
@@ -35,7 +39,9 @@ if($erreur != ""){
           }
 }
   $resultat = move_uploaded_file($_FILES['mon_fichier']['tmp_name'],$destination.$name);
-if ($resultat){
+  // $resultat2 = move_uploaded_file($_FILES['mon_fichier']['tmp_name'],$destinationEN.$name);
+if ($resultat && $resultat2){
+  $req= "INSERT INTO PHOTOS_MONUMENTS(\`Name\`, \`FileName\`, \`Valid\`) VALUES ($name,$dossierA,0);";
   echo "<h2 class=\"h2 text-center\">transfer reussi</h2><br />";
   header("Refresh:3; url=upload.php");
 }

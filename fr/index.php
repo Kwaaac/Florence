@@ -1,3 +1,6 @@
+<?php
+include('../Admin/connexion.php');
+ ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 
@@ -20,7 +23,9 @@
               $fichierEtDossiers=scandir($dir);
               $myFile = "./textes/mainSlider.txt";
               $lines = file($myFile);
-
+              $req = 'SELECT `Name` FROM `PHOTOS_MONUMENTS` WHERE valid = 1;';
+              $valide=$dbh->query($req);
+              echo (array) $valide;
                 for ($i=0; $i<count($fichierEtDossiers); $i++)
                 {
                         if($fichierEtDossiers[$i]!="." && $fichierEtDossiers[$i]!=".."){

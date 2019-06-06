@@ -12,6 +12,7 @@ include("connectionFiles/connectionLOG.inc.php");
   </head>
   <body id="connection">
     <?php
+    include('../../HeadAndFoot/headerStg2.php');
     //on récupère les données du formulaire
     $login=isset($_POST['login']) ? $_POST['login'] : null ;
     $mdp=isset($_POST['mdp']) ? $_POST['mdp'] : null ;
@@ -41,12 +42,13 @@ include("connectionFiles/connectionLOG.inc.php");
     <br>
     <form class="form-inline my-2 my-lg-0" method="post">
       <input type="text" placeholder="Utilisateur" name="login" required>
+      <br>
       <input type="password" placeholder="Password" name="mdp" required>
-      <button type="submit">Se connecter</button>
+      <br>
+      <button type="submit" name="button" class="btn btn-primary" align="center">Envoyer</button>
     </form>
     <?php
     }
-    ?>
-
+    include('../../HeadAndFoot/footerStg2.php');?>
   </body>
 </html>

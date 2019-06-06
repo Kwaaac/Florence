@@ -1,6 +1,14 @@
 <?php
-include("../fr/Pages/connectionFiles/connectionLOG.inc.php");
-
+include("../connectionFiles/connectionLOG.inc.php");
+?>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="pages.css">
+    <title>[Florence] Administrateur - Validation images</title>
+  </head>
+  <body id="admin">
+  <?php
 
  if ($_SESSION["type"] == 1) {
  ?>
@@ -21,16 +29,8 @@ include("../fr/Pages/connectionFiles/connectionLOG.inc.php");
      }
    }
 
-    ?>
-
-
- </table>
-
-
-
-
-
-
-
- <?php
- }
+   echo "</table>";
+  }
+?>
+  </body>
+</html>

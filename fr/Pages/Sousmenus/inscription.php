@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST["Mdp"])){
   if($_POST["Mdp"]== $_POST["Mdp2"]){
-    $check->query("SELECT * FROM USER WHERE login=\"".$_POST."\";")
+    $check->query("SELECT * FROM USER WHERE login=\"".$_POST["login"]."\";")
     if ($check->rowCount()!=0){
       $dbh->query("INSERT INTO USER VALUES (\"".$_POST["login"].\"\", SHA1(\"".$_POST["Mdp"]."\"));");
     }
@@ -20,8 +20,7 @@ if(isset($_POST["Mdp"])){
     <title>[Florence] Inscription</title>
   </head>
   <body id="inscription">
-    <?php include('../../HeadAndFoot/headerStg2.php');?>
-    <?php
+    <?php include('../../HeadAndFoot/headerStg2.php');
     if (isset($error1)) {
       ?>
       <div class="alert alert-primary">

@@ -19,7 +19,7 @@ if($login != null && $mdp != null){
     $_SESSION["type"] = 1;
     header("location: ../Admin/mainAdmin.php");
   }else{
-    echo "T'es pas co !";
+    $error=true;
   }
 }
 ?>
@@ -32,6 +32,9 @@ if($login != null && $mdp != null){
   <body id="connection">
     <?php
     include('../../HeadAndFoot/headerStg2.php');
+    if (isset($error)) {
+      echo "L'identifiant ou le mot de passe que vous avez rentre est errone, veuillez reessayer.";
+    }
     ?>
     <form class="form-inline my-2 my-lg-0" method="post">
       <input type="text" placeholder="Utilisateur" name="login" required>

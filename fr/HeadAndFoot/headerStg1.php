@@ -73,8 +73,8 @@
         </a>
 
         <ul class="sousmenu">
-          <li><a>Se connecter</a></li>
-          <li><a>S'inscrire</a></li>
+          <li><a href="Pages/connection.php">Se connecter</a></li>
+          <li><a href="Pages/inscription.php">S'inscrire</a></li>
         </ul>
 
       </li>

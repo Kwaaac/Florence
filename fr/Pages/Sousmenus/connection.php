@@ -11,54 +11,6 @@ include("connectionFiles/connectionLOG.inc.php");
     <title>[Florence] Connection</title>
   </head>
   <body id="connection">
-    <header>
-      <div class="menu">
-        <div class="lang">
-          <a href="../en/Pages/connection.php"><img src="../../Images/langswitch.png" alt="en"></a>
-        </div>
-        <div class="logo">
-          <a href="../../index.html"><img class="Logo" src="../../Images/Logo.png" alt="Logo"></a>
-        </div>
-        <div class="menuderoulant">
-          <nav>
-            <ul>
-
-              <li class="Login"><a href="#">Culture</a>
-
-                <ul class="sousmenu">
-                  <li><a href="frise.html">Histoire de la ville</a></li>
-                  <li><a href="archi.html">Architecture</a></li>
-                </ul>
-              </li>
-
-
-              <li class="InfoPr"><a href="#">Infos Pratiques</a>
-
-                <ul class="sousmenu">
-                <li><a href="calendar.html">Actualités de la ville</a></li>
-                  <li><a href="Transports.html">Transports</a></li>
-                </ul>
-              </li>
-
-              <li class="BonPl"><a href="#">Astuces</a>
-
-                <ul class="sousmenu">
-                  <li><a href="Petits Prix.html">Nos bonnes adresses</a></li>
-                  <li><a href="Insolite.html">Insolites</a></li>
-                </ul>
-              </li>
-              <li class="Sejour"><a href="#">Visiter Florence</a>
-
-                <ul class="sousmenu">
-                  <li><a href="autour.html">Autour de vous</a></li>
-                  <li><a href="circuits.html">Nos circuit</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
     <?php
     //on récupère les données du formulaire
     $login=isset($_POST['login']) ? $_POST['login'] : null ;

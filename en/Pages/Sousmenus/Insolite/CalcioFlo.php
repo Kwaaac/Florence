@@ -17,7 +17,7 @@
     <div class="swiper-container main-slider loading">
       <div class="swiper-wrapper">
         <?php
-          $dir = '../../../Images/hotels/orcagna';
+          $dir = '../../../Images/cal';
           $fichierEtDossiers=scandir($dir);
 
           for ($i=0; $i<count($fichierEtDossiers); $i++)

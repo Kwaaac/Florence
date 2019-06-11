@@ -1,29 +1,31 @@
 @font-face {
-font-family: "Pinyon Script";
-src: url("../Polices/PinyonScript-Regular.ttf");
+  font-family: "Pinyon Script";
+  src: url("../Polices/PinyonScript-Regular.ttf");
 }
 
-body{
+body {
   font-family: 'Times New Roman', cursive;
   font-size: 25px;
   margin: 0px;
   padding: 0px;
+  background-image: url("Images/bckg30.jpeg");
+  background-size: cover;
 }
-/* Menu */
 
+/* Menu */
 .header a {
   text-decoration: none;
   color: #fff;
   display: block;
 }
 
-.lang img{
+.lang img {
   width: 100%;
   height: 50px;
   margin-top: 20px;
 }
 
-.lang a{
+.lang a {
   height: 96px;
   padding-left: 30px;
   padding: 0;
@@ -73,11 +75,10 @@ ul.logo {
   z-index: 1;
 }
 
-ul.logo a , img{
+ul.logo a, img {
   width: 100%;
   height: 96px;
 }
-
 
 ul.primary li .menuItem {
   display: block;
@@ -87,9 +88,10 @@ ul.primary li .menuItem {
   padding-bottom: 1em;
   border-right: 0.063em solid #3D3D3D;
   font-size: 25px;
+  color: #fff;
 }
 
-.menu-toggle-button , .primary a {
+.menu-toggle-button, .primary a {
   transition: 1s;
 }
 
@@ -146,7 +148,7 @@ ul.primary li:hover a {
   text-shadow: none;
 }
 
-ul.primary li:hover > a{
+ul.primary li:hover>a {
   color: #000;
 }
 
@@ -191,13 +193,12 @@ ul.primary li:hover > a{
   float: right;
 }
 
-
 .slider-container img {
   max-width: 100%;
   max-height: 89%;
 }
 
-.slider-container{
+.slider-container {
   height: 76%;
   width: 100%;
   position: absolute;
@@ -228,31 +229,38 @@ ul.primary li:hover > a{
   transition: opacity .6s ease, transform .3s ease;
   transition: opacity .6s ease, transform .3s ease, -webkit-transform .3s ease;
 }
+
 .swiper-container.nav-slider {
   width: 20%;
   padding-left: 5px;
 }
+
 .swiper-container.nav-slider .swiper-slide {
   cursor: pointer;
   opacity: .4;
   transition: opacity .3s ease;
 }
+
 .swiper-container.nav-slider .swiper-slide.swiper-slide-active {
   opacity: 1;
 }
+
 .swiper-container.nav-slider .swiper-slide .content {
   width: 100%;
 }
+
 .swiper-container.nav-slider .swiper-slide .content .title {
   font-size: 20px;
 }
+
 .swiper-container:hover .swiper-button-prev,
 .swiper-container:hover .swiper-button-next {
   -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
   opacity: 1;
   visibility: visible;
 }
+
 .swiper-container.loading {
   opacity: 0;
   visibility: hidden;
@@ -261,6 +269,7 @@ ul.primary li:hover > a{
 .swiper-slide {
   overflow: hidden;
 }
+
 .swiper-slide .slide-bgimg {
   position: absolute;
   top: 0;
@@ -270,9 +279,11 @@ ul.primary li:hover > a{
   background-position: center;
   background-size: cover;
 }
+
 .swiper-slide .entity-img {
   display: none;
 }
+
 .swiper-slide .content {
   position: absolute;
   top: 40%;
@@ -281,26 +292,29 @@ ul.primary li:hover > a{
   padding-left: 5%;
   color: #fff;
 }
+
 .swiper-slide .content .title {
   font-size: 5em;
   font-family: 'Pinyon Script', cursive;
   font-weight: bold;
   margin-bottom: 30px;
 }
+
 .swiper-slide .content .caption {
   display: block;
   font-size: 13px;
   line-height: 1.4;
   -webkit-transform: translateX(50px);
-          transform: translateX(50px);
+  transform: translateX(50px);
   opacity: 0;
   transition: opacity .3s ease, -webkit-transform .7s ease;
   transition: opacity .3s ease, transform .7s ease;
   transition: opacity .3s ease, transform .7s ease, -webkit-transform .7s ease;
 }
+
 .swiper-slide .content .caption.show {
   -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
   opacity: 1;
 }
 
@@ -312,21 +326,206 @@ ul.primary li:hover > a{
 
 .swiper-button-prev {
   -webkit-transform: translateX(50px);
-          transform: translateX(50px);
+  transform: translateX(50px);
 }
 
 .swiper-button-next {
   -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
+  transform: translateX(-50px);
 }
 
-.hiden a{
-padding: 10px;
-margin-top: 10px;
-margin-bottom:0%;
-margin-left:0%;
+.hiden a {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 0%;
+  margin-left: 0%;
 }
 
+/* ajout */
+#ajout .ajout {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35em;
+}
+
+#ajout .clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+#ajout .clearfix:after {
+  clear: both;
+}
+
+#ajout .hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+#ajout .input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#ajout .btn-file {
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+}
+
+.btn-file>input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: translate(-300px, 0) scale(4);
+  font-size: 23px;
+  direction: ltr;
+  cursor: pointer;
+}
+
+#ajout .fileupload {
+  margin-bottom: 9px;
+}
+
+.fileupload .uneditable-input {
+  display: inline-block;
+  margin-bottom: 0px;
+  vertical-align: middle;
+  cursor: text;
+}
+
+#ajout .fileupload .thumbnail {
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.fileupload .thumbnail>img {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
+}
+
+#ajout .fileupload .btn {
+  vertical-align: middle;
+}
+
+#ajout .fileupload-exists .fileupload-new, .fileupload-new .fileupload-exists {
+  display: none;
+}
+
+#ajout .fileupload-inline .fileupload-controls {
+  display: inline;
+}
+
+#ajout .fileupload-new .input-append .btn-file {
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+
+#ajout .thumbnail-borderless .thumbnail {
+  border: none;
+  padding: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+#ajout .fileupload-new.thumbnail-borderless .thumbnail {
+  border: 1px solid #ddd;
+}
+
+#ajout .control-group.warning .fileupload .uneditable-input {
+  color: #a47e3c;
+  border-color: #a47e3c;
+}
+
+#ajout .control-group.warning .fileupload .fileupload-preview {
+  color: #a47e3c;
+}
+
+#ajout .control-group.warning .fileupload .thumbnail {
+  border-color: #a47e3c;
+}
+
+#ajout .control-group.error .fileupload .uneditable-input {
+  color: #b94a48;
+  border-color: #b94a48;
+}
+
+#ajout .control-group.error .fileupload .fileupload-preview {
+  color: #b94a48;
+}
+
+#ajout .control-group.error .fileupload .thumbnail {
+  border-color: #b94a48;
+}
+
+#ajout .control-group.success .fileupload .uneditable-input {
+  color: #468847;
+  border-color: #468847;
+}
+
+#ajout .control-group.success .fileupload .fileupload-preview {
+  color: #468847;
+}
+
+#ajout .control-group.success .fileupload .thumbnail {
+  border-color: #468847;
+}
+
+#admin .title {
+  font-family: 'Pinyon Script', cursive;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-align: center;
+  background-color: #ce500a;
+  color: #fff;
+  font-size: 40px;
+}
+
+/* admin */
+#admin tr > .imagetab{
+  width: 10%;
+}
+#admin td > img{
+  width: 100%;
+  height: 100%;
+}
+#admin .tab{
+  width: 10%;
+  height: 10%;
+}
+#admin table{
+  width: 50%;
+  margin: auto;
+  margin-top: 2em;
+}
 
 /* Footer */
 footer {
@@ -342,6 +541,10 @@ footer {
   color: #ffffff;
 }
 
+#ajout footer{
+  margin-top: 6.5em;
+}
+
 .Partenaires {
   margin-left: 15%;
   display: inline-block;
@@ -354,6 +557,24 @@ footer {
   margin-right: 15%;
   display: inline-block;
   width: auto;
+}
+
+.Social{
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.Social img{
+  width: 36px;
+  height: 36px;
+}
+
+@media only screen and (max-width: 630px) {
+  .Social{
+    margin-top: 7em;
+    margin-left: 9%;
+    text-align: left;
+  }
 }
 
 footer ul {
@@ -375,7 +596,6 @@ footer li {
   list-style: none;
   font-size: 20px;
 }
-
 
 @media only screen and (max-width: 1640px) {
   .primary {
@@ -476,11 +696,11 @@ footer li {
     font-size: 15px;
   }
 
-  footer  li {
+  footer li {
     font-size: 13px;
   }
 
-  .swiper-slide .content .title{
+  .swiper-slide .content .title {
     font-size: 2em;
   }
 }

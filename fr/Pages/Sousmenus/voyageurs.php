@@ -84,6 +84,6 @@
       </div>
     </section>
 
-    <?php include('../../../HeadAndFoot/footerStg2.php'); ?>
+    <?php include('../../HeadAndFoot/footerStg2.php'); ?>
   </body>
 </html>

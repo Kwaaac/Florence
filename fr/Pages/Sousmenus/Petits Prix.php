@@ -4,20 +4,20 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="pages.css">
-  <title>[Florence] Se restaurer / Se loger</title>
+  <title>[Florence] Se restaurer</title>
 </head>
 
 <body id="petitsprix">
   <?php include('../../HeadAndFoot/headerStg2.php'); ?>
 
   <div class="title">
-    <span> Nos bonnes adresses </span>
+    <span> Se restaurer </span>
   </div>
   <div class="container">
 
     <div class="adresse">
       <a href="restaurant/Il_Vinaino.php"><img class="image" src="../../Images/restaurant.jpg" alt="Restaurant"></a>
-      <h3>Il_Vinaino</h3>
+      <h3>Il Vinaino</h3>
     </div>
 
 
@@ -31,7 +31,7 @@
 
     <div class="adresse">
       <a href="restaurant/Mercato_Central.php"><img class="image" src="../../Images/restaurant/Mercato_Central/mercato.jpg" alt="Mercato_Central"></a>
-      <h3>Mercato_Central</h3>
+      <h3>Mercato Central</h3>
     </div>
 
     <div class="adresse">
@@ -48,11 +48,6 @@
     <div class="adresse">
       <a href="restaurant/Trattoria_Pallotino.php"><img class="image" src="../../Images/restaurant/Trattoria_Pallotino/pallotino.png" alt="Trattoria Pallotino"></a>
       <h3>Trattoria Pallotino</h3>
-    </div>
-
-    <div class="adresse">
-      <a href="restaurant/Trattoria_Dall'Oste.php"><img class="image" src="../../Images/restaurant/Trattoria_dall_oste/dall oste.png" alt="Trattoria Dall'Oste"></a>
-      <h3>Trattoria Dall'Oste</h3>
     </div>
 
   </div>

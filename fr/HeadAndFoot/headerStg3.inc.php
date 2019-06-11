@@ -1,6 +1,8 @@
+<?php
+session_start() ?>
 <div class="header">
   <ul class="logo">
-    <a href="../../../../en/index.php"><img src="../../../Images/Logo.png" alt="Logo"></a>
+    <a href="../../../../fr/index.php"><img src="../../../Images/Logo.png" alt="Logo"></a>
   </ul>
   <nav>
     <input class="menu-toggle" id="menu-toggle" type="checkbox">
@@ -75,12 +77,17 @@
         <ul class="sousmenu">
           <li><a href="../connection.php">Se connecter</a></li>
           <li><a href="../inscription.php">S'inscrire</a></li>
+          <?php
+          if (isset($_SESSION["type"]) && $_SESSION["type"]==1){
+            echo "<li><a href='../../Admin/mainAdmin.php'>Page admin </a> </li>";
+          }
+           ?>
         </ul>
 
       </li>
 
       <li class="lang" id="lang">
-        <a href=""><img class="lg" src="../../../Images/langswitch.png" alt="en"></a>
+        <a href="../../../../en/index.php"><img class="lg" src="../../../Images/langswitch.png" alt="en"></a>
       </li>
 
     </ul>

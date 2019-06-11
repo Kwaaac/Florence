@@ -88,7 +88,7 @@
       </li>
 
       <li class="lang" id="lang">
-        <a href=""><img class="lg" src="../../../Images/langswitch.png" alt="en"></a>
+        <a href="../en/index.php"><img class="lg" src="../../../Images/langswitch.png" alt="en"></a>
       </li>
 
     </ul>

@@ -87,15 +87,11 @@
 
   <div class="textBox" id="page">
     <div class="indication">
-      <p>Le Palazzo Vecchio</p>
+      <p>The Palazzo Vecchio</p>
     </div>
 
     <div class="texte">
-      <p>À la fin du XIIIe siècle, la ville de Florence décide de construire un palais, pour montrer sa puissance et garantir une plus grande sécurité aux magistrats de la ville, en cette période de trouble. Celui-ci abritera le Signoria (la «
-        Seigneurie »), c'est-à-dire le gouvernement de la République Florentine.
-        Construit de 1229 à 1314 sur les plans de l’architecte Arnolfo di Cambio, il fut d’abord la résidence des Prieurs sous le nom de Palazzo della Signoria (palais de la Seigneurie) puis nommé Palazzo Ducale sous Cosme 1er.
-        Une sculpture d’ Hercule et Cacus de Baccio Bandinelli ainsi que la réplique du David de Michel-Ange se trouvent sur la place publique, au-devant du bâtiment, un emplacement stratégique emblématique et symbolique (puissance, et puis
-        touristique, aujourd'hui).</p>
+      <p>At the end of the 13th century, the city of Florence decided to build a palace to show its power and guarantee greater security for the city's magistrates during this period of unrest. This will house the Signoria (the "Lordship"), i.e. the government of the Florentine Republic. Built from 1229 to 1314 according to the plans of the architect Arnolfo di Cambio, it was first the Priors' residence under the name of Palazzo della Signoria (Palace of the Lordship) and then named Palazzo Ducale under Cosmos I. A sculpture of Hercules and Cacus by Baccio Bandinelli and the replica of Michelangelo's David are in the public square, in front of the building, an emblematic and symbolic strategic location (power, and then tourist, today).</p>
     </div>
 
   </div>

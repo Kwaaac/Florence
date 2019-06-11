@@ -7,6 +7,8 @@
     </ul>
   </div>
 
+
+
   <div class="Propos">
     <ul>A Propos
       <li><br><a class="ftr" href="Pages/Sousmenus/contact.php">Objectif et créateurs du site</a></li>
@@ -14,4 +16,12 @@
     </ul>
 
   </div>
+
+  <div class="Social">
+    <a href="https://www.instagram.com/mcnflorence/"><img src="Images/instagramIcon.png" alt="Instagram"></a>
+    <a href="https://www.linkedin.com/company/mcn-florence/about/?viewAsMember=true"><img src="Images/linkedinIcon.png" alt="Linkedin"></a>
+    <a href="https://www.facebook.com/mcnflorence/"><img src="Images/facebookIcon.png" alt="Facebook"></a>
+  </div>
+
+
 </footer>

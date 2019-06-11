@@ -12,11 +12,11 @@
         <a class=" menuItem">
           <input class="menu-toggle" id="menu-toggle1" type="checkbox"></input>
           <label class="menu-toggle-button" for="menu-toggle">☶</label>
-          Histoire
+          History
         </a>
 
         <ul class="sousmenu">
-          <li><a href="../frise.php">Frise Historique</a></li>
+          <li><a href="../frise.php">Timeline of the city's history</a></li>
           <li><a href="../archi.php">Monuments</a></li>
         </ul>
       </li>
@@ -26,11 +26,11 @@
         <a class=" menuItem">
           <input class="menu-toggle" id="menu-toggle2" type="checkbox"></input>
           <label class="menu-toggle-button" for="menu-toggle">☶</label>
-          Informations Utiles
+          Useful informations
         </a>
 
         <ul class="sousmenu">
-          <li><a href="../calendar.php">Actualités de la ville</a></li>
+          <li><a href="../calendar.php">City News</a></li>
           <li><a href="../Transports.php">Transports</a></li>
         </ul>
 
@@ -41,13 +41,13 @@
         <a class=" menuItem">
           <input class="menu-toggle" id="menu-toggle3" type="checkbox"></input>
           <label class="menu-toggle-button" for="menu-toggle">☶</label>
-          Découvertes
+          Discoveries
         </a>
 
         <ul class="sousmenu">
-          <li><a href="../Petits Prix.php">Se restaurer</a></li>
-          <li><a href="../Insolite.php">Curiosités</a></li>
-          <li><a href="../voyageurs.php">Citations de Voyageurs</a></li>
+          <li><a href="../Petits Prix.php">Restaurants</a></li>
+          <li><a href="../Insolite.php">Curiosities</a></li>
+          <li><a href="../voyageurs.php">Travelers Quotes</a></li>
         </ul>
       </li>
 
@@ -56,12 +56,12 @@
         <a class=" menuItem">
           <input class="menu-toggle" id="menu-toggle4" type="checkbox"></input>
           <label class="menu-toggle-button" for="menu-toggle">☶</label>
-          Visiter la ville
+          Visit the city
         </a>
 
         <ul class="sousmenu">
-          <li><a href="../autour.php">Points d'intérêts</a></li>
-          <li><a href="../circuits.php">Nos circuits</a></li>
+          <li><a href="../autour.php">Points of interest</a></li>
+          <li><a href="../circuits.php">Our tours</a></li>
         </ul>
       </li>
 
@@ -69,18 +69,18 @@
         <a class=" menuItem">
           <input class="menu-toggle" id="menu-toggle4" type="checkbox"></input>
           <label class="menu-toggle-button" for="menu-toggle">☶</label>
-          Authentification
+          Authentication
         </a>
 
         <ul class="sousmenu">
-          <li><a href="../connection.php">Se connecter</a></li>
-          <li><a href="../inscription.php">S'inscrire</a></li>
+          <li><a href="../connection.php">Log in</a></li>
+          <li><a href="../inscription.php">Sign In</a></li>
         </ul>
 
       </li>
 
       <li class="lang" id="lang">
-        <a href=""><img class="lg" src="../../../Images/langswitch.png" alt="en"></a>
+        <a href="../../../../fr/index.php"><img class="lg" src="../../../Images/langswitch.png" alt="en"></a>
       </li>
 
     </ul>

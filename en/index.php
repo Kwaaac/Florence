@@ -96,11 +96,6 @@ include('../Admin/connexion.php');
       <?php include('HeadAndFoot/footerStg1.php'); ?>
     </div>
 
-
-
-    <div class="hiden">
-      <a href="../upload.php"></a>
-    </div>
     <script src="slider.js"></script>
 </body>
 

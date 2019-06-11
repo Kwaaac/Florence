@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="pages.css">
-  <title>[Florence] Architecture</title>
+  <title>[Florence] Monuments</title>
 </head>
 
 <body id="archi">
@@ -31,7 +31,7 @@
     </div>
 
     <div class="monuments">
-      <a href="architecture/Offices.php"><img class="image" src="../../Images/MuOf/Musée2.png" alt="Musée des Offices"></a>
+      <a href="architecture/Offices.php"><img class="image" src="../../Images/MuOf/Musee2.png" alt="Musée des Offices"></a>
       <h3><a class="titreMonument" href="architecture/Offices.php">Musée des Offices</a></h3>
     </div>
 

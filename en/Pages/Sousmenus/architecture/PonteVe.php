@@ -96,25 +96,15 @@ include('../../connectionFiles/connectionLOG.inc.php');
 
   <div class="textBox" id="page">
     <div class="indication">
-      <p>Le Ponte Vecchio</p>
+      <p>The Ponte Vecchio</p>
     </div>
 
     <div class="texte">
-      <p>Le Ponte Vecchio, qui signifie litteralement "vieux pont", porte bien son nom, puisqu'il s'agit en effet du plus vieux pont de la ville. Mais pas que. Cette curiosite architecturale qui surplombe l'Arno, est egalement la plus vieille rue
-        pietonne de Florence, ainsi que sa plus vieille galerie marchande. En effet, de nos jours le "Vieux Pont" accueille un grand nombre de joailliers et d'orfevres, mais ces derniers n'y ont fait leur apparition qu'a la fin du XVIeme siecle. Ils
-        ont ete precede par des bouchers et poissonniers, relocalises a cause des odeurs. Ce pont ne date pourtant "que" de 1345, tandis que Florence existait deja durant l'Empire Romain.
-        Les nombreuses crues de l'Arno ont fait des ravages dans la ville et l'on trouve donc des traces du Ponte Vecchio jusqu'en 966. Il a ainsi ete rebati plusieurs fois au travers des ages, nous permettant aujourd'hui d'admirer cette merveille
-        architecturale, tenant en equilibre sur l'eau, toujours grouillante d'activite.</p>
+      <p>The Ponte Vecchio, which literally means "old bridge", bears its name well, since it is the oldest bridge in the city. But not just that. This architectural curiosity overlooking the Arno is also Florence's oldest pedestrian street and its oldest shopping mall. Indeed, nowadays the "Old Bridge" welcomes a large number of jewellers and goldsmiths, but the latter only appeared there at the end of the 16th century. They were preceded by butchers and fishmongers, relocated because of the smells. However, this bridge "only" dates back to 1345, while Florence already existed during the Roman Empire. The many floods of the Arno River caused havoc in the city and traces of the Ponte Vecchio can therefore be found until 966. It has been rebuilt several times over the years, allowing us today to admire this architectural marvel, balanced on the water, still teeming with activity.</p>
     </div>
 
     <script src="slider.js"></script>
-<?php
-if(isset($_SESSION["login"])){
-  echo "<a href=\"../../../upload.php\"> <input type=\"button\" value=\"Upload\"> </a>";
-}else{
-  echo '<a href="../../connexion.php" > <input type="button" value="Upload"> </a>';
-    }
-    ?>
+    
   <?php include('../../../HeadAndFoot/footerStg3.php'); ?>
 </body>
 

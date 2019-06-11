@@ -478,10 +478,9 @@ ul.primary li:hover>a {
 
 /* Connection */
 #connection .formConnection {
-  margin-top: 10em;
-  text-align: center;
-  width: 50%;
-  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+
+  margin: auto;
 }
 
 #connection input {
@@ -504,6 +503,13 @@ ul.primary li:hover>a {
 
 #connection .title {
   margin-bottom: 0;
+}
+
+#connection form{
+  background-color: rgba(255, 255, 255, 1);
+  width: 438px;
+  margin: auto;
+  padding-left: 70px;
 }
 
 #connection form a {
@@ -616,6 +622,11 @@ ul.primary li:hover>a {
   float: right;
 }
 
+
+#admin  {
+
+}
+
 /* footer */
 footer {
   background-color: #d14a00;
@@ -637,7 +648,7 @@ footer {
 }
 
 #connection footer {
-  margin-top: 21.350em;
+  margin-top: 20em;
 }
 
 #transport footer {
@@ -656,6 +667,24 @@ footer {
   margin-right: 15%;
   display: inline-block;
   width: auto;
+}
+
+.Social{
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.Social img{
+  width: 36px;
+  height: 36px;
+}
+
+@media only screen and (max-width: 630px) {
+  .Social{
+    margin-top: 7em;
+    margin-left: 9%;
+    text-align: left;
+  }
 }
 
 footer ul {

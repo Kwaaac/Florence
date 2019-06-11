@@ -17,7 +17,7 @@
   <div class="projet">
 
     <h2>Notre projet:</h2>
-    <p>En partenariat avec L'UNESCO et dirigé par M.Ettayeb, <br>Notre site à pour but de valoriser le patrimoine culturel de Florence</p>
+    <p>En partenariat avec L'UNESCO et dirigé par M.Ettayeb, <br>Notre site a pour but de valoriser le patrimoine culturel de Florence ainsi que de faire découvrir et revisiter le patrimoine Florentin.<br > C'est composé d'une équipe de cinq personnes que nous avons réalisé ce projet sur une période de dix mois.</p>
 
   </div>
 

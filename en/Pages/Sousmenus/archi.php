@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="pages.css">
-  <title>[Florence] Architecture</title>
+  <title>[Florence] Monuments</title>
 </head>
 
 <body id="archi">
@@ -31,18 +31,18 @@
     </div>
 
     <div class="monuments">
-      <a href="architecture/Offices.php"><img class="image" src="../../Images/MuOf/Musée2.png" alt="Musée des Offices"></a>
-      <h3><a class="titreMonument" href="architecture/Offices.php">Musée des Offices</a></h3>
+      <a href="architecture/Offices.php"><img class="image" src="../../Images/MuOf/Musee2.png" alt="Musée des Offices"></a>
+      <h3><a class="titreMonument" href="architecture/Offices.php">The Uffizi Gallery</a></h3>
     </div>
 
     <div class="monuments">
       <a href="architecture/JardinBoboli.php"><img class="image3" src="../../Images/JaBo/Jardin1.jpg" alt="Jardin Boboli"></a>
-      <h3><a class="titreMonument" href="architecture/JardinBoboli.php">Jardin Boboli</a></h3>
+      <h3><a class="titreMonument" href="architecture/JardinBoboli.php">The Boboli Gardens</a></h3>
     </div>
 
     <div class="monuments">
       <a href="architecture/PalaisPitti.php"><img class="image3" src="../../Images/PaPi/Florence-PalaisPitti.jpg" alt="Palais Pitti"></a>
-      <h3><a class="titreMonument" href="architecture/PalaisPitti.php">Palais Pitti</a></h3>
+      <h3><a class="titreMonument" href="architecture/PalaisPitti.php">Palazzo Pitti</a></h3>
     </div>
 
     <div class="monuments">
@@ -52,12 +52,12 @@
 
     <div class="monuments">
       <a href="architecture/BasiliqueSanLorenzo.php"><img class="image3" src="../../Images/SanLorenzo/BasiliqueSanLorenzo.jpg" alt="SanLorenzo"></a>
-      <h3><a class="titreMonument" href="architecture/BasiliqueSanLorenzo.php">Basilique San Lorenzo</a></h3>
+      <h3><a class="titreMonument" href="architecture/BasiliqueSanLorenzo.php">Basilica di San Lorenzo</a></h3>
     </div>
 
     <div class="monuments">
       <a href="architecture/BasiliqueSanMiniato.php"><img class="image3" src="../../Images/SanMiniato/SanMiniatoAlMonte.jpg" alt="SanMiniato"></a>
-      <h3><a class="titreMonument" href="architecture/BasiliqueSanMiniato.php">Basilique San Miniato</a></h3>
+      <h3><a class="titreMonument" href="architecture/BasiliqueSanMiniato.php">Basilica di San Miniato</a></h3>
     </div>
 
     <div class="monuments">
@@ -77,12 +77,12 @@
 
     <div class="monuments">
       <a href="architecture/ForteresseBasso.php"><img class="image3" src="../../Images/ForteresseBasso/Fortezza_da_Basso_1.JPG" alt="ForteresseBasso"></a>
-      <h3><a class="titreMonument" href="architecture/ForteresseBasso.php">Forteresse de Basso</a></h3>
+      <h3><a class="titreMonument" href="architecture/ForteresseBasso.php">Basso Fortress</a></h3>
     </div>
 
     <div class="monuments">
       <a href="architecture/CampanileGiotto.php"><img class="image3" src="../../Images/CampanileGiotto/Campaniledigiotto.JPG" alt="CampanileGiotto"></a>
-      <h3><a class="titreMonument" href="architecture/CampanileGiotto.php">Campanile de Giotto</a></h3>
+      <h3><a class="titreMonument" href="architecture/CampanileGiotto.php">Giotto's Bell Tower</a></h3>
     </div>
 
     <div class="monuments">
